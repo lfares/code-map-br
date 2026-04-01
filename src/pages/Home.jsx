@@ -1,7 +1,7 @@
 import React from 'react'
 import { Database, Target, Cpu } from 'lucide-react'
 
-export default function Home() {
+export default function Home({ setPage }) {
   return (
     <div className="max-w-6xl mx-auto px-6 py-28">
       <section className="text-center">
@@ -12,12 +12,12 @@ export default function Home() {
         </p>
 
         <div className="mt-10 flex justify-center">
-          <a
-            href="#"
+          <button
+            onClick={() => setPage('dashboard')}
             className="inline-block bg-[#A57B2F] text-white rounded-md px-10 py-4 md:py-5 text-lg md:text-xl font-semibold shadow-sm hover:opacity-95"
           >
             Explore Dashboard
-          </a>
+          </button>
         </div>
       </section>
 

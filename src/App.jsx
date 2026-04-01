@@ -11,7 +11,7 @@ export default function App() {
       <Navbar setPage={setRoute} />
 
       <main className="pt-24">
-        {route === 'home' && <Home />}
+        {route === 'home' && <Home setPage={setRoute} />}
         {route === 'dashboard' && <Dashboard />}
       </main>
     </div>
