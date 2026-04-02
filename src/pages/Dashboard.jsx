@@ -30,9 +30,9 @@ export default function Dashboard() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <div className="p-2">
-            <div className="w-full h-[560px] bg-white shadow-sm rounded overflow-hidden">
+            <div className="w-full h-[780px]">
               {geoReady ? (
-                <ComposableMap projection="geoMercator" projectionConfig={{ scale: 700, center: [-54, -14] }} className="w-full h-full">
+                <ComposableMap projection="geoMercator" projectionConfig={{ scale: 1050, center: [-54, -26] }} className="w-full h-full">
                   <Geographies geography={GEO_URL}>
                     {({ geographies }) =>
                       geographies.map((geo) => {
