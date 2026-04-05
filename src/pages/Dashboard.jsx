@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps'
 import brazil from '@svg-maps/brazil'
 import { BookOpen, Clock, CalendarDays, FileText, BarChart2, ChevronDown, ChevronUp, School, GraduationCap, Users, Globe } from 'lucide-react'
+import brazilMap from '@svg-maps/brazil'
+
+const SOUTHEAST_IDS = ['sp', 'rj', 'mg', 'es']
+const southeastLocations = brazilMap.locations.filter(l => SOUTHEAST_IDS.includes(l.id))
 
 const GEO_URL = '/brazil-states.geojson'
 
@@ -111,12 +115,20 @@ function SPDeepDive() {
 
         {/* Map + Quick Stats */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12 items-start">
-          {/* SP State Map placeholder */}
+          {/* Southeast region map */}
           <div className="flex flex-col gap-2">
-            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">State Territory</p>
-            <div className="w-full h-64 bg-[#F0F4F8] rounded-lg flex items-center justify-center border border-gray-200">
-              <span className="text-sm text-[#6B7280] italic">São Paulo state map — coming soon</span>
-            </div>
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">Southeast Region</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="316 295 231 203" className="w-2/3">
+              {southeastLocations.map((loc) => (
+                <path
+                  key={loc.id}
+                  d={loc.path}
+                  fill={loc.id === 'sp' ? '#A57B2F' : '#CBD5E1'}
+                  stroke="#fff"
+                  strokeWidth={1.5}
+                />
+              ))}
+            </svg>
           </div>
 
           {/* Quick Stats */}
