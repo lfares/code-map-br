@@ -21,8 +21,53 @@ const STATE_DATA = {
       { icon: FileText, text: 'Currículo Paulista — Educação Digital e Midiática (Aligned with CIEB standards)' },
       { icon: BarChart2, text: '100% Implemented across the state public network.' },
     ],
+    scope: { from: 6, to: 12, fromLabel: 'Middle School 2', toLabel: 'High School' },
     deepDiveId: 'sp-deep-dive',
   },
+}
+
+function AdminScopeTimeline({ from, to, fromLabel, toLabel }) {
+  const GRADES = 12
+  const activeStart = ((from - 1) / GRADES) * 100
+  const activeEnd = to === GRADES ? 100 : ((to - 1) / GRADES) * 100
+  const activeWidth = activeEnd - activeStart
+
+  return (
+    <div>
+      <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-3">Administrative Scope</p>
+      <div className="relative">
+        {/* Track */}
+        <div className="relative h-1.5 rounded-full bg-[#D1D5DB]">
+          <div
+            className="absolute h-1.5 rounded-full"
+            style={{ left: `${activeStart}%`, width: `${activeWidth}%`, backgroundColor: '#A57B2F' }}
+          />
+          <div
+            className="absolute top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full border-2 border-white ring-1 ring-[#A57B2F] bg-[#A57B2F]"
+            style={{ left: `calc(${activeStart}% - 5px)` }}
+          />
+          <div
+            className="absolute top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full border-2 border-white ring-1 ring-[#A57B2F] bg-[#A57B2F]"
+            style={{ left: `calc(${activeEnd}% - 5px)` }}
+          />
+        </div>
+
+        {/* Grade marker row — G1, Gfrom, Gto, G12 all on same line */}
+        <div className="relative h-5 mt-1.5">
+          {from !== 1 && <span className="absolute text-xs text-[#9CA3AF] -translate-x-1/2" style={{ left: '0%' }}>G1</span>}
+          <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>G{from}</span>
+          <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeEnd}%` }}>G{to}</span>
+          {to !== 12 && <span className="absolute text-xs text-[#9CA3AF] -translate-x-full" style={{ left: '100%' }}>G12</span>}
+        </div>
+
+        {/* Scope label row */}
+        <div className="relative h-5 mt-0.5">
+          <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>{fromLabel}</span>
+          <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeEnd}%` }}>{toLabel}</span>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 function AvailabilityBar({ score, label }) {
@@ -65,6 +110,15 @@ function StatePanel({ name }) {
       <p className="text-base italic text-[#001C3D] leading-relaxed">
         {data.summary}
       </p>
+
+      {data.scope && (
+        <AdminScopeTimeline
+          from={data.scope.from}
+          to={data.scope.to}
+          fromLabel={data.scope.fromLabel}
+          toLabel={data.scope.toLabel}
+        />
+      )}
 
       <ul className="flex flex-col gap-5">
         {data.details.map(({ icon: Icon, text }, i) => (
