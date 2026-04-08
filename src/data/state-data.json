@@ -1,0 +1,15 @@
+{
+  "São Paulo": {
+    "availability": { "score": 2, "label": "Restricted and Incomplete" },
+    "summary": "A centralized platform-based model utilizing pre-defined scripts and pre-made slides through partnerships with private platforms. While focused on large-scale delivery, SEDUC restricts most pedagogical content to logged-in users, creating barriers to transparency and external collaboration.",
+    "details": [
+      { "icon": "BookOpen", "text": "Tecnologia e Inovação" },
+      { "icon": "Clock", "text": "1 class-hour per week*" },
+      { "icon": "CalendarDays", "text": "Implemented as a mandatory curriculum in 2020 through the 'Inova Educação' Program." },
+      { "icon": "FileText", "text": "Currículo Paulista — Educação Digital e Midiática (Aligned with CIEB standards)" },
+      { "icon": "BarChart2", "text": "100% Implemented across the state public network." }
+    ],
+    "scope": { "from": 6, "to": 12, "fromLabel": "Middle School 2", "toLabel": "High School" },
+    "deepDiveId": "sp-deep-dive"
+  }
+}

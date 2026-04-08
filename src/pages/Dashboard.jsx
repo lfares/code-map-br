@@ -3,28 +3,14 @@ import { ComposableMap, Geographies, Geography } from 'react-simple-maps'
 import brazil from '@svg-maps/brazil'
 import { BookOpen, Clock, CalendarDays, FileText, BarChart2, ChevronDown, ChevronUp, School, GraduationCap, Users, Globe } from 'lucide-react'
 import brazilMap from '@svg-maps/brazil'
+import stateData from '../data/state-data.json'
+
+const ICON_MAP = { BookOpen, Clock, CalendarDays, FileText, BarChart2 }
 
 const SOUTHEAST_IDS = ['sp', 'rj', 'mg', 'es']
 const southeastLocations = brazilMap.locations.filter(l => SOUTHEAST_IDS.includes(l.id))
 
 const GEO_URL = '/brazil-states.geojson'
-
-const STATE_DATA = {
-  'São Paulo': {
-    flag: '🏳️',
-    availability: { score: 2, label: 'Restricted and Incomplete' },
-    summary: 'A centralized platform-based model utilizing pre-defined scripts and pre-made slides through partnerships with private platforms. While focused on large-scale delivery, SEDUC restricts most pedagogical content to logged-in users, creating barriers to transparency and external collaboration.',
-    details: [
-      { icon: BookOpen, text: 'Tecnologia e Inovação' },
-      { icon: Clock, text: '1 class-hour per week*' },
-      { icon: CalendarDays, text: "Implemented as a mandatory curriculum in 2020 through the 'Inova Educação' Program." },
-      { icon: FileText, text: 'Currículo Paulista — Educação Digital e Midiática (Aligned with CIEB standards)' },
-      { icon: BarChart2, text: '100% Implemented across the state public network.' },
-    ],
-    scope: { from: 6, to: 12, fromLabel: 'Middle School 2', toLabel: 'High School' },
-    deepDiveId: 'sp-deep-dive',
-  },
-}
 
 function AdminScopeTimeline({ from, to, fromLabel, toLabel }) {
   const GRADES = 12
@@ -89,7 +75,7 @@ function AvailabilityBar({ score, label }) {
 }
 
 function StatePanel({ name }) {
-  const data = STATE_DATA[name]
+  const data = stateData[name]
 
   if (!data) {
     return (
@@ -121,12 +107,15 @@ function StatePanel({ name }) {
       )}
 
       <ul className="flex flex-col gap-5">
-        {data.details.map(({ icon: Icon, text }, i) => (
-          <li key={i} className="flex items-start gap-3">
-            <Icon className="w-6 h-6 mt-0.5 shrink-0 text-[#A57B2F]" />
-            <span className="text-base text-[#001C3D]">{text}</span>
-          </li>
-        ))}
+        {data.details.map(({ icon, text }, i) => {
+          const Icon = ICON_MAP[icon]
+          return (
+            <li key={i} className="flex items-start gap-3">
+              {Icon && <Icon className="w-6 h-6 mt-0.5 shrink-0 text-[#A57B2F]" />}
+              <span className="text-base text-[#001C3D]">{text}</span>
+            </li>
+          )
+        })}
       </ul>
 
       <div>
