@@ -11,5 +11,18 @@
     ],
     "scope": { "from": 6, "to": 12, "fromLabel": "Middle School 2", "toLabel": "High School" },
     "deepDiveId": "sp-deep-dive"
+  },
+  "Minas Gerais": {
+    "availability": { "score": 4, "label": "Open but Opaque" },
+    "summary": "Recently implemented computer science curriculum focused on digital literacy and Artificial Intelligence. The model prioritizes in-house audiovisual content through the 'Digital Training School' (Escola de Formação Digital), which is open to the public. However, practical implementation remains dependent on local infrastructure and assessment results are not yet publicly available.",
+    "details": [
+      { "icon": "BookOpen", "text": "Digital Education" },
+      { "icon": "Clock", "text": "1 class (45 min) per week" },
+      { "icon": "FileText", "text": "Referencial Curricular Computação na Educação Básica" },
+      { "icon": "BarChart2", "text": "100% Implemented" },
+      { "icon": "CalendarDays", "text": "Mandatory since 2026 (Resolution SEE nº 5.212/2025)" }
+    ],
+    "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
+    "deepDiveId": null
   }
 }

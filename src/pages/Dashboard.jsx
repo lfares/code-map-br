@@ -38,7 +38,7 @@ function AdminScopeTimeline({ from, to, fromLabel, toLabel }) {
           />
         </div>
 
-        {/* Grade marker row — G1, Gfrom, Gto, G12 all on same line */}
+        {/* Grade marker row */}
         <div className="relative h-5 mt-1.5">
           {from !== 1 && <span className="absolute text-xs text-[#9CA3AF] -translate-x-1/2" style={{ left: '0%' }}>G1</span>}
           <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>G{from}</span>
@@ -48,8 +48,16 @@ function AdminScopeTimeline({ from, to, fromLabel, toLabel }) {
 
         {/* Scope label row */}
         <div className="relative h-5 mt-0.5">
-          <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>{fromLabel}</span>
-          <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeEnd}%` }}>{toLabel}</span>
+          {fromLabel === toLabel ? (
+            <div className="absolute flex justify-center" style={{ left: `${activeStart}%`, width: `${activeWidth}%` }}>
+              <span className="text-xs font-bold text-[#A57B2F]">{fromLabel}</span>
+            </div>
+          ) : (
+            <>
+              <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>{fromLabel}</span>
+              <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeEnd}%` }}>{toLabel}</span>
+            </>
+          )}
         </div>
       </div>
     </div>
@@ -119,12 +127,22 @@ function StatePanel({ name }) {
       </ul>
 
       <div>
-        <a
-          href={`#${data.deepDiveId}`}
-          className="inline-block bg-[#001C3D] text-white rounded-md px-6 py-3 text-sm font-semibold hover:opacity-90 transition-opacity"
-        >
-          Learn More
-        </a>
+        {data.deepDiveId ? (
+          <a
+            href={`#${data.deepDiveId}`}
+            className="inline-block bg-[#001C3D] text-white rounded-md px-6 py-3 text-sm font-semibold hover:opacity-90 transition-opacity"
+          >
+            Learn More
+          </a>
+        ) : (
+          <button
+            disabled
+            className="inline-block bg-[#001C3D] text-white rounded-md px-6 py-3 text-sm font-semibold opacity-40 cursor-not-allowed"
+            title="Coming soon"
+          >
+            Learn More
+          </button>
+        )}
       </div>
     </div>
   )
