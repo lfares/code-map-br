@@ -23,6 +23,6 @@
       { "icon": "CalendarDays", "text": "Mandatory since 2026 (Resolution SEE nº 5.212/2025)" }
     ],
     "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
-    "deepDiveId": null
+    "deepDiveId": "mg-deep-dive"
   }
 }

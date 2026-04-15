@@ -345,6 +345,164 @@ function SPDeepDive() {
   )
 }
 
+function MGDeepDive() {
+  return (
+    <section id="mg-deep-dive" className="bg-white border-t border-gray-200 mt-12">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="font-serif text-3xl md:text-4xl text-[#001C3D] mb-10">Minas Gerais — State Deep Dive</h2>
+
+        {/* Map + Quick Stats */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12 items-start">
+          <div className="flex flex-col gap-2">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">Southeast Region</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="316 295 231 203" className="w-2/3">
+              {southeastLocations.map((loc) => (
+                <path
+                  key={loc.id}
+                  d={loc.path}
+                  fill={loc.id === 'mg' ? '#A57B2F' : '#CBD5E1'}
+                  stroke="#fff"
+                  strokeWidth={1.5}
+                />
+              ))}
+            </svg>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">At a Glance</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <School className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">3,424</p>
+                  <p className="text-sm text-[#6B7280]">Public Schools</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <GraduationCap className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">~1.5 Million</p>
+                  <p className="text-sm text-[#6B7280]">Students (~650k in High School)</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <Users className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">12k–15k</p>
+                  <p className="text-sm text-[#6B7280]">Tech &amp; Innovation Teachers (est.)</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <Globe className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">SEE-MG</p>
+                  <a href="https://www.educacao.mg.gov.br/" target="_blank" rel="noopener noreferrer" className="text-sm text-[#A57B2F] underline hover:opacity-80">
+                    educacao.mg.gov.br
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Accordion Cards */}
+        <div className="flex flex-col gap-4">
+          <AccordionCard title="Learning Components">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-[#F0F4F8]">
+                    <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Axis (Pillar)</th>
+                    <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Learning Milestone</th>
+                    <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Classroom Approach</th>
+                    <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Tools &amp; Platforms</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border border-gray-200 hover:bg-gray-50">
+                    <td className="px-4 py-3 border border-gray-200 font-medium">Computational Thinking</td>
+                    <td className="px-4 py-3 border border-gray-200">Complex Problem Solving (Modeling, process automation, and system algorithm adaptation)</td>
+                    <td className="px-4 py-3 border border-gray-200">Logic challenges integrated with Math/Science, meta-programming, and algorithmic efficiency analysis</td>
+                    <td className="px-4 py-3 border border-gray-200">Scratch, circuit simulators, Arduino, 3D prototyping tools</td>
+                  </tr>
+                  <tr className="border border-gray-200 hover:bg-gray-50">
+                    <td className="px-4 py-3 border border-gray-200 font-medium">Digital World</td>
+                    <td className="px-4 py-3 border border-gray-200">Infrastructure &amp; AI (Understanding networks, security protocols, and technical AI fundamentals)</td>
+                    <td className="px-4 py-3 border border-gray-200">Hardware identification, IoT debates, and investigating how AI processes big data</td>
+                    <td className="px-4 py-3 border border-gray-200">'Se Liga na Educação' (YouTube), 'Estude em Casa' portals, open data repositories</td>
+                  </tr>
+                  <tr className="border border-gray-200 hover:bg-gray-50">
+                    <td className="px-4 py-3 border border-gray-200 font-medium">Digital Culture</td>
+                    <td className="px-4 py-3 border border-gray-200">Literacy &amp; Algorithmic Ethics (Critical analysis of fake news, data privacy/LGPD, and social impact of AI)</td>
+                    <td className="px-4 py-3 border border-gray-200">Media Auditing (podcasts/videos), information curation, cryptography simulations, and bias analysis in intelligent systems</td>
+                    <td className="px-4 py-3 border border-gray-200">Google Workspace, social media, Canva/Anchor, Generative AI for pedagogical support</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </AccordionCard>
+
+          <AccordionCard title="Available Materials">
+            <div className="flex flex-col gap-5">
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-2">Curriculum Links</p>
+                <ul className="flex flex-col gap-2">
+                  <li>
+                    <a href="https://drive.google.com/file/d/1Rm2pAdJHhY0Wtu7VRMfsdAnex4XGuleq/view" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">
+                      Preliminary Computing Framework
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-2">Public Resources</p>
+                <ul className="flex flex-col gap-3">
+                  <li>
+                    <a href="https://seliga.educacao.mg.gov.br/ensino-m%C3%A9dio/tecnologia-e-inova%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">
+                      Full Student &amp; Teacher Handbooks — Se Liga na Educação
+                    </a>
+                    <p className="text-xs text-[#6B7280] mt-0.5">Complete handbooks for both students and teachers publicly available.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </AccordionCard>
+
+          <AccordionCard title="Infrastructure">
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Device Access</p>
+                <p>Minas Gerais has undertaken a massive procurement of laptops and robotics kits across the state network. Equipment rotation between classrooms is managed predominantly through <span className="font-medium">mobile charging carts</span>, enabling shared use across school units.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Connectivity</p>
+                <p>Connectivity and Wi-Fi stability remain primary bottlenecks, particularly for simultaneous access to AI platforms, which demand consistent high-bandwidth environments rarely available in standard classroom settings.</p>
+              </div>
+            </div>
+          </AccordionCard>
+
+          <AccordionCard title="Assessment & Feedback">
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Internal Tracking</p>
+                <p>Progress is monitored through <span className="font-medium">Diagnostic and Quarterly Assessments</span> focused on digital literacy competencies, providing a structured measure of student engagement with the curriculum.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Practical Work</p>
+                <p>Bi-monthly <span className="font-medium">'Hands-on' (Mão na Massa)</span> projects are a core assessment mechanism, ranging from AI prototypes to robotics circuits, requiring students to apply computational thinking in tangible deliverables.</p>
+              </div>
+              <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3">
+                <p className="font-semibold text-amber-800 mb-1">Transparency Gap</p>
+                <p className="text-amber-900">Performance microdata and implementation efficacy results for 2026 are not yet publicly disclosed. Teacher feedback highlights the need for better technical support and the challenge of delivering a dense curriculum — including AI concepts — within a single 45-minute weekly class.</p>
+              </div>
+            </div>
+          </AccordionCard>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export default function Dashboard() {
   const [selectedState, setSelectedState] = useState(null)
   const [geoReady, setGeoReady] = useState(null)
@@ -423,6 +581,7 @@ export default function Dashboard() {
       </div>
 
       <SPDeepDive />
+      <MGDeepDive />
     </div>
   )
 }
