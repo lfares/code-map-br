@@ -82,7 +82,13 @@ function AvailabilityBar({ score, label }) {
   )
 }
 
-function StatePanel({ name }) {
+const DEEP_DIVE_MAP = {
+  'São Paulo': SPDeepDive,
+  'Minas Gerais': MGDeepDive,
+  'Rio de Janeiro': RJDeepDive,
+}
+
+function StatePanel({ name, onLearnMore }) {
   const data = stateData[name]
 
   if (!data) {
@@ -132,12 +138,12 @@ function StatePanel({ name }) {
 
       <div>
         {data.deepDiveId ? (
-          <a
-            href={`#${data.deepDiveId}`}
+          <button
+            onClick={onLearnMore}
             className="inline-block bg-[#001C3D] text-white rounded-md px-6 py-3 text-sm font-semibold hover:opacity-90 transition-opacity"
           >
             Learn More
-          </a>
+          </button>
         ) : (
           <button
             disabled
@@ -674,7 +680,17 @@ function RJDeepDive() {
 
 export default function Dashboard() {
   const [selectedState, setSelectedState] = useState(null)
+  const [activeDeepDive, setActiveDeepDive] = useState(null)
   const [geoReady, setGeoReady] = useState(null)
+
+  useEffect(() => {
+    if (!activeDeepDive) return
+    const id = stateData[activeDeepDive]?.deepDiveId
+    if (!id) return
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    }, 50)
+  }, [activeDeepDive])
 
   useEffect(() => {
     let mounted = true
@@ -710,7 +726,7 @@ export default function Dashboard() {
                           <Geography
                             key={geo.rsmKey}
                             geography={geo}
-                            onClick={() => setSelectedState(name)}
+                            onClick={() => { setSelectedState(name); setActiveDeepDive(null); }}
                             style={{
                               default: { ...mapStyles.default, fill: isSelected ? mapStyles.pressed.fill : mapStyles.default.fill },
                               hover: mapStyles.hover,
@@ -743,15 +759,13 @@ export default function Dashboard() {
                 <p className="mt-4 text-base text-[#001C3D]">Click a state on the map to view available information.</p>
               </div>
             ) : (
-              <StatePanel name={selectedState} />
+              <StatePanel name={selectedState} onLearnMore={() => setActiveDeepDive(selectedState)} />
             )}
           </aside>
         </div>
       </div>
 
-      <SPDeepDive />
-      <MGDeepDive />
-      <RJDeepDive />
+      {activeDeepDive && (() => { const DeepDive = DEEP_DIVE_MAP[activeDeepDive]; return DeepDive ? <DeepDive /> : null })()}
     </div>
   )
 }
