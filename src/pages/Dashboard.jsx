@@ -507,6 +507,171 @@ function MGDeepDive() {
   )
 }
 
+function RJDeepDive() {
+  return (
+    <section id="rj-deep-dive" className="bg-white border-t border-gray-200 mt-12">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="font-serif text-3xl md:text-4xl text-[#001C3D] mb-10">Rio de Janeiro — State Deep Dive</h2>
+
+        {/* Map + Quick Stats */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12 items-start">
+          <div className="flex flex-col gap-2">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">Southeast Region</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="316 295 231 203" className="w-2/3">
+              {southeastLocations.map((loc) => (
+                <path
+                  key={loc.id}
+                  d={loc.path}
+                  fill={loc.id === 'rj' ? '#A57B2F' : '#CBD5E1'}
+                  stroke="#fff"
+                  strokeWidth={1.5}
+                />
+              ))}
+            </svg>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">At a Glance</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <School className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">1,214</p>
+                  <p className="text-sm text-[#6B7280]">Public Schools (~240 full-time units)</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <GraduationCap className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">~455,000</p>
+                  <p className="text-sm text-[#6B7280]">Students</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <Users className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">N/A</p>
+                  <p className="text-sm text-[#6B7280]">Tech &amp; Innovation Teachers (not officially tracked)</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <Globe className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">SEEDUC-RJ</p>
+                  <a href="https://www.seeduc.rj.gov.br/" target="_blank" rel="noopener noreferrer" className="text-sm text-[#A57B2F] underline hover:opacity-80">
+                    seeduc.rj.gov.br
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Accordion Cards */}
+        <div className="flex flex-col gap-4">
+          <AccordionCard title="Learning Components">
+            <div className="flex flex-col gap-4">
+              <div className="bg-red-50 border border-red-200 rounded-md px-4 py-3">
+                <p className="font-semibold text-red-800 mb-1">Not Applicable to General Network</p>
+                <p className="text-red-900 text-sm">There is no specific mandatory computing subject for non-integral schools. The components below apply exclusively to full-time schools enrolled in the Technology itinerary under the New High School program.</p>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-[#F0F4F8]">
+                      <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Subject</th>
+                      <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Learning Milestone</th>
+                      <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Classroom Approach</th>
+                      <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Tools &amp; Platforms</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border border-gray-200 hover:bg-gray-50">
+                      <td className="px-4 py-3 border border-gray-200 font-medium">Technology, Innovation, and Environment</td>
+                      <td className="px-4 py-3 border border-gray-200">Understanding the relationship between technological development, automation (AI), and sustainability (Circular Economy)</td>
+                      <td className="px-4 py-3 border border-gray-200">Project-Based Learning (PBL): Creating technological solutions for local environmental or social issues</td>
+                      <td className="px-4 py-3 border border-gray-200">Robotics kits, circuit simulators, modeling software, AI tools</td>
+                    </tr>
+                    <tr className="border border-gray-200 hover:bg-gray-50">
+                      <td className="px-4 py-3 border border-gray-200 font-medium">STEAM Culture</td>
+                      <td className="px-4 py-3 border border-gray-200">Integrating Science, Engineering, and Arts for hands-on prototyping</td>
+                      <td className="px-4 py-3 border border-gray-200">Maker Culture: Laboratory experimentation and construction of physical and digital prototypes</td>
+                      <td className="px-4 py-3 border border-gray-200">Maker Labs, design tools, Arduino, recyclable materials</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </AccordionCard>
+
+          <AccordionCard title="Available Materials">
+            <div className="flex flex-col gap-5">
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-2">Curriculum Links</p>
+                <ul className="flex flex-col gap-2">
+                  <li>
+                    <a href="https://sites.google.com/educacao.rj.gov.br/ementasnovoensinomedio2025/componentes-eletivos/tecnologia" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">
+                      2025 Syllabi (Latest) — New High School Components
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.profeduca.rj.gov.br/expotech" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">
+                      Expotech Portal — Prof. Educa
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-2">Public &amp; Authenticated Resources</p>
+                <ul className="flex flex-col gap-3">
+                  <li>
+                    <a href="https://conexao.educacao.rj.gov.br/" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">Conexão Educação</a>
+                    <span className="ml-2 text-xs text-[#6B7280]">(Requires login)</span>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/@Appliquese/courses" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">Applique-se (YouTube)</a>
+                    <p className="text-xs text-[#6B7280] mt-0.5">General content only — lacks specific Tech/Innovation modules.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </AccordionCard>
+
+          <AccordionCard title="Infrastructure">
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Device Access</p>
+                <p>The state's <span className="font-medium">"Conectar Já"</span> program distributes tablets and Chromebooks, but 1:1 access is largely restricted to full-time (CIEP) schools. In the general stream, device use is occasional and often limited to aging computer labs with ongoing maintenance issues.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Connectivity</p>
+                <p>Unstable high-speed internet across several regions creates a dependency on offline or printed materials, significantly hindering the use of cloud-based AI tools and platforms intended for the curriculum.</p>
+              </div>
+            </div>
+          </AccordionCard>
+
+          <AccordionCard title="Assessment & Feedback">
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Primary Milestone</p>
+                <p>The <span className="font-medium">Expotech</span> (Technology and Innovation Exhibition) serves as the state's main metric, showcasing projects from full-time schools. It functions as a visibility event rather than a systematic assessment instrument.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Methodology</p>
+                <p>Practical project-based assessment (robotics, apps, sustainable prototypes) applies to full-time schools. Assessment is nearly non-existent in the general stream, with no standardized digital competency evaluation in place.</p>
+              </div>
+              <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3">
+                <p className="font-semibold text-amber-800 mb-1">Transparency Gap</p>
+                <p className="text-amber-900">No public data on student digital competency exists. Feedback is internal and restricted to authenticated portals, obscuring the real impact on the general student body. Teacher reports highlight high workloads for complex technology projects without technical support, and the exclusion of general stream teachers from the innovation ecosystem.</p>
+              </div>
+            </div>
+          </AccordionCard>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export default function Dashboard() {
   const [selectedState, setSelectedState] = useState(null)
   const [geoReady, setGeoReady] = useState(null)
@@ -586,6 +751,7 @@ export default function Dashboard() {
 
       <SPDeepDive />
       <MGDeepDive />
+      <RJDeepDive />
     </div>
   )
 }

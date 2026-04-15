@@ -36,6 +36,6 @@
     ],
     "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
     "footnote": "* No specific subject exists in the general network; computing is treated as transversal content. In the New High School's technology itinerary, it includes the subjects 'Technology, Innovation, and Environment' and 'STEAM Culture'.",
-    "deepDiveId": null
+    "deepDiveId": "rj-deep-dive"
   }
 }
