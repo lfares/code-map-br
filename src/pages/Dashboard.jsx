@@ -126,6 +126,10 @@ function StatePanel({ name }) {
         })}
       </ul>
 
+      {data.footnote && (
+        <p className="text-xs text-[#6B7280] leading-relaxed italic">{data.footnote}</p>
+      )}
+
       <div>
         {data.deepDiveId ? (
           <a

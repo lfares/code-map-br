@@ -24,5 +24,18 @@
     ],
     "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
     "deepDiveId": "mg-deep-dive"
+  },
+  "Rio de Janeiro": {
+    "availability": { "score": 1, "label": "Inaccessible and Obscure" },
+    "summary": "The state does not offer a universal computing component in its general education stream, providing technology itineraries only within full-time integral schools. Furthermore, pedagogical guides and teaching materials are locked behind authenticated portals, preventing public access and external oversight.",
+    "details": [
+      { "icon": "BookOpen", "text": "Itinerary Components (Variable)*" },
+      { "icon": "Clock", "text": "0h (Standard/General) | 4h per week (Full-time schools — Tech track)" },
+      { "icon": "BarChart2", "text": "~25% Implemented (restricted to full-time and technical schools)" },
+      { "icon": "CalendarDays", "text": "Not mandatory for general stream | New High School implementation began in 2022" }
+    ],
+    "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
+    "footnote": "* No specific subject exists in the general network; computing is treated as transversal content. In the New High School's technology itinerary, it includes the subjects 'Technology, Innovation, and Environment' and 'STEAM Culture'.",
+    "deepDiveId": null
   }
 }
