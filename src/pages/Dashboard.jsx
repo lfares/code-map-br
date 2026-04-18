@@ -678,8 +678,7 @@ function RJDeepDive() {
   )
 }
 
-export default function Dashboard() {
-  const [selectedState, setSelectedState] = useState(null)
+export default function Dashboard({ selectedState, setSelectedState }) {
   const [activeDeepDive, setActiveDeepDive] = useState(null)
   const [geoReady, setGeoReady] = useState(null)
 
