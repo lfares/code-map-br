@@ -62,6 +62,7 @@
       { "icon": "CalendarDays", "text": "Not mandatory | Integration with Math Curriculum started in 2024" }
     ],
     "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
+    "deepDiveId": "es-deep-dive",
     "meta": {
       "abbr": "ES",
       "region": "Southeast",

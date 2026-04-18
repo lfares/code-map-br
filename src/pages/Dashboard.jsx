@@ -86,6 +86,7 @@ const DEEP_DIVE_MAP = {
   'São Paulo': SPDeepDive,
   'Minas Gerais': MGDeepDive,
   'Rio de Janeiro': RJDeepDive,
+  'Espírito Santo': ESDeepDive,
 }
 
 function StatePanel({ name, onLearnMore }) {
@@ -504,6 +505,198 @@ function MGDeepDive() {
               <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3">
                 <p className="font-semibold text-amber-800 mb-1">Transparency Gap</p>
                 <p className="text-amber-900">Performance microdata and implementation efficacy results for 2026 are not yet publicly disclosed. Teacher feedback highlights the need for better technical support and the challenge of delivering a dense curriculum — including AI concepts — within a single 45-minute weekly class.</p>
+              </div>
+            </div>
+          </AccordionCard>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function ESDeepDive() {
+  return (
+    <section id="es-deep-dive" className="bg-white border-t border-gray-200 mt-12">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="font-serif text-3xl md:text-4xl text-[#001C3D] mb-10">Espírito Santo — State Deep Dive</h2>
+
+        {/* Map + Quick Stats */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12 items-start">
+          <div className="flex flex-col gap-2">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">Southeast Region</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="316 295 231 203" className="w-2/3">
+              {southeastLocations.map((loc) => (
+                <path
+                  key={loc.id}
+                  d={loc.path}
+                  fill={loc.id === 'es' ? '#A57B2F' : '#CBD5E1'}
+                  stroke="#fff"
+                  strokeWidth={1.5}
+                />
+              ))}
+            </svg>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">At a Glance</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <School className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">~400</p>
+                  <p className="text-sm text-[#6B7280]">State Public Schools</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <GraduationCap className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">~230,000</p>
+                  <p className="text-sm text-[#6B7280]">Students (State Network)</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <Users className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">0</p>
+                  <p className="text-sm text-[#6B7280]">Tech &amp; Innovation Teachers (delivered by Math teachers)</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 bg-[#F9FAFB] rounded-lg px-4 py-4 border border-gray-100">
+                <Globe className="w-6 h-6 text-[#A57B2F] shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-[#001C3D] text-base">SEDU-ES</p>
+                  <a href="https://sedu.es.gov.br/" target="_blank" rel="noopener noreferrer" className="text-sm text-[#A57B2F] underline hover:opacity-80">
+                    sedu.es.gov.br
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Accordion Cards */}
+        <div className="flex flex-col gap-4">
+          <AccordionCard title="Learning Components">
+            <div className="flex flex-col gap-4">
+              <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3">
+                <p className="font-semibold text-amber-800 mb-1">Transversal Integration — No Standalone Subject</p>
+                <p className="text-amber-900 text-sm">Computational Thinking is not a standalone subject. It is embedded as a transversal competency within the Mathematics and its Technologies curriculum, delivered entirely by Mathematics teachers.</p>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-[#F0F4F8]">
+                      <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Component</th>
+                      <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Learning Milestone</th>
+                      <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Classroom Approach</th>
+                      <th className="text-left px-4 py-3 font-semibold text-[#001C3D] border border-gray-200">Tools &amp; Platforms</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border border-gray-200 hover:bg-gray-50">
+                      <td className="px-4 py-3 border border-gray-200 font-medium">Computational Mathematics &amp; Algorithms</td>
+                      <td className="px-4 py-3 border border-gray-200">Investigate, build, and record algorithms for problem-solving using flowcharts</td>
+                      <td className="px-4 py-3 border border-gray-200">Solution Reuse: exploring complex problem-solving by reusing parts of existing solutions</td>
+                      <td className="px-4 py-3 border border-gray-200">Flowcharts, algebra software, and dynamic geometry tools</td>
+                    </tr>
+                    <tr className="border border-gray-200 hover:bg-gray-50">
+                      <td className="px-4 py-3 border border-gray-200 font-medium">Modeling &amp; Simulation</td>
+                      <td className="px-4 py-3 border border-gray-200">Create and explore simple computational models to simulate phenomena and make scientific predictions</td>
+                      <td className="px-4 py-3 border border-gray-200">Scientific Method: investigating how variables relate in mathematical models (e.g., HDI) and if they faithfully portray reality</td>
+                      <td className="px-4 py-3 border border-gray-200">Simulators, spreadsheets, and modeling tools</td>
+                    </tr>
+                    <tr className="border border-gray-200 hover:bg-gray-50">
+                      <td className="px-4 py-3 border border-gray-200 font-medium">Data Analysis &amp; Culture</td>
+                      <td className="px-4 py-3 border border-gray-200">Analyze different forms of digital data representation and querying for scientific research</td>
+                      <td className="px-4 py-3 border border-gray-200">Critical Analysis: investigating methods of construction, authorship, and purpose of digital messages to evaluate reliability</td>
+                      <td className="px-4 py-3 border border-gray-200">Digital data formats, query databases, and research portals</td>
+                    </tr>
+                    <tr className="border border-gray-200 hover:bg-gray-50">
+                      <td className="px-4 py-3 border border-gray-200 font-medium">Communication &amp; Digital Objects</td>
+                      <td className="px-4 py-3 border border-gray-200">Communicate complex ideas clearly through structured digital objects</td>
+                      <td className="px-4 py-3 border border-gray-200">Digital Synthesis: representing research reports and data correlations through infographics and concept maps</td>
+                      <td className="px-4 py-3 border border-gray-200">Concept maps, infographics, hypertexts, and curation tools</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </AccordionCard>
+
+          <AccordionCard title="Available Materials">
+            <div className="flex flex-col gap-5">
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-2">Curriculum Links</p>
+                <ul className="flex flex-col gap-2">
+                  <li>
+                    <a href="https://curriculo.sedu.es.gov.br/curriculo/orientacoescurriculares/" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">
+                      Full 2026 Curricular Guidelines — Orientações Curriculares
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://curriculo.sedu.es.gov.br/curriculo/documentos/" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">
+                      2025 Documents — Currículo ES
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-2">Public Resources</p>
+                <ul className="flex flex-col gap-3">
+                  <li className="flex items-start gap-2">
+                    <div>
+                      <a href="https://escolataon.sedu.es.gov.br/" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">Escola Tá ON</a>
+                      <span className="ml-2 text-xs text-red-600 font-medium">(Link currently broken / unstable)</span>
+                      <p className="text-xs text-[#6B7280] mt-0.5">Central hub for teaching materials and lesson plans. Chronic platform instability limits practical access for teachers.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </AccordionCard>
+
+          <AccordionCard title="Infrastructure">
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Device Access</p>
+                <p>Massive distribution of Chromebooks for 100% of High School and EJA students, including data packages for off-campus use. Charging cabinets are used for organization, storage, and rotation of equipment between classrooms.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Connectivity</p>
+                <p>Ongoing implementation of high-performance Wi-Fi to support simultaneous access across classrooms. Infrastructure rollout is still in progress across the state network.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Escola do Futuro Program</p>
+                <p>Focused investment in robotics and innovation labs in certified units. Currently active in 19 schools, with a goal of reaching 75 schools by the end of 2026.</p>
+              </div>
+            </div>
+          </AccordionCard>
+
+          <AccordionCard title="Assessment & Feedback">
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-2">Assessment Platforms</p>
+                <ul className="flex flex-col gap-2">
+                  <li>
+                    <a href="https://sites.google.com/edu.es.gov.br/painel-gea" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">BI Panel</a>
+                    <span className="ml-2 text-xs text-emerald-700 font-medium">(Public)</span>
+                    <p className="text-xs text-[#6B7280] mt-0.5">Consolidated public indicators and progress monitoring.</p>
+                  </li>
+                  <li>
+                    <a href="https://avaliacaoemonitoramentoespiritosanto.caeddigital.net/#!/pagina-inicial" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">CAEd</a>
+                    <span className="ml-2 text-xs text-[#6B7280]">(Restricted)</span>
+                    <p className="text-xs text-[#6B7280] mt-0.5">Detailed student-level data and diagnostic assessments.</p>
+                  </li>
+                  <li>
+                    <a href="https://sigae.institutounibanco.org.br/portal/login" target="_blank" rel="noopener noreferrer" className="text-[#A57B2F] underline hover:opacity-80">SIGAE</a>
+                    <span className="ml-2 text-xs text-[#6B7280]">(Restricted)</span>
+                    <p className="text-xs text-[#6B7280] mt-0.5">Pedagogical feedback platform for teachers and coordinators.</p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold text-[#001C3D] mb-1">Monitoring &amp; Diagnostics</p>
+                <p>Progress is tracked via CAEd with detailed student-level data (restricted) and consolidated public indicators via the BI Panel. The system uses integrated assessments within Mathematics to measure Computational Thinking skills, with SIGAE providing pedagogical feedback to teachers.</p>
               </div>
             </div>
           </AccordionCard>
