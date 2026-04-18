@@ -51,6 +51,31 @@
       "maturityYear": 2026
     }
   },
+  "Espírito Santo": {
+    "availability": { "score": 3, "label": "Unstable but Comprehensive" },
+    "summary": "The state does not offer a standalone computing subject, integrating Computational Thinking as a transversal competency within the Mathematics curriculum. While the curricular framework is updated and broadly available for public consultation, access to practical teaching materials and lesson plans is hindered by the constant instability of the 'Escola Tá ON' platform.",
+    "details": [
+      { "icon": "BookOpen", "text": "Integrated into Mathematics" },
+      { "icon": "Clock", "text": "0h (No standalone mandatory hours)" },
+      { "icon": "FileText", "text": "Integrated into Mathematics and its Technologies Curriculum" },
+      { "icon": "BarChart2", "text": "0% Implemented (as a standalone subject)" },
+      { "icon": "CalendarDays", "text": "Not mandatory | Integration with Math Curriculum started in 2024" }
+    ],
+    "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
+    "meta": {
+      "abbr": "ES",
+      "region": "Southeast",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": "Transversal",
+      "adminScope": ["High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "Low-tech (Teacher's computer or projector only)",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "No Assessment",
+      "maturityYear": 2024
+    }
+  },
   "Rio de Janeiro": {
     "availability": { "score": 1, "label": "Inaccessible and Obscure" },
     "summary": "The state does not offer a universal computing component in its general education stream, providing technology itineraries only within full-time integral schools. Furthermore, pedagogical guides and teaching materials are locked behind authenticated portals, preventing public access and external oversight.",
