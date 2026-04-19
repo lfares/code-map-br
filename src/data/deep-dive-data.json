@@ -1,0 +1,270 @@
+{
+  "São Paulo": {
+    "sectionId": "sp-deep-dive",
+    "svgId": "sp",
+    "glance": [
+      { "icon": "School",        "value": "+5,000",      "label": "Public Schools" },
+      { "icon": "GraduationCap", "value": "~3.1 Million","label": "Students" },
+      { "icon": "Users",         "value": "20k–30k",     "label": "Tech & Innovation Teachers (est.)" },
+      { "icon": "Globe",         "value": "SEDUC-SP",    "label": "portal", "url": "https://www.educacao.sp.gov.br", "urlDisplay": "educacao.sp.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Logic & Problem Solving (Decomposition, patterns, algorithms)", "**EF:** Interactive stories/games. **EM:** Formal coding/automation", "Scratch, Blockly, Alura"],
+              ["Digital World", "Hardware & Infrastructure (Binary, networks, physical parts)", "Hands-on: PC parts identification, Cloud/Wi-Fi concepts, basic robotics", "Robotics kits, simulators"],
+              ["Digital Culture", "Ethics & Citizenship (Media analysis, digital footprint, AI impact)", "Debates: Anti-cyberbullying campaigns, fake news, LGPD/Privacy", "Google Workspace, CMSP materials"]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Official Curriculum",
+            "items": [
+              { "label": "2026 Digital & Media Literacy Curriculum — Currículo Paulista", "url": "https://efape.educacao.sp.gov.br/curriculopaulista/" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Public Resources",
+            "items": [
+              { "label": "EF2 Materials", "url": "https://efape.educacao.sp.gov.br/materialdidatico/", "note": "Complete student notebooks available up to 2024. Teacher manuals are outdated (2023)." },
+              { "label": "EM — High School Materials", "url": "https://efape.educacao.sp.gov.br/ensinomedio/", "note": "Incomplete materials; only scattered semesters from 2024 available." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Digital Platforms",
+            "headingNote": "(Require institutional login)",
+            "items": [
+              { "label": "EFAPE — Lesson Planning Portal", "url": "https://efape.educacao.sp.gov.br" },
+              { "label": "SED Portal", "url": "https://sed.educacao.sp.gov.br" },
+              { "label": "CMSP Repository", "url": "https://cmsp.educacao.sp.gov.br" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Device Access", "body": "São Paulo has undertaken a large-scale purchase of Chromebooks to equip its public school network. **Full-Time Schools (PEI)** aim for a 1:1 device-to-student ratio, while regular schools operate shared **'Chromebook Carts'** on a rotational basis across classrooms." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "Reliable, high-speed internet access remains a critical bottleneck. The dependence on cloud-based platforms (CMSP, Alura, Google Workspace) means that connectivity gaps directly impact instructional delivery, particularly in peripheral and rural school units." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "Internal Tracking", "body": "Progress is monitored through **BI Educação**, SEDUC's internal business intelligence dashboard, which tracks platform completion rates — primarily Alura course tracks — as a proxy for instructional engagement." },
+          { "type": "paragraph", "heading": "Saresp Integration", "body": "The annual state exam (**Saresp**) now incorporates questions targeting logical reasoning and digital culture, signaling a formal institutionalization of CS competencies within the state's evaluation framework." },
+          { "type": "paragraph", "heading": "Artifact Production", "body": "The scripted curriculum mandates end-of-bimester project deliverables — for example, designing and presenting a **Scratch game** — as a tangible assessment of computational thinking skills." },
+          { "type": "alert", "variant": "amber", "heading": "Transparency Gap", "body": "No formal public feedback mechanism from students or teachers currently exists. Anonymized student performance data is not publicly available. Reports from social media channels and teacher unions surface recurring concerns regarding limited teacher pedagogical autonomy and the poor maintenance of robotics kits and school Wi-Fi infrastructure." }
+        ]
+      }
+    ]
+  },
+
+  "Minas Gerais": {
+    "sectionId": "mg-deep-dive",
+    "svgId": "mg",
+    "glance": [
+      { "icon": "School",        "value": "3,424",        "label": "Public Schools" },
+      { "icon": "GraduationCap", "value": "~1.5 Million", "label": "Students (~650k in High School)" },
+      { "icon": "Users",         "value": "12k–15k",      "label": "Tech & Innovation Teachers (est.)" },
+      { "icon": "Globe",         "value": "SEE-MG",       "label": "portal", "url": "https://www.educacao.mg.gov.br/", "urlDisplay": "educacao.mg.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Complex Problem Solving (Modeling, process automation, and system algorithm adaptation)", "Logic challenges integrated with Math/Science, meta-programming, and algorithmic efficiency analysis", "Scratch, circuit simulators, Arduino, 3D prototyping tools"],
+              ["Digital World", "Infrastructure & AI (Understanding networks, security protocols, and technical AI fundamentals)", "Hardware identification, IoT debates, and investigating how AI processes big data", "'Se Liga na Educação' (YouTube), 'Estude em Casa' portals, open data repositories"],
+              ["Digital Culture", "Literacy & Algorithmic Ethics (Critical analysis of fake news, data privacy/LGPD, and social impact of AI)", "Media Auditing (podcasts/videos), information curation, cryptography simulations, and bias analysis in intelligent systems", "Google Workspace, social media, Canva/Anchor, Generative AI for pedagogical support"]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Links",
+            "items": [
+              { "label": "Preliminary Computing Framework", "url": "https://drive.google.com/file/d/1Rm2pAdJHhY0Wtu7VRMfsdAnex4XGuleq/view" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Public Resources",
+            "items": [
+              { "label": "Full Student & Teacher Handbooks — Se Liga na Educação", "url": "https://seliga.educacao.mg.gov.br/ensino-m%C3%A9dio/tecnologia-e-inova%C3%A7%C3%A3o", "note": "Complete handbooks for both students and teachers publicly available." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Device Access", "body": "Minas Gerais has undertaken a massive procurement of laptops and robotics kits across the state network. Equipment rotation between classrooms is managed predominantly through **mobile charging carts**, enabling shared use across school units." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "Connectivity and Wi-Fi stability remain primary bottlenecks, particularly for simultaneous access to AI platforms, which demand consistent high-bandwidth environments rarely available in standard classroom settings." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "Internal Tracking", "body": "Progress is monitored through **Diagnostic and Quarterly Assessments** focused on digital literacy competencies, providing a structured measure of student engagement with the curriculum." },
+          { "type": "paragraph", "heading": "Practical Work", "body": "Bi-monthly **'Hands-on' (Mão na Massa)** projects are a core assessment mechanism, ranging from AI prototypes to robotics circuits, requiring students to apply computational thinking in tangible deliverables." },
+          { "type": "alert", "variant": "amber", "heading": "Transparency Gap", "body": "Performance microdata and implementation efficacy results for 2026 are not yet publicly disclosed. Teacher feedback highlights the need for better technical support and the challenge of delivering a dense curriculum — including AI concepts — within a single 45-minute weekly class." }
+        ]
+      }
+    ]
+  },
+
+  "Espírito Santo": {
+    "sectionId": "es-deep-dive",
+    "svgId": "es",
+    "glance": [
+      { "icon": "School",        "value": "~400",     "label": "State Public Schools" },
+      { "icon": "GraduationCap", "value": "~230,000", "label": "Students (State Network)" },
+      { "icon": "Users",         "value": "0",        "label": "Tech & Innovation Teachers (delivered by Math teachers)" },
+      { "icon": "Globe",         "value": "SEDU-ES",  "label": "portal", "url": "https://sedu.es.gov.br/", "urlDisplay": "sedu.es.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          { "type": "alert", "variant": "amber", "heading": "Transversal Integration — No Standalone Subject", "body": "Computational Thinking is not a standalone subject. It is embedded as a transversal competency within the Mathematics and its Technologies curriculum, delivered entirely by Mathematics teachers." },
+          {
+            "type": "table",
+            "columns": ["Component", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Mathematics & Algorithms", "Investigate, build, and record algorithms for problem-solving using flowcharts", "Solution Reuse: exploring complex problem-solving by reusing parts of existing solutions", "Flowcharts, algebra software, and dynamic geometry tools"],
+              ["Modeling & Simulation", "Create and explore simple computational models to simulate phenomena and make scientific predictions", "Scientific Method: investigating how variables relate in mathematical models (e.g., HDI) and if they faithfully portray reality", "Simulators, spreadsheets, and modeling tools"],
+              ["Data Analysis & Culture", "Analyze different forms of digital data representation and querying for scientific research", "Critical Analysis: investigating methods of construction, authorship, and purpose of digital messages to evaluate reliability", "Digital data formats, query databases, and research portals"],
+              ["Communication & Digital Objects", "Communicate complex ideas clearly through structured digital objects", "Digital Synthesis: representing research reports and data correlations through infographics and concept maps", "Concept maps, infographics, hypertexts, and curation tools"]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Links",
+            "items": [
+              { "label": "Full 2026 Curricular Guidelines — Orientações Curriculares", "url": "https://curriculo.sedu.es.gov.br/curriculo/orientacoescurriculares/" },
+              { "label": "2025 Documents — Currículo ES", "url": "https://curriculo.sedu.es.gov.br/curriculo/documentos/" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Public Resources",
+            "items": [
+              { "label": "Escola Tá ON", "url": "https://escolataon.sedu.es.gov.br/", "tag": "(Link currently broken / unstable)", "tagColor": "red", "note": "Central hub for teaching materials and lesson plans. Chronic platform instability limits practical access for teachers." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Device Access", "body": "Massive distribution of Chromebooks for 100% of High School and EJA students, including data packages for off-campus use. Charging cabinets are used for organization, storage, and rotation of equipment between classrooms." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "Ongoing implementation of high-performance Wi-Fi to support simultaneous access across classrooms. Infrastructure rollout is still in progress across the state network." },
+          { "type": "paragraph", "heading": "Escola do Futuro Program", "body": "Focused investment in robotics and innovation labs in certified units. Currently active in 19 schools, with a goal of reaching 75 schools by the end of 2026." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Assessment Platforms",
+            "items": [
+              { "label": "BI Panel", "url": "https://sites.google.com/edu.es.gov.br/painel-gea", "access": "Public", "note": "Consolidated public indicators and progress monitoring." },
+              { "label": "CAEd", "url": "https://avaliacaoemonitoramentoespiritosanto.caeddigital.net/#!/pagina-inicial", "access": "Restricted", "note": "Detailed student-level data and diagnostic assessments." },
+              { "label": "SIGAE", "url": "https://sigae.institutounibanco.org.br/portal/login", "access": "Restricted", "note": "Pedagogical feedback platform for teachers and coordinators." }
+            ]
+          },
+          { "type": "paragraph", "heading": "Monitoring & Diagnostics", "body": "Progress is tracked via CAEd with detailed student-level data (restricted) and consolidated public indicators via the BI Panel. The system uses integrated assessments within Mathematics to measure Computational Thinking skills, with SIGAE providing pedagogical feedback to teachers." }
+        ]
+      }
+    ]
+  },
+
+  "Rio de Janeiro": {
+    "sectionId": "rj-deep-dive",
+    "svgId": "rj",
+    "glance": [
+      { "icon": "School",        "value": "1,214",    "label": "Public Schools (~240 full-time units)" },
+      { "icon": "GraduationCap", "value": "~455,000", "label": "Students" },
+      { "icon": "Users",         "value": "N/A",      "label": "Tech & Innovation Teachers (not officially tracked)" },
+      { "icon": "Globe",         "value": "SEEDUC-RJ","label": "portal", "url": "https://www.seeduc.rj.gov.br/", "urlDisplay": "seeduc.rj.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          { "type": "alert", "variant": "red", "heading": "Not Applicable to General Network", "body": "There is no specific mandatory computing subject for non-integral schools. The components below apply exclusively to full-time schools enrolled in the Technology itinerary under the New High School program." },
+          {
+            "type": "table",
+            "columns": ["Subject", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Technology, Innovation, and Environment", "Understanding the relationship between technological development, automation (AI), and sustainability (Circular Economy)", "Project-Based Learning (PBL): Creating technological solutions for local environmental or social issues", "Robotics kits, circuit simulators, modeling software, AI tools"],
+              ["STEAM Culture", "Integrating Science, Engineering, and Arts for hands-on prototyping", "Maker Culture: Laboratory experimentation and construction of physical and digital prototypes", "Maker Labs, design tools, Arduino, recyclable materials"]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Links",
+            "items": [
+              { "label": "2025 Syllabi (Latest) — New High School Components", "url": "https://sites.google.com/educacao.rj.gov.br/ementasnovoensinomedio2025/componentes-eletivos/tecnologia" },
+              { "label": "Expotech Portal — Prof. Educa", "url": "https://www.profeduca.rj.gov.br/expotech" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Public & Authenticated Resources",
+            "items": [
+              { "label": "Conexão Educação", "url": "https://conexao.educacao.rj.gov.br/", "tag": "(Requires login)", "tagColor": "gray" },
+              { "label": "Applique-se (YouTube)", "url": "https://www.youtube.com/@Appliquese/courses", "note": "General content only — lacks specific Tech/Innovation modules." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Device Access", "body": "The state's **\"Conectar Já\"** program distributes tablets and Chromebooks, but 1:1 access is largely restricted to full-time (CIEP) schools. In the general stream, device use is occasional and often limited to aging computer labs with ongoing maintenance issues." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "Unstable high-speed internet across several regions creates a dependency on offline or printed materials, significantly hindering the use of cloud-based AI tools and platforms intended for the curriculum." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "Primary Milestone", "body": "The **Expotech** (Technology and Innovation Exhibition) serves as the state's main metric, showcasing projects from full-time schools. It functions as a visibility event rather than a systematic assessment instrument." },
+          { "type": "paragraph", "heading": "Methodology", "body": "Practical project-based assessment (robotics, apps, sustainable prototypes) applies to full-time schools. Assessment is nearly non-existent in the general stream, with no standardized digital competency evaluation in place." },
+          { "type": "alert", "variant": "amber", "heading": "Transparency Gap", "body": "No public data on student digital competency exists. Feedback is internal and restricted to authenticated portals, obscuring the real impact on the general student body. Teacher reports highlight high workloads for complex technology projects without technical support, and the exclusion of general stream teachers from the innovation ecosystem." }
+        ]
+      }
+    ]
+  }
+}
