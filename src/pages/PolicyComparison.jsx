@@ -4,6 +4,50 @@ import { FILTERS, emptyFilters, matches } from '../data/filters.js'
 
 // ── Sidebar Filters ──────────────────────────────────────────────────────────
 
+function FilterGroup({ filter, activeFilters, onToggle }) {
+  const activeCount = activeFilters[filter.key].size
+  const [open, setOpen] = useState(activeCount > 0)
+
+  return (
+    <div className="border-b border-gray-50 last:border-0">
+      <button
+        onClick={() => setOpen(o => !o)}
+        className="w-full flex items-center justify-between px-5 py-3.5 hover:bg-[#F9FAFB] transition-colors"
+      >
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#6B7280]">{filter.label}</span>
+          {activeCount > 0 && (
+            <span className="text-[10px] font-bold bg-[#A57B2F] text-white rounded-full w-4 h-4 flex items-center justify-center">
+              {activeCount}
+            </span>
+          )}
+        </div>
+        <span className="text-[#9CA3AF] text-xs transition-transform duration-200" style={{ display: 'inline-block', transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }}>▾</span>
+      </button>
+      {open && (
+        <div className="px-5 pb-4 flex flex-col gap-1">
+          {filter.options.map(option => {
+            const active = activeFilters[filter.key].has(option)
+            return (
+              <button
+                key={option}
+                onClick={() => onToggle(filter.key, option)}
+                className={`text-left text-xs px-3 py-2 rounded-lg border transition-all duration-150 ${
+                  active
+                    ? 'bg-[#A57B2F] text-white border-[#A57B2F] font-semibold'
+                    : 'bg-transparent text-[#374151] border-transparent hover:bg-[#F9FAFB] hover:border-gray-200'
+                }`}
+              >
+                {option}
+              </button>
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
+}
+
 function FilterSidebar({ activeFilters, onToggle, onClearAll, hasActiveFilters }) {
   return (
     <aside className="w-full lg:w-64 shrink-0">
@@ -16,29 +60,14 @@ function FilterSidebar({ activeFilters, onToggle, onClearAll, hasActiveFilters }
             </button>
           )}
         </div>
-        <div className="divide-y divide-gray-50">
+        <div>
           {FILTERS.map(filter => (
-            <div key={filter.key} className="px-5 py-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#9CA3AF] mb-3">{filter.label}</p>
-              <div className="flex flex-col gap-1">
-                {filter.options.map(option => {
-                  const active = activeFilters[filter.key].has(option)
-                  return (
-                    <button
-                      key={option}
-                      onClick={() => onToggle(filter.key, option)}
-                      className={`text-left text-xs px-3 py-2 rounded-lg border transition-all duration-150 ${
-                        active
-                          ? 'bg-[#A57B2F] text-white border-[#A57B2F] font-semibold'
-                          : 'bg-transparent text-[#374151] border-transparent hover:bg-[#F9FAFB] hover:border-gray-200'
-                      }`}
-                    >
-                      {option}
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
+            <FilterGroup
+              key={filter.key}
+              filter={filter}
+              activeFilters={activeFilters}
+              onToggle={onToggle}
+            />
           ))}
         </div>
       </div>
