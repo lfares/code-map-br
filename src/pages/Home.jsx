@@ -172,7 +172,7 @@ export default function Home({ setPage }) {
             ].map(({ icon, title, body }) => (
               <div
                 key={title}
-                className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col gap-3 hover:bg-white/10 hover:border-white/20 transition-all duration-200 cursor-default"
+                className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col gap-3 hover:scale-105 transition-transform duration-300 cursor-default"
               >
                 <div className="text-[#A57B2F]">{icon}</div>
                 <h3 className="font-semibold text-white text-lg">{title}</h3>
