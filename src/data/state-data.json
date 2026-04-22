@@ -22,7 +22,8 @@
       "infrastructure": "1:1 Devices/Chromebooks",
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "Project-Based (Artifacts)",
-      "maturityYear": 2020
+      "maturityYear": 2020,
+      "maturityRange": "Early Adopter (2020–2021)"
     }
   },
   "Minas Gerais": {
@@ -48,7 +49,8 @@
       "infrastructure": "Laboratory",
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "Project-Based (Artifacts)",
-      "maturityYear": 2026
+      "maturityYear": 2026,
+      "maturityRange": "Recent (2024+)"
     }
   },
   "Espírito Santo": {
@@ -74,7 +76,8 @@
       "infrastructure": "Low-tech (Teacher's computer or projector only)",
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "No Assessment",
-      "maturityYear": 2024
+      "maturityYear": 2024,
+      "maturityRange": "Recent (2024+)"
     }
   },
   "Rio de Janeiro": {
@@ -100,7 +103,8 @@
       "infrastructure": "Laboratory",
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "Project-Based (Artifacts)",
-      "maturityYear": 2022
+      "maturityYear": 2022,
+      "maturityRange": "Mid Adoption (2022–2023)"
     }
   }
 }

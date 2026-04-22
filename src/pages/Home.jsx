@@ -121,7 +121,7 @@ export default function Home({ setPage }) {
         >
           {[
             { value: 27, suffix: '', label: 'States tracked' },
-            { value: 9,  suffix: '', label: 'Policy dimensions' },
+            { value: 10, suffix: '', label: 'Policy dimensions' },
             { value: 100, suffix: '%', label: 'Open access' },
           ].map(({ value, suffix, label }) => (
             <div key={label} className="flex flex-col gap-1">

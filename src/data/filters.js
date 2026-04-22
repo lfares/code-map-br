@@ -45,6 +45,11 @@ export const FILTERS = [
     label: 'Assessment',
     options: ['Project-Based (Artifacts)', 'Exams', 'No Assessment'],
   },
+  {
+    key: 'maturityRange',
+    label: 'Curriculum Maturity',
+    options: ['Early Adopter (2020–2021)', 'Mid Adoption (2022–2023)', 'Recent (2024+)'],
+  },
 ]
 
 export function emptyFilters() {
