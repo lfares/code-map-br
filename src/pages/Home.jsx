@@ -1,5 +1,93 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Target, Map, BarChart2, BookOpen, GraduationCap, Users } from 'lucide-react'
+
+const AUDIENCES = [
+  {
+    icon: Target,
+    audience: 'Policy Makers',
+    description: 'Identify best-in-class state programs and the structural choices behind their success.',
+    uses: ['Benchmark your state against peers', 'Find models to adapt or replicate', 'Spot implementation gaps by region'],
+  },
+  {
+    icon: GraduationCap,
+    audience: 'Researchers & Educators',
+    description: 'Structured, comparable data on CS curriculum across all 27 states, with links to primary sources.',
+    uses: ['Cross-state comparative research', 'Access linked official materials', 'Track CS policy maturity over time'],
+  },
+  {
+    icon: Users,
+    audience: 'Parents & Caregivers',
+    description: "Understand what CS education your child can access — and how your state stacks up.",
+    uses: ["Check your state's CS offering", 'Understand delivery and scope', 'Advocate for better access'],
+  },
+]
+
+function AudienceSection({ whoRef }) {
+  const [active, setActive] = React.useState(0)
+  const current = AUDIENCES[active]
+  const Icon = current.icon
+
+  return (
+    <section className="bg-[#F9FAFB] py-20">
+      <div ref={whoRef} className="fade-in-up max-w-6xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-start" style={{ animationDelay: '0.1s' }}>
+
+        {/* Left — title */}
+        <div className="lg:w-2/5 shrink-0">
+          <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#A57B2F] mb-4">Audience</span>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#001C3D] leading-tight mb-8">Who is this for?</h2>
+          <div className="flex flex-col gap-2">
+            {AUDIENCES.map((a, i) => {
+              const BtnIcon = a.icon
+              const isActive = i === active
+              return (
+                <button
+                  key={a.audience}
+                  onMouseEnter={() => setActive(i)}
+                  className={`flex items-center gap-4 text-left px-5 py-4 rounded-xl transition-all duration-200 group border ${isActive ? 'border-[#001C3D]' : 'border-[#001C3D]/20'}`}
+                  style={{
+                    backgroundColor: isActive ? '#001C3D' : 'transparent',
+                    boxShadow: isActive ? '0 4px 20px rgba(0,28,61,0.15)' : 'none',
+                  }}
+                >
+                  <div className={`w-11 h-11 rounded-lg flex items-center justify-center shrink-0 transition-colors duration-200 ${isActive ? 'bg-[#A57B2F]' : 'bg-[#001C3D]/8 group-hover:bg-[#001C3D]/12'}`}>
+                    <BtnIcon className={`w-5 h-5 ${isActive ? 'text-white' : 'text-[#001C3D]'}`} />
+                  </div>
+                  <span className={`font-semibold text-sm transition-colors duration-200 ${isActive ? 'text-white' : 'text-[#374151] group-hover:text-[#001C3D]'}`}>
+                    {a.audience}
+                  </span>
+                  {isActive && <span className="ml-auto text-[#A57B2F] text-xs">→</span>}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+
+        {/* Right — detail panel */}
+        <div className="flex-1 min-w-0">
+          <div
+            key={active}
+            className="bg-white rounded-2xl p-10 border border-gray-100 shadow-sm wheel-fade-in"
+          >
+            <div className="w-12 h-12 rounded-xl bg-[#A57B2F] flex items-center justify-center mb-6">
+              <Icon key={`icon-${active}`} className="w-6 h-6 text-white icon-bounce" />
+            </div>
+            <h3 className="font-serif text-3xl text-[#001C3D] mb-3">{current.audience}</h3>
+            <p className="text-[#6B7280] text-base leading-relaxed mb-8">{current.description}</p>
+            <ul className="flex flex-col gap-3">
+              {current.uses.map(u => (
+                <li key={u} className="flex items-center gap-3 text-sm text-[#374151] bg-[#F9FAFB] rounded-lg px-4 py-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#A57B2F] shrink-0" />
+                  {u}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  )
+}
 import PolicyWheel from '../components/PolicyWheel'
 
 // ── Scroll fade-in hook ───────────────────────────────────────────────────────
@@ -226,57 +314,7 @@ export default function Home({ setPage }) {
       </section>
 
       {/* ── Who is this for ── */}
-      <section className="bg-[#F9FAFB] py-20">
-        <div ref={whoRef} className="fade-in-up max-w-6xl mx-auto px-6" style={{ animationDelay: '0.1s' }}>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#001C3D] text-center mb-3">Who is this for?</h2>
-          <p className="text-center text-[#6B7280] max-w-xl mx-auto mb-14 text-sm">
-            CodeMap Brasil is designed to serve different audiences with different needs.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: <Target className="w-7 h-7" />,
-                audience: 'Policy Makers',
-                description: 'Identify best-in-class state programs and the structural choices behind their success.',
-                uses: ['Benchmark your state against peers', 'Find models to adapt or replicate', 'Spot implementation gaps by region'],
-              },
-              {
-                icon: <GraduationCap className="w-7 h-7" />,
-                audience: 'Researchers & Educators',
-                description: 'Structured, comparable data on CS curriculum across all 27 states, with links to primary sources.',
-                uses: ['Cross-state comparative research', 'Access linked official materials', 'Track CS policy maturity over time'],
-              },
-              {
-                icon: <Users className="w-7 h-7" />,
-                audience: 'Parents & Caregivers',
-                description: "Understand what CS education your child can access — and how your state stacks up.",
-                uses: ["Check your state's CS offering", 'Understand delivery and scope', 'Advocate for better access'],
-              },
-            ].map(({ icon, audience, description, uses }) => (
-              <div
-                key={audience}
-                className="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col gap-5 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-              >
-                <div className="w-12 h-12 rounded-xl bg-[#A57B2F]/10 flex items-center justify-center text-[#A57B2F] shrink-0">
-                  {icon}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-[#001C3D] text-lg mb-2">{audience}</h3>
-                  <p className="text-sm text-[#6B7280] leading-relaxed">{description}</p>
-                </div>
-                <ul className="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-50">
-                  {uses.map(u => (
-                    <li key={u} className="flex items-center gap-2 text-sm text-[#374151]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#A57B2F] shrink-0" />
-                      {u}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AudienceSection whoRef={whoRef} />
 
       {/* ── Contact ── */}
       <section className="max-w-6xl mx-auto px-6 py-20">
