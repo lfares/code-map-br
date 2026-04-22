@@ -23,7 +23,8 @@
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "Project-Based (Artifacts)",
       "maturityYear": 2020,
-      "maturityRange": "Early Adopter (2020–2021)"
+      "maturityRange": "Early Adopter (2020–2021)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware"]
     }
   },
   "Minas Gerais": {
@@ -50,7 +51,8 @@
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "Project-Based (Artifacts)",
       "maturityYear": 2026,
-      "maturityRange": "Recent (2024+)"
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware", "Data Science & AI"]
     }
   },
   "Espírito Santo": {
@@ -77,7 +79,8 @@
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "No Assessment",
       "maturityYear": 2024,
-      "maturityRange": "Recent (2024+)"
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Data Science & AI"]
     }
   },
   "Rio de Janeiro": {
@@ -104,7 +107,8 @@
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "Project-Based (Artifacts)",
       "maturityYear": 2022,
-      "maturityRange": "Mid Adoption (2022–2023)"
+      "maturityRange": "Mid Adoption (2022–2023)",
+      "learningComponents": ["Robotics & Hardware", "Programming & Software"]
     }
   }
 }

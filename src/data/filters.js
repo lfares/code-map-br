@@ -50,6 +50,12 @@ export const FILTERS = [
     label: 'Curriculum Maturity',
     options: ['Early Adopter (2020–2021)', 'Mid Adoption (2022–2023)', 'Recent (2024+)'],
   },
+  {
+    key: 'learningComponents',
+    label: 'Learning Components',
+    options: ['Computational Thinking', 'Digital Culture & Literacy', 'Programming & Software', 'Robotics & Hardware', 'Data Science & AI'],
+    multi: true,
+  },
 ]
 
 export function emptyFilters() {
