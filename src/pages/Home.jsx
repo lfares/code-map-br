@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Target, Map, BarChart2, BookOpen, GraduationCap, Users } from 'lucide-react'
+import PolicyWheel from '../components/PolicyWheel'
 
 // ── Scroll fade-in hook ───────────────────────────────────────────────────────
 function useFadeIn() {
@@ -131,6 +132,22 @@ export default function Home({ setPage }) {
               <span className="text-xs uppercase tracking-widest text-[#9CA3AF] font-medium">{label}</span>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Policy Wheel ── */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+          <div className="lg:w-2/5 shrink-0">
+            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[#A57B2F] mb-4">Framework</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#001C3D] leading-tight mb-6">11 Dimensions of CS Policy</h2>
+            <p className="text-[#4B5563] text-base md:text-lg leading-relaxed">
+              Hover over each icon to explore the policy dimensions we track across every Brazilian state — from infrastructure and teacher profiles to curriculum maturity and learning components.
+            </p>
+          </div>
+          <div className="flex-1 flex justify-center">
+            <PolicyWheel />
+          </div>
         </div>
       </section>
 
