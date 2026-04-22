@@ -83,10 +83,10 @@ export default function PolicyWheel() {
       <div
         className="absolute rounded-full flex items-center justify-center overflow-hidden"
         style={{
-          width: active ? 280 : 190,
-          height: active ? 280 : 190,
-          left: active ? CENTER - 140 : CENTER - 95,
-          top: active ? CENTER - 140 : CENTER - 95,
+          width: active ? 250 : 210,
+          height: active ? 250 : 210,
+          left: active ? CENTER - 125 : CENTER - 105,
+          top: active ? CENTER - 125 : CENTER - 105,
           backgroundColor: '#001C3D',
           boxShadow: active
             ? '0 0 0 3px rgba(165,123,47,0.5), 0 12px 48px rgba(0,28,61,0.45)'
@@ -103,14 +103,14 @@ export default function PolicyWheel() {
             <>
               <p className="text-[#A57B2F] text-[10px] font-bold uppercase tracking-widest mb-2">Dimension</p>
               <p className="text-white font-serif text-lg font-semibold leading-snug mb-3">{active.title}</p>
-              <p className="text-white/70 text-sm leading-relaxed">{active.description}</p>
+              <p className="text-[#C8D8E8] text-sm leading-relaxed">{active.description}</p>
             </>
           ) : (
             <>
               <p className="text-[#A57B2F] font-serif text-3xl font-bold leading-none">11</p>
-              <p className="text-white text-[10px] font-semibold uppercase tracking-widest mt-1.5 opacity-70">Policy</p>
-              <p className="text-white text-[10px] font-semibold uppercase tracking-widest opacity-70">Dimensions</p>
-              <p className="text-white/30 text-[9px] mt-3 leading-relaxed">Hover any icon<br/>to explore</p>
+              <p className="text-white text-xs font-semibold uppercase tracking-widest mt-2 opacity-80">Policy</p>
+              <p className="text-white text-xs font-semibold uppercase tracking-widest opacity-80">Dimensions</p>
+              <p className="text-white/50 text-[10px] mt-3 leading-relaxed">Hover any icon<br/>to explore</p>
             </>
           )}
         </div>
