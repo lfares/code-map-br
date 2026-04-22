@@ -306,7 +306,7 @@ function AccordionCard({ title, children }) {
 }
 
 
-export default function Dashboard({ selectedState, setSelectedState }) {
+export default function StateInsights({ selectedState, setSelectedState }) {
   const [activeDeepDive, setActiveDeepDive] = useState(null)
   const [geoReady, setGeoReady] = useState(null)
 

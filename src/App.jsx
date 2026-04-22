@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import Dashboard from './pages/Dashboard'
+import StateInsights from './pages/StateInsights'
 import PolicyComparison from './pages/PolicyComparison'
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
 
       <main className="pt-24">
         {route === 'home' && <Home setPage={setRoute} />}
-        {route === 'dashboard' && <Dashboard selectedState={selectedState} setSelectedState={setSelectedState} />}
+        {route === 'dashboard' && <StateInsights selectedState={selectedState} setSelectedState={setSelectedState} />}
         {route === 'comparison' && <PolicyComparison setPage={setRoute} setSelectedState={setSelectedState} />}
       </main>
     </div>

@@ -11,7 +11,7 @@ export default function Navbar({ setPage }) {
 
         <div className="hidden sm:flex items-center space-x-8 text-base md:text-lg font-medium">
           <button onClick={() => setPage('home')} className="text-[#001C3D] hover:underline">Home</button>
-          <button onClick={() => setPage('dashboard')} className="text-[#001C3D] hover:underline">Dashboard</button>
+          <button onClick={() => setPage('dashboard')} className="text-[#001C3D] hover:underline">State Insights</button>
           <button onClick={() => setPage('comparison')} className="text-[#001C3D] hover:underline">Policy Comparison</button>
         </div>
 

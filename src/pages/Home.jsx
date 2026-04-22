@@ -189,7 +189,7 @@ export default function Home({ setPage }) {
               onClick={() => setPage('dashboard')}
               className="bg-[#A57B2F] text-white rounded-lg px-9 py-4 text-base font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-150"
             >
-              Explore Dashboard →
+              Explore State Insights →
             </button>
             <button
               onClick={() => setPage('comparison')}
@@ -279,9 +279,9 @@ export default function Home({ setPage }) {
             {[
               {
                 step: '01',
-                title: 'Dashboard',
+                title: 'State Insights',
                 cta: 'dashboard',
-                ctaLabel: 'Open Dashboard',
+                ctaLabel: 'Open State Insights',
                 body: 'Start here. Use the interactive Brazil map to select a state and explore its full CS education profile — availability score, curriculum summary, delivery model, administrative scope, materials, and deep-dive implementation notes.',
               },
               {
