@@ -65,20 +65,48 @@ function AdminScopeTimeline({ from, to, fromLabel, toLabel }) {
   )
 }
 
-function AvailabilityBar({ score, label }) {
+function AvailabilityBar({ score, label, breakdown }) {
+  const [open, setOpen] = useState(false)
+
+  function fillPct(i) {
+    if (score >= i) return 100
+    if (score <= i - 1) return 0
+    return (score - (i - 1)) * 100
+  }
+
   return (
-    <div className="flex flex-col items-end gap-1">
+    <div
+      className="relative flex flex-col items-end gap-1 cursor-default"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
       <p className="text-[11px] font-semibold uppercase tracking-wide text-[#6B7280]">Public Availability</p>
       <div className="flex items-center gap-1.5">
         {[1, 2, 3, 4, 5].map((i) => (
-          <div
-            key={i}
-            className="h-2 w-7 rounded-full"
-            style={{ backgroundColor: i <= score ? '#A57B2F' : '#D1D5DB' }}
-          />
+          <div key={i} className="h-2 w-7 rounded-full overflow-hidden bg-[#D1D5DB]">
+            <div className="h-full rounded-full bg-[#A57B2F]" style={{ width: `${fillPct(i)}%` }} />
+          </div>
         ))}
       </div>
-      <p className="text-[11px] text-[#6B7280]">{label}</p>
+      <p className="text-[11px] text-[#6B7280]">{label} · {score.toFixed(1)}/5</p>
+
+      {open && breakdown && (
+        <div className="absolute top-full right-0 mt-2 w-68 bg-white border border-gray-200 rounded-xl shadow-xl z-50 p-4 flex flex-col gap-3.5 min-w-[260px]">
+          <p className="text-[10px] font-bold uppercase tracking-wider text-[#9CA3AF]">Score Breakdown</p>
+          {breakdown.map(({ dimension, score: s, outOf, note }) => (
+            <div key={dimension}>
+              <div className="flex items-center justify-between mb-1">
+                <p className="text-xs font-semibold text-[#001C3D]">{dimension}</p>
+                <p className="text-xs font-bold text-[#A57B2F]">{s}/{outOf}</p>
+              </div>
+              <div className="h-1.5 rounded-full bg-[#E5E7EB] overflow-hidden">
+                <div className="h-1.5 rounded-full bg-[#A57B2F]" style={{ width: `${(s / outOf) * 100}%` }} />
+              </div>
+              <p className="text-[10px] text-[#6B7280] mt-1 leading-snug">{note}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
@@ -231,7 +259,7 @@ function StatePanel({ name, onLearnMore }) {
     <div className="flex flex-col gap-6">
       <div className="flex items-start justify-between">
         <h3 className="font-serif text-3xl text-[#001C3D]">{name}</h3>
-        <AvailabilityBar score={data.availability.score} label={data.availability.label} />
+        <AvailabilityBar score={data.availability.score} label={data.availability.label} breakdown={data.availability.breakdown} />
       </div>
 
       <p className="text-lg italic text-[#001C3D] leading-relaxed">

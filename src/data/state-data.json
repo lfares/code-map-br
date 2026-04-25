@@ -1,6 +1,14 @@
 {
   "São Paulo": {
-    "availability": { "score": 2, "label": "Restricted and Incomplete" },
+    "availability": {
+      "score": 4.43,
+      "label": "Comprehensive but Gated",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.66, "outOf": 1, "note": "Curriculum is public, but materials and assessment require institutional login." },
+        { "dimension": "Stability",    "score": 5,    "outOf": 5, "note": "CMSP platform is robust and supports millions of concurrent users." },
+        { "dimension": "Granularity",  "score": 5,    "outOf": 5, "note": "Complete lesson scripts — teacher receives exact content and projection materials." }
+      ]
+    },
     "summary": "A centralized platform-based model utilizing pre-defined scripts and pre-made slides through partnerships with private platforms. While focused on large-scale delivery, SEDUC restricts most pedagogical content to logged-in users, creating barriers to transparency and external collaboration.",
     "details": [
       { "icon": "BookOpen",     "label": "Subject",              "text": "Tecnologia e Inovação" },
@@ -29,7 +37,15 @@
     }
   },
   "Minas Gerais": {
-    "availability": { "score": 4, "label": "Open but Opaque" },
+    "availability": {
+      "score": 4.38,
+      "label": "Open but Opaque",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.83, "outOf": 1, "note": "Curriculum and materials fully open; assessment results are only partially available." },
+        { "dimension": "Stability",    "score": 5,    "outOf": 5, "note": "Hosted on permanent Google Drive links — resilient and always accessible." },
+        { "dimension": "Granularity",  "score": 4,    "outOf": 5, "note": "Detailed lesson guides and videos, though not all classes have editable slides." }
+      ]
+    },
     "summary": "Recently implemented computer science curriculum focused on digital literacy and Artificial Intelligence. The model prioritizes in-house audiovisual content through the 'Digital Training School' (Escola de Formação Digital), which is open to the public. However, practical implementation remains dependent on local infrastructure and assessment results are not yet publicly available.",
     "details": [
       { "icon": "BookOpen",     "label": "Subject",              "text": "Digital Education" },
@@ -58,7 +74,15 @@
     }
   },
   "Espírito Santo": {
-    "availability": { "score": 3, "label": "Unstable but Comprehensive" },
+    "availability": {
+      "score": 3.17,
+      "label": "Unstable but Comprehensive",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.50, "outOf": 1, "note": "Classroom materials are restricted; no public assessment guides available." },
+        { "dimension": "Stability",    "score": 2,    "outOf": 5, "note": "'Escola Tá ON' portal suffers frequent crashes and 404 errors." },
+        { "dimension": "Granularity",  "score": 5,    "outOf": 5, "note": "Most technically deep framework of the four — covers AI and Data Science in detail." }
+      ]
+    },
     "summary": "The state does not offer a standalone computing subject, integrating Computational Thinking as a transversal competency within the Mathematics curriculum. While the curricular framework is updated and broadly available for public consultation, access to practical teaching materials and lesson plans is hindered by the constant instability of the 'Escola Tá ON' platform.",
     "details": [
       { "icon": "BookOpen",     "label": "Subject",              "text": "Integrated into Mathematics" },
@@ -87,7 +111,15 @@
     }
   },
   "Rio de Janeiro": {
-    "availability": { "score": 1, "label": "Inaccessible and Obscure" },
+    "availability": {
+      "score": 3.10,
+      "label": "Partial and Fragmented",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.66, "outOf": 1, "note": "Itinerary materials are public, but no assessment data was found." },
+        { "dimension": "Stability",    "score": 4,    "outOf": 5, "note": "Government sites are generally stable, with occasional outages." },
+        { "dimension": "Granularity",  "score": 2,    "outOf": 5, "note": "Only high-level competency lists — no practical classroom scripts provided." }
+      ]
+    },
     "summary": "The state does not offer a universal computing component in its general education stream, providing technology itineraries only within full-time integral schools. Furthermore, pedagogical guides and teaching materials are locked behind authenticated portals, preventing public access and external oversight.",
     "details": [
       { "icon": "BookOpen",     "label": "Subject",              "text": "Itinerary Components (Variable)*" },

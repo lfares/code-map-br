@@ -134,9 +134,14 @@ function StateCard({ stateName, data, isMatch, hasActiveFilters, onLearnMore }) 
             <h3 className="font-serif text-xl text-white">{stateName}</h3>
           </div>
           <div className="flex items-center gap-1 shrink-0 pt-1">
-            {[1, 2, 3, 4, 5].map(i => (
-              <div key={i} className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: i <= data.availability.score ? '#A57B2F' : 'rgba(255,255,255,0.2)' }} />
-            ))}
+            {[1, 2, 3, 4, 5].map(i => {
+              const pct = data.availability.score >= i ? 100 : data.availability.score <= i - 1 ? 0 : (data.availability.score - (i - 1)) * 100
+              return (
+                <div key={i} className="w-2.5 h-2.5 rounded-full overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.2)' }}>
+                  <div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: '#A57B2F' }} />
+                </div>
+              )
+            })}
           </div>
         </div>
         <p className="text-xs text-gray-400 mt-1.5">{data.availability.label}</p>
