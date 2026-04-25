@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps'
 import brazil from '@svg-maps/brazil'
-import { BookOpen, Clock, CalendarDays, FileText, BarChart2, ChevronDown, ChevronUp, School, GraduationCap, Users, Globe } from 'lucide-react'
+import { BookOpen, Clock, CalendarDays, FileText, BarChart2, Target, ChevronDown, ChevronUp, School, GraduationCap, Users, Globe } from 'lucide-react'
 import brazilMap from '@svg-maps/brazil'
 import stateData from '../data/state-data.json'
 import deepDiveData from '../data/deep-dive-data.json'
 
-const ICON_MAP = { BookOpen, Clock, CalendarDays, FileText, BarChart2 }
+const ICON_MAP = { BookOpen, Clock, CalendarDays, FileText, BarChart2, Target }
 
 const SOUTHEAST_IDS = ['sp', 'rj', 'mg', 'es']
 const southeastLocations = brazilMap.locations.filter(l => SOUTHEAST_IDS.includes(l.id))
@@ -21,42 +21,42 @@ function AdminScopeTimeline({ from, to, fromLabel, toLabel }) {
 
   return (
     <div>
-      <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-3">Administrative Scope</p>
+      <p className="text-[10px] font-semibold uppercase tracking-wide text-[#6B7280] mb-2">Administrative Scope</p>
       <div className="relative">
         {/* Track */}
-        <div className="relative h-1.5 rounded-full bg-[#D1D5DB]">
+        <div className="relative h-1 rounded-full bg-[#D1D5DB]">
           <div
-            className="absolute h-1.5 rounded-full"
+            className="absolute h-1 rounded-full"
             style={{ left: `${activeStart}%`, width: `${activeWidth}%`, backgroundColor: '#A57B2F' }}
           />
           <div
-            className="absolute top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full border-2 border-white ring-1 ring-[#A57B2F] bg-[#A57B2F]"
-            style={{ left: `calc(${activeStart}% - 5px)` }}
+            className="absolute top-1/2 -translate-y-1/2 w-2 h-2 rounded-full border-2 border-white ring-1 ring-[#A57B2F] bg-[#A57B2F]"
+            style={{ left: `calc(${activeStart}% - 4px)` }}
           />
           <div
-            className="absolute top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full border-2 border-white ring-1 ring-[#A57B2F] bg-[#A57B2F]"
-            style={{ left: `calc(${activeEnd}% - 5px)` }}
+            className="absolute top-1/2 -translate-y-1/2 w-2 h-2 rounded-full border-2 border-white ring-1 ring-[#A57B2F] bg-[#A57B2F]"
+            style={{ left: `calc(${activeEnd}% - 4px)` }}
           />
         </div>
 
         {/* Grade marker row */}
-        <div className="relative h-5 mt-1.5">
-          {from !== 1 && <span className="absolute text-xs text-[#9CA3AF] -translate-x-1/2" style={{ left: '0%' }}>G1</span>}
-          <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>G{from}</span>
-          <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeEnd}%` }}>G{to}</span>
-          {to !== 12 && <span className="absolute text-xs text-[#9CA3AF] -translate-x-full" style={{ left: '100%' }}>G12</span>}
+        <div className="relative h-4 mt-1">
+          {from !== 1 && <span className="absolute text-[10px] text-[#9CA3AF] -translate-x-1/2" style={{ left: '0%' }}>G1</span>}
+          <span className="absolute text-[10px] font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>G{from}</span>
+          <span className="absolute text-[10px] font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeEnd}%` }}>G{to}</span>
+          {to !== 12 && <span className="absolute text-[10px] text-[#9CA3AF] -translate-x-full" style={{ left: '100%' }}>G12</span>}
         </div>
 
         {/* Scope label row */}
-        <div className="relative h-5 mt-0.5">
+        <div className="relative h-4 mt-0.5">
           {fromLabel === toLabel ? (
             <div className="absolute flex justify-center" style={{ left: `${activeStart}%`, width: `${activeWidth}%` }}>
-              <span className="text-xs font-bold text-[#A57B2F]">{fromLabel}</span>
+              <span className="text-[10px] font-bold text-[#A57B2F]">{fromLabel}</span>
             </div>
           ) : (
             <>
-              <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>{fromLabel}</span>
-              <span className="absolute text-xs font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeEnd}%` }}>{toLabel}</span>
+              <span className="absolute text-[10px] font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>{fromLabel}</span>
+              <span className="absolute text-[10px] font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeEnd}%` }}>{toLabel}</span>
             </>
           )}
         </div>
@@ -68,17 +68,17 @@ function AdminScopeTimeline({ from, to, fromLabel, toLabel }) {
 function AvailabilityBar({ score, label }) {
   return (
     <div className="flex flex-col items-end gap-1">
-      <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280]">Public Availability</p>
-      <div className="flex items-center gap-1">
+      <p className="text-[11px] font-semibold uppercase tracking-wide text-[#6B7280]">Public Availability</p>
+      <div className="flex items-center gap-1.5">
         {[1, 2, 3, 4, 5].map((i) => (
           <div
             key={i}
-            className="h-1.5 w-6 rounded-full"
+            className="h-2 w-7 rounded-full"
             style={{ backgroundColor: i <= score ? '#A57B2F' : '#D1D5DB' }}
           />
         ))}
       </div>
-      <p className="text-xs text-[#6B7280]">{label}</p>
+      <p className="text-[11px] text-[#6B7280]">{label}</p>
     </div>
   )
 }
@@ -234,7 +234,7 @@ function StatePanel({ name, onLearnMore }) {
         <AvailabilityBar score={data.availability.score} label={data.availability.label} />
       </div>
 
-      <p className="text-base italic text-[#001C3D] leading-relaxed">
+      <p className="text-lg italic text-[#001C3D] leading-relaxed">
         {data.summary}
       </p>
 
@@ -247,17 +247,54 @@ function StatePanel({ name, onLearnMore }) {
         />
       )}
 
-      <ul className="flex flex-col gap-5">
-        {data.details.map(({ icon, text }, i) => {
-          const Icon = ICON_MAP[icon]
-          return (
-            <li key={i} className="flex items-start gap-3">
-              {Icon && <Icon className="w-6 h-6 mt-0.5 shrink-0 text-[#A57B2F]" />}
-              <span className="text-base text-[#001C3D]">{text}</span>
-            </li>
-          )
-        })}
-      </ul>
+      {/* ── Technical Datasheet ── */}
+      {(() => {
+        const byLabel = Object.fromEntries(data.details.map(d => [d.label, d]))
+        const delivery = byLabel['Delivery Model']
+        const DeliveryIcon = delivery ? ICON_MAP[delivery.icon] : null
+        return (
+          <div className="flex flex-col gap-3">
+            {/* Delivery Model — with Subject + Hours nested */}
+            <div className="flex items-start gap-2">
+              {DeliveryIcon && <DeliveryIcon className="w-4 h-4 text-[#A57B2F] shrink-0 mt-0.5" />}
+              <div className="min-w-0 flex-1">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-[#9CA3AF]">Delivery Model</p>
+                <p className="text-sm text-[#001C3D] mt-0.5 leading-snug">{delivery?.text}</p>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-2 mt-2.5">
+                  {['Subject', 'Weekly Hours'].map(lbl => {
+                    const d = byLabel[lbl]
+                    const Icon = d ? ICON_MAP[d.icon] : null
+                    return (
+                      <div key={lbl} className="pl-2.5 border-l-2 border-[#A57B2F]/20">
+                        <div className="flex items-center gap-1 mb-0.5">
+                          {Icon && <Icon className="w-3.5 h-3.5 text-[#A57B2F]" />}
+                          <p className="text-[11px] font-bold uppercase tracking-wider text-[#9CA3AF]">{lbl}</p>
+                        </div>
+                        <p className="text-sm text-[#374151] leading-snug">{d?.text}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            </div>
+            {/* Remaining fields — same alignment as Delivery Model */}
+            {['Curriculum Framework', 'Implementation Status', 'Policy Start Date'].map(lbl => {
+              const d = byLabel[lbl]
+              if (!d) return null
+              const Icon = ICON_MAP[d.icon]
+              return (
+                <div key={lbl} className="flex items-start gap-2">
+                  {Icon && <Icon className="w-4 h-4 text-[#A57B2F] shrink-0 mt-0.5" />}
+                  <div className="min-w-0">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-[#9CA3AF]">{lbl}</p>
+                    <p className="text-sm text-[#001C3D] mt-0.5 leading-snug">{d.text}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        )
+      })()}
 
       {data.footnote && (
         <p className="text-xs text-[#6B7280] leading-relaxed italic">{data.footnote}</p>

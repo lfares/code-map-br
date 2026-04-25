@@ -3,11 +3,12 @@
     "availability": { "score": 2, "label": "Restricted and Incomplete" },
     "summary": "A centralized platform-based model utilizing pre-defined scripts and pre-made slides through partnerships with private platforms. While focused on large-scale delivery, SEDUC restricts most pedagogical content to logged-in users, creating barriers to transparency and external collaboration.",
     "details": [
-      { "icon": "BookOpen", "text": "Tecnologia e Inovação" },
-      { "icon": "Clock", "text": "1 class-hour per week*" },
-      { "icon": "CalendarDays", "text": "Implemented as a mandatory curriculum in 2020 through the 'Inova Educação' Program." },
-      { "icon": "FileText", "text": "Currículo Paulista — Educação Digital e Midiática (Aligned with CIEB standards)" },
-      { "icon": "BarChart2", "text": "100% Implemented across the state public network." }
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Tecnologia e Inovação" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "1 class-hour per week*" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Mandatory for all students" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Currículo Paulista — Educação Digital e Midiática (Aligned with CIEB standards)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "100% Implemented across the state public network." },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Implemented as a mandatory curriculum in 2020 through the 'Inova Educação' Program." }
     ],
     "scope": { "from": 6, "to": 12, "fromLabel": "Middle School 2", "toLabel": "High School" },
     "deepDiveId": "sp-deep-dive",
@@ -31,11 +32,12 @@
     "availability": { "score": 4, "label": "Open but Opaque" },
     "summary": "Recently implemented computer science curriculum focused on digital literacy and Artificial Intelligence. The model prioritizes in-house audiovisual content through the 'Digital Training School' (Escola de Formação Digital), which is open to the public. However, practical implementation remains dependent on local infrastructure and assessment results are not yet publicly available.",
     "details": [
-      { "icon": "BookOpen", "text": "Digital Education" },
-      { "icon": "Clock", "text": "1 class (45 min) per week" },
-      { "icon": "FileText", "text": "Referencial Curricular Computação na Educação Básica" },
-      { "icon": "BarChart2", "text": "100% Implemented" },
-      { "icon": "CalendarDays", "text": "Mandatory since 2026 (Resolution SEE nº 5.212/2025)" }
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Digital Education" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "1 class (45 min) per week" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Mandatory for all students" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Referencial Curricular Computação na Educação Básica" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "100% Implemented" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Mandatory since 2026 (Resolution SEE nº 5.212/2025)" }
     ],
     "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
     "deepDiveId": "mg-deep-dive",
@@ -59,11 +61,12 @@
     "availability": { "score": 3, "label": "Unstable but Comprehensive" },
     "summary": "The state does not offer a standalone computing subject, integrating Computational Thinking as a transversal competency within the Mathematics curriculum. While the curricular framework is updated and broadly available for public consultation, access to practical teaching materials and lesson plans is hindered by the constant instability of the 'Escola Tá ON' platform.",
     "details": [
-      { "icon": "BookOpen", "text": "Integrated into Mathematics" },
-      { "icon": "Clock", "text": "0h (No standalone mandatory hours)" },
-      { "icon": "FileText", "text": "Integrated into Mathematics and its Technologies Curriculum" },
-      { "icon": "BarChart2", "text": "0% Implemented (as a standalone subject)" },
-      { "icon": "CalendarDays", "text": "Not mandatory | Integration with Math Curriculum started in 2024" }
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Integrated into Mathematics" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h (No standalone mandatory hours)" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Integrated into Mathematics and its Technologies Curriculum" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "0% Implemented (as a standalone subject)" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Not mandatory | Integration with Math Curriculum started in 2024" }
     ],
     "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
     "deepDiveId": "es-deep-dive",
@@ -87,10 +90,12 @@
     "availability": { "score": 1, "label": "Inaccessible and Obscure" },
     "summary": "The state does not offer a universal computing component in its general education stream, providing technology itineraries only within full-time integral schools. Furthermore, pedagogical guides and teaching materials are locked behind authenticated portals, preventing public access and external oversight.",
     "details": [
-      { "icon": "BookOpen", "text": "Itinerary Components (Variable)*" },
-      { "icon": "Clock", "text": "0h (Standard/General) | 4h per week (Full-time schools — Tech track)" },
-      { "icon": "BarChart2", "text": "~25% Implemented (restricted to full-time and technical schools)" },
-      { "icon": "CalendarDays", "text": "Not mandatory for general stream | New High School implementation began in 2022" }
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Itinerary Components (Variable)*" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h (Standard/General) | 4h per week (Full-time schools — Tech track)" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Itinerary (depends on student's specialty choice)" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "New High School Technology Itinerary (SEEDUC-RJ)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "~25% Implemented (restricted to full-time and technical schools)" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Not mandatory for general stream | New High School implementation began in 2022" }
     ],
     "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
     "footnote": "* No specific subject exists in the general network; computing is treated as transversal content. In the New High School's technology itinerary, it includes the subjects 'Technology, Innovation, and Environment' and 'STEAM Culture'.",
