@@ -49,12 +49,12 @@
       "adminScope": ["High School"],
       "materialTransparency": "Open",
       "materialSource": "In-house (State-authored)",
-      "infrastructure": "Laboratory",
+      "infrastructure": "1:1 Devices/Chromebooks",
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "Project-Based (Artifacts)",
       "maturityYear": 2026,
       "maturityRange": "Recent (2024+)",
-      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware", "Data Science & AI"]
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Robotics & Hardware", "Data Science & AI"]
     }
   },
   "Espírito Santo": {
@@ -73,14 +73,14 @@
     "meta": {
       "abbr": "ES",
       "region": "Southeast",
-      "networkSize": "Medium (500 to 1500 schools)",
+      "networkSize": "Small (up to 500 schools)",
       "deliveryModel": "Transversal",
       "adminScope": ["High School"],
       "materialTransparency": "Open",
       "materialSource": "In-house (State-authored)",
-      "infrastructure": "Low-tech (Teacher's computer or projector only)",
+      "infrastructure": "1:1 Devices/Chromebooks",
       "teacherProfile": "Multidisciplinary",
-      "assessmentType": "No Assessment",
+      "assessmentType": "Exams",
       "maturityYear": 2024,
       "maturityRange": "Recent (2024+)",
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Data Science & AI"]
@@ -106,14 +106,14 @@
       "networkSize": "Medium",
       "deliveryModel": "Itinerary (depends on student's specialty choice)",
       "adminScope": ["High School"],
-      "materialTransparency": "Restricted (Login)",
+      "materialTransparency": "Open",
       "materialSource": "In-house (State-authored)",
       "infrastructure": "Laboratory",
       "teacherProfile": "Multidisciplinary",
       "assessmentType": "Project-Based (Artifacts)",
       "maturityYear": 2022,
       "maturityRange": "Mid Adoption (2022–2023)",
-      "learningComponents": ["Robotics & Hardware", "Programming & Software"]
+      "learningComponents": ["Digital Culture & Literacy", "Robotics & Hardware"]
     }
   }
 }
