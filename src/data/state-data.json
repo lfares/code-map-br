@@ -110,6 +110,43 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Data Science & AI"]
     }
   },
+  "Bahia": {
+    "availability": {
+      "score": 3.3,
+      "label": "Granular but Gated",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.67, "outOf": 1, "note": "High-quality curriculum and matrices are public, but pedagogical guides (Stations) are fragmented or require login." },
+        { "dimension": "Stability",    "score": 3,    "outOf": 5, "note": "Official PDFs are stable, but the Anísio Teixeira and 'Escola Tá ON' platforms face recurring downtime." },
+        { "dimension": "Granularity",  "score": 5,    "outOf": 5, "note": "Deep pedagogical structure in the Knowledge Stations model, with transdisciplinary milestones and AI integration." }
+      ]
+    },
+    "summary": "Bahia adopts the 'Knowledge Stations' model in High School, featuring a 'Computational Thinking' component focused on experimental praxis and territorial problem-solving. The state strategy emphasizes digital sovereignty and the use of AI, integrating technologies transdisciplinarily and utilizing the Conectar project to enable access via the Google ecosystem and mobile devices.",
+    "details": [
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Integrated Transdisciplinary Itinerary (Mandatory) | Transversal (Middle School)" },
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Knowledge Stations IV – Computational Thinking (HS) | Body Culture and Technologies (MS)" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "3 classes/week (120 annual hours) in HS | 0h standalone in MS" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Documento Referencial Curricular da Bahia (DCRB)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "100% Implemented in curriculum / Expansion phase in Full-Time schools" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Mandatory since 2022 (Consolidation of the New High School)" }
+    ],
+    "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "ba-deep-dive",
+    "meta": {
+      "abbr": "BA",
+      "region": "Northeast",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": "Mandatory for all students",
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "1:1 Devices/Chromebooks",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "Project-Based (Artifacts)",
+      "maturityYear": 2022,
+      "maturityRange": "Mid Adoption (2022–2023)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,

@@ -191,7 +191,14 @@ function DeepDiveBlock({ block }) {
 
 function StateDeepDive({ stateName }) {
   const data = deepDiveData[stateName]
+  const meta = stateData[stateName]?.meta
   if (!data) return null
+
+  const isSoutheast = meta?.region === 'Southeast'
+  const svgLocations = isSoutheast ? southeastLocations : brazilMap.locations
+  const svgViewBox = isSoutheast ? "316 295 231 203" : brazilMap.viewBox
+  const regionLabel = meta?.region ? `${meta.region} Region` : 'Region'
+
   return (
     <section id={data.sectionId} className="bg-white border-t border-gray-200 mt-12">
       <div className="max-w-6xl mx-auto px-6 py-12">
@@ -199,9 +206,9 @@ function StateDeepDive({ stateName }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12 items-start">
           <div className="flex flex-col gap-2">
-            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">Southeast Region</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="316 295 231 203" className="w-2/3">
-              {southeastLocations.map((loc) => (
+            <p className="text-xs font-semibold uppercase tracking-wide text-[#6B7280] mb-2">{regionLabel}</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox={svgViewBox} className="w-2/3">
+              {svgLocations.map((loc) => (
                 <path key={loc.id} d={loc.path} fill={loc.id === data.svgId ? '#A57B2F' : '#CBD5E1'} stroke="#fff" strokeWidth={1.5} />
               ))}
             </svg>

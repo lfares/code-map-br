@@ -205,6 +205,74 @@
     ]
   },
 
+  "Bahia": {
+    "sectionId": "ba-deep-dive",
+    "svgId": "ba",
+    "glance": [
+      { "icon": "School",        "value": "~1,100",   "label": "State Schools (574 Full-Time in 2025)" },
+      { "icon": "GraduationCap", "value": "~700,000", "label": "Students in the State Network" },
+      { "icon": "Users",         "value": "10k–15k",  "label": "Teachers (est., transdisciplinary model)" },
+      { "icon": "Globe",         "value": "SEDUC-BA", "label": "portal", "url": "https://www.educacao.ba.gov.br/", "urlDisplay": "educacao.ba.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop abstraction processes and algorithms for real-world problem-solving.", "Experimental Practices (Stations) applied to the territory.", "Scratch, Block Languages, and Unplugged Logic."],
+              ["Body Culture & Tech", "Integrate technological languages into human and bodily expressions.", "Media production and critical analysis of tech impact on society.", "Video/Audio editing, Audio, and Social Media."],
+              ["Innovation & Territoriality", "Create tech solutions that respect and empower local contexts.", "Social Intervention and Scientific Initiation projects.", "Google Workspace, Canva, and SABE Platform."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Links",
+            "items": [
+              { "label": "Curriculum — High School (DCRB)", "url": "https://drive.google.com/file/d/1fu9XcIyandHIOQ-xUsVFv82U31VPv94L/view", "access": "Public" },
+              { "label": "Curriculum — Middle School (DCRB)", "url": "https://drive.google.com/file/d/1PW9ap9nTd-IjQp_8lxTvR9tMZAUAWUxE/view", "access": "Public" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Platforms & Resources",
+            "items": [
+              { "label": "Jornada Pedagógica", "url": "https://jornadapedagogica.educacao.ba.gov.br/", "access": "Public" },
+              { "label": "Digital Education (AI & Tech)", "url": "https://jornadapedagogica.educacao.ba.gov.br/educacaodigital/", "access": "Public" },
+              { "label": "Anísio Teixeira Platform", "url": "https://pat.educacao.ba.gov.br/", "tag": "(Broken link)", "tagColor": "red" },
+              { "label": "e-Nova Educação (G Suite)", "url": "https://sites.enova.educacao.ba.gov.br/e-nova", "tag": "(Requires login)", "tagColor": "gray" },
+              { "label": "SABE Platform", "url": "https://avaliacaoemonitoramentobahia.caeddigital.net/#!/pagina-inicial", "tag": "(Requires login)", "tagColor": "gray" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Digital Sovereignty", "body": "Focus on building national data infrastructure to reduce dependency on Big Tech. The state actively promotes the use of open standards and national platforms alongside Google Workspace tools." },
+          { "type": "paragraph", "heading": "Mobile Devices & Guidelines", "body": "Strict guidelines under **Law 15.100/2025** and **Decree 12.385/2025** govern the pedagogical and responsible use of mobile devices in schools, balancing access with focused learning." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "Tablets are provided with data chips to guarantee access to Google Workspace and AI assistants off-campus. The **Conectar Program** aims to deliver high-speed Wi-Fi and fiber optics to all school units." },
+          { "type": "paragraph", "heading": "AI Assistants", "body": "Tools like **Tutor IA / PIÁ** and **Acompanhatec** are integrated to support pedagogical tracking and personalized learning pathways for students." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SABE System", "body": "Process-based evaluation integrated into Mathematics and Language exams, tracking Computational Thinking competencies within the existing assessment framework." },
+          { "type": "paragraph", "heading": "Data Management", "body": "Assessment results are discussed in **Pedagogical Journeys (Jornadas Pedagógicas)** for structured intervention planning, connecting data directly to classroom practice." },
+          { "type": "alert", "variant": "amber", "heading": "Transparency Gap", "body": "No public feedback channel exists. Teacher feedback is collected exclusively via annual internal surveys conducted by SEC-BA, with results not publicly disclosed." }
+        ]
+      }
+    ]
+  },
+
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",
