@@ -11,6 +11,14 @@ const ICON_MAP = { BookOpen, Clock, CalendarDays, FileText, BarChart2, Target }
 const SOUTHEAST_IDS = ['sp', 'rj', 'mg', 'es']
 const southeastLocations = brazilMap.locations.filter(l => SOUTHEAST_IDS.includes(l.id))
 
+const NORTHEAST_IDS = ['ma', 'pi', 'ce', 'rn', 'pb', 'pe', 'al', 'se', 'ba']
+const northeastLocations = brazilMap.locations.filter(l => NORTHEAST_IDS.includes(l.id))
+
+const REGION_CONFIG = {
+  Southeast: { locations: southeastLocations, viewBox: '316 295 231 203' },
+  Northeast: { locations: northeastLocations, viewBox: '175 75 445 430' },
+}
+
 const GEO_URL = '/brazil-states.geojson'
 
 function AdminScopeTimeline({ from, to, fromLabel, toLabel }) {
@@ -194,9 +202,9 @@ function StateDeepDive({ stateName }) {
   const meta = stateData[stateName]?.meta
   if (!data) return null
 
-  const isSoutheast = meta?.region === 'Southeast'
-  const svgLocations = isSoutheast ? southeastLocations : brazilMap.locations
-  const svgViewBox = isSoutheast ? "316 295 231 203" : brazilMap.viewBox
+  const regionCfg = REGION_CONFIG[meta?.region]
+  const svgLocations = regionCfg ? regionCfg.locations : brazilMap.locations
+  const svgViewBox = regionCfg ? regionCfg.viewBox : brazilMap.viewBox
   const regionLabel = meta?.region ? `${meta.region} Region` : 'Region'
 
   return (
