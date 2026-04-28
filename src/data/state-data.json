@@ -17,7 +17,7 @@
       { "icon": "Target",       "label": "Delivery Model",       "text": "Mandatory for all students" },
       { "icon": "FileText",     "label": "Curriculum Framework", "text": "Currículo Paulista — Educação Digital e Midiática (Aligned with CIEB standards)" },
       { "icon": "BarChart2",    "label": "Implementation Status","text": "100% Implemented across the state public network." },
-      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Implemented as a mandatory curriculum in 2020 through the 'Inova Educação' Program." }
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Mandatory since 2020 — Inova Educação Program" }
     ],
     "scope": { "from": 6, "to": 12, "fromLabel": "Middle School 2", "toLabel": "High School" },
     "deepDiveId": "sp-deep-dive",
@@ -93,7 +93,7 @@
       { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal" },
       { "icon": "FileText",     "label": "Curriculum Framework", "text": "Integrated into Mathematics and its Technologies Curriculum" },
       { "icon": "BarChart2",    "label": "Implementation Status","text": "0% Implemented (as a standalone subject)" },
-      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Not mandatory | Integration with Math Curriculum started in 2024" }
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Not mandatory — integrated into Math since 2024" }
     ],
     "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
     "deepDiveId": "es-deep-dive",
@@ -126,12 +126,12 @@
     "shortSummary": "One of the few states with a mandatory 'Tecnologia e Inovação' unit in High School covering CT, programming, and digital ethics. In Middle School, computing is transversally integrated via a 2025 Digital Culture Guide.",
     "summary": "Pernambuco is one of the few states with a dedicated technology curricular unit in High School — 'Tecnologia e Inovação' — mandatory within the Formative Itineraries block for all students. In Middle School, computing is transversally integrated into Mathematics and Languages, supported by a Digital Culture Guide published in 2025. Pedagogical materials have real depth, but are distributed as scattered PDFs on the SEE portal, with no unified access platform.",
     "details": [
-      { "icon": "Target",       "label": "Delivery Model",       "text": "Mandatory for all students (High School) | Transversal (Middle School)" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "HS: Mandatory | MS: Transversal" },
       { "icon": "BookOpen",     "label": "Subject",              "text": "HS: Tecnologia e Inovação | MS: Cultura Digital (Math & Languages)" },
       { "icon": "Clock",        "label": "Weekly Hours",         "text": "HS: 45–120h/year | MS: 0h standalone" },
-      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Currículo de Pernambuco EM (2020, revised 2025) + Currículo Complementar de Educação Digital e Midiática (2025–2026)" },
-      { "icon": "BarChart2",    "label": "Implementation Status","text": "~100% implemented in HS; MS in transversal implementation phase" },
-      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Mandatory since 2022 (New High School) | 2026 — BNCC Computing mandatory in all stages (IN SEE-PE 02/2025)" }
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Currículo de Pernambuco EM (rev. 2025) + Educação Digital e Midiática (2025–2026)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "HS: ~100% implemented | MS: Transversal phase" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "HS: Mandatory since 2022 | MS: BNCC Computing from 2026" }
     ],
     "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
     "deepDiveId": "pe-deep-dive",
@@ -164,12 +164,12 @@
     "shortSummary": "Transdisciplinary 'Knowledge Stations' model with a Computational Thinking component focused on local problem-solving and AI. Access is enabled via the Conectar project and the Google ecosystem.",
     "summary": "Bahia adopts the 'Knowledge Stations' model in High School, featuring a 'Computational Thinking' component focused on experimental praxis and territorial problem-solving. The state strategy emphasizes digital sovereignty and the use of AI, integrating technologies transdisciplinarily and utilizing the Conectar project to enable access via the Google ecosystem and mobile devices.",
     "details": [
-      { "icon": "Target",       "label": "Delivery Model",       "text": "Integrated Transdisciplinary Itinerary (Mandatory) | Transversal (Middle School)" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "HS: Mandatory Itinerary | MS: Transversal" },
       { "icon": "BookOpen",     "label": "Subject",              "text": "HS: Knowledge Stations IV – Computational Thinking | MS: Body Culture and Technologies" },
       { "icon": "Clock",        "label": "Weekly Hours",         "text": "HS: 3 classes/week (120h/year) | MS: 0h standalone" },
       { "icon": "FileText",     "label": "Curriculum Framework", "text": "Documento Referencial Curricular da Bahia (DCRB)" },
-      { "icon": "BarChart2",    "label": "Implementation Status","text": "100% Implemented in curriculum / Expansion phase in Full-Time schools" },
-      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Mandatory since 2022 (Consolidation of the New High School)" }
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "HS: 100% implemented | MS: Expansion phase" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Mandatory since 2022 — New High School" }
     ],
     "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
     "deepDiveId": "ba-deep-dive",
@@ -207,7 +207,7 @@
       { "icon": "Target",       "label": "Delivery Model",       "text": "Itinerary (depends on student's specialty choice)" },
       { "icon": "FileText",     "label": "Curriculum Framework", "text": "New High School Technology Itinerary (SEEDUC-RJ)" },
       { "icon": "BarChart2",    "label": "Implementation Status","text": "~25% Implemented (restricted to full-time and technical schools)" },
-      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Not mandatory for general stream | New High School implementation began in 2022" }
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Not mandatory (general stream) — New HS itinerary since 2022" }
     ],
     "scope": { "from": 10, "to": 12, "fromLabel": "High School", "toLabel": "High School" },
     "footnote": "* No specific subject exists in the general network; computing is treated as transversal content. In the New High School's technology itinerary, it includes the subjects 'Technology, Innovation, and Environment' and 'STEAM Culture'.",

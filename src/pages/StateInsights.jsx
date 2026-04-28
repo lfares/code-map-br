@@ -302,6 +302,36 @@ function StatePanel({ name, onLearnMore }) {
 
       {/* ── Technical Datasheet ── */}
       {(() => {
+        function LevelText({ text, color = '#001C3D', stacked = false }) {
+          const isMultiLevel = text?.includes('HS:') && text?.includes('MS:')
+          if (!isMultiLevel) return <span className="text-sm leading-snug" style={{ color }}>{text}</span>
+          const parts = text.split(' | ').map(p => {
+            const [level, ...rest] = p.split(': ')
+            return { level: level.trim(), value: rest.join(': ').trim() }
+          })
+          if (stacked) return (
+            <div className="flex flex-col gap-0.5 mt-0.5">
+              {parts.map(({ level, value }) => (
+                <div key={level} className="flex items-baseline gap-1">
+                  <span className={`text-[11px] font-bold shrink-0 ${level === 'HS' ? 'text-[#001C3D]' : 'text-teal-600'}`}>{level}</span>
+                  <span className="text-sm leading-snug" style={{ color }}>{value}</span>
+                </div>
+              ))}
+            </div>
+          )
+          return (
+            <div className="flex items-center gap-1.5 flex-wrap mt-0.5">
+              {parts.map(({ level, value }, i) => (
+                <span key={level} className="flex items-center gap-1">
+                  {i > 0 && <span className="text-[#D1D5DB]">·</span>}
+                  <span className={`text-[11px] font-bold ${level === 'HS' ? 'text-[#001C3D]' : 'text-teal-600'}`}>{level}</span>
+                  <span className="text-sm leading-snug" style={{ color }}>{value}</span>
+                </span>
+              ))}
+            </div>
+          )
+        }
+
         const byLabel = Object.fromEntries(data.details.map(d => [d.label, d]))
         const delivery = byLabel['Delivery Model']
         const DeliveryIcon = delivery ? ICON_MAP[delivery.icon] : null
@@ -312,34 +342,18 @@ function StatePanel({ name, onLearnMore }) {
               {DeliveryIcon && <DeliveryIcon className="w-4 h-4 text-[#A57B2F] shrink-0 mt-0.5" />}
               <div className="min-w-0 flex-1">
                 <p className="text-[11px] font-bold uppercase tracking-wider text-[#9CA3AF]">Delivery Model</p>
-                <p className="text-sm text-[#001C3D] mt-0.5 leading-snug">{delivery?.text}</p>
+                <LevelText text={delivery?.text} color="#001C3D" />
                 <div className="grid grid-cols-2 gap-x-4 gap-y-2 mt-2.5">
                   {['Subject', 'Weekly Hours'].map(lbl => {
                     const d = byLabel[lbl]
                     const Icon = d ? ICON_MAP[d.icon] : null
-                    const isMultiLevel = d?.text?.includes('HS:') && d?.text?.includes('MS:')
-                    const parts = isMultiLevel ? d.text.split(' | ').map(p => {
-                      const [level, ...rest] = p.split(': ')
-                      return { level: level.trim(), value: rest.join(': ').trim() }
-                    }) : null
                     return (
                       <div key={lbl} className="pl-2.5 border-l-2 border-[#A57B2F]/20">
                         <div className="flex items-center gap-1 mb-0.5">
                           {Icon && <Icon className="w-3.5 h-3.5 text-[#A57B2F]" />}
                           <p className="text-[11px] font-bold uppercase tracking-wider text-[#9CA3AF]">{lbl}</p>
                         </div>
-                        {isMultiLevel ? (
-                          <div className="flex flex-col gap-1 mt-0.5">
-                            {parts.map(({ level, value }) => (
-                              <div key={level} className="flex items-start gap-1.5">
-                                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 mt-0.5 ${level === 'HS' ? 'bg-[#001C3D] text-white' : 'bg-teal-600 text-white'}`}>{level}</span>
-                                <span className="text-sm text-[#374151] leading-snug">{value}</span>
-                              </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <p className="text-sm text-[#374151] leading-snug">{d?.text}</p>
-                        )}
+                        <LevelText text={d?.text} color="#374151" stacked />
                       </div>
                     )
                   })}
@@ -356,7 +370,7 @@ function StatePanel({ name, onLearnMore }) {
                   {Icon && <Icon className="w-4 h-4 text-[#A57B2F] shrink-0 mt-0.5" />}
                   <div className="min-w-0">
                     <p className="text-[11px] font-bold uppercase tracking-wider text-[#9CA3AF]">{lbl}</p>
-                    <p className="text-sm text-[#001C3D] mt-0.5 leading-snug">{d.text}</p>
+                    <LevelText text={d.text} color="#001C3D" />
                   </div>
                 </div>
               )
