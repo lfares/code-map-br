@@ -81,7 +81,7 @@ function AnalyticsBar({ stateEntries, total, hasActiveFilters }) {
   const count = stateEntries.length
   const mandatory = stateEntries.filter(([, d]) => d.meta.deliveryModel === 'Mandatory for all students').length
   const open = stateEntries.filter(([, d]) => d.meta.materialTransparency === 'Open').length
-  const oneToOne = stateEntries.filter(([, d]) => d.meta.infrastructure === '1:1 Devices/Chromebooks').length
+  const withAI = stateEntries.filter(([, d]) => d.meta.learningComponents?.includes('Data Science & AI')).length
   const avgScore = count > 0
     ? (stateEntries.reduce((sum, [, d]) => sum + d.availability.score, 0) / count).toFixed(1)
     : '—'
@@ -90,8 +90,8 @@ function AnalyticsBar({ stateEntries, total, hasActiveFilters }) {
     { value: hasActiveFilters ? `${count} / ${total}` : count, label: 'States' },
     { value: mandatory, label: 'Mandatory' },
     { value: open, label: 'Open Materials' },
-    { value: oneToOne, label: '1:1 Devices' },
-    { value: `${avgScore} / 5`, label: 'Avg. Score' },
+    { value: withAI, label: 'Teach AI' },
+    { value: `${avgScore} / 5`, label: 'Avg. Transparency Score' },
   ]
 
   return (
@@ -148,27 +148,36 @@ function StateCard({ stateName, data, isMatch, hasActiveFilters, onLearnMore }) 
       </div>
 
       {/* Card body */}
-      <div className="px-5 py-4 flex flex-col gap-4 flex-1">
-        <p className="text-sm text-[#374151] italic leading-relaxed line-clamp-3">
-          {data.summary}
+      <div className="px-5 py-4 flex flex-col gap-3 flex-1">
+        {/* Short summary */}
+        <p className="text-sm text-[#374151] leading-relaxed">
+          {data.shortSummary}
         </p>
 
-        {/* Key details */}
-        <div className="flex flex-col gap-2">
-          <div className="flex items-center gap-2">
-            <span className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full ${delivery.bg} ${delivery.text}`}>
-              <span className={`w-1.5 h-1.5 rounded-full ${delivery.dot}`} />
-              {data.meta?.deliveryModel}
-            </span>
-          </div>
-          <div className="flex flex-wrap gap-1.5">
-            {[data.meta?.region, data.meta?.infrastructure, data.meta?.materialTransparency]
-              .filter(Boolean)
-              .map((tag, i) => (
-                <span key={i} className="text-xs bg-[#F0F4F8] text-[#6B7280] px-2.5 py-1 rounded-full">{tag}</span>
-              ))}
-          </div>
+        {/* Delivery model */}
+        <div className="flex items-center gap-2">
+          <span className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full ${delivery.bg} ${delivery.text}`}>
+            <span className={`w-1.5 h-1.5 rounded-full ${delivery.dot}`} />
+            {data.meta?.deliveryModel}
+          </span>
         </div>
+
+        {/* Scope + transparency tags */}
+        <div className="flex flex-wrap gap-1.5">
+          {[data.meta?.adminScope?.join(' & '), data.meta?.materialTransparency]
+            .filter(Boolean)
+            .map((tag, i) => (
+              <span key={i} className="text-xs bg-[#F0F4F8] text-[#6B7280] px-2.5 py-1 rounded-full">{tag}</span>
+            ))}
+        </div>
+
+        {/* Learning components — dot-separated */}
+        {data.meta?.learningComponents?.length > 0 && (
+          <p className="text-xs text-[#6B7280]">
+            <span className="font-semibold text-[#001C3D]">Covers: </span>
+            {data.meta.learningComponents.join(' · ')}
+          </p>
+        )}
       </div>
 
       {/* Card footer */}
