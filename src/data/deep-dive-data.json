@@ -205,6 +205,93 @@
     ]
   },
 
+  "Pernambuco": {
+    "sectionId": "pe-deep-dive",
+    "svgId": "pe",
+    "glance": [
+      { "icon": "School",        "value": "1,081",    "label": "State Schools (673 full-time in 2026)" },
+      { "icon": "GraduationCap", "value": "~500,000", "label": "Students in the State Network" },
+      { "icon": "Users",         "value": "5k–8k",    "label": "Technology Teachers (est., multidisciplinary)" },
+      { "icon": "Globe",         "value": "SEE-PE",   "label": "portal", "url": "https://portal.educacao.pe.gov.br", "urlDisplay": "portal.educacao.pe.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          { "type": "alert", "variant": "amber", "heading": "Two-tier model", "body": "In High School, the four axes below are covered by the mandatory 'Tecnologia e Inovação' UC for all students. In Middle School, the last two axes are delivered transversally within Mathematics and Languages — no standalone subject exists." },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Creative Processes & Digital Citizenship", "Propose and test ethical, innovative solutions for real problems, integrating digital technologies (EMIF04PE).", "Project-based learning; ethical and misuse case analysis; digital prototype production.", "Google Workspace, digital prototyping tools."],
+              ["Computational Thinking & Logic", "Model algorithms applied to real problems; understand automation, IoT, and AI in local context.", "Programming and modeling challenges; algorithmic efficiency analysis; Python projects.", "Scratch, Python, network simulators."],
+              ["Digital World & Infrastructure", "Understand network architecture, cloud computing, and digital security.", "Hands-on hardware and networking exploration; simulations; security and privacy debates.", "Circuit and network simulators."],
+              ["Digital Culture & Media Ethics", "Critically analyze the social impact of technology; combat disinformation; understand LGPD and digital footprint.", "Media auditing; digital footprint mapping; AI and fake news debates; critical content production.", "Social media, fact-checking tools, audio/video editors."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Links",
+            "items": [
+              { "label": "Currículo de Pernambuco — Ensino Médio (with EMIF skills mapped for Tecnologia e Inovação)", "url": "https://www.gov.br/mec/pt-br/novo-ensino-medio-descontinuado/pdfs/copy_of_RCSEEPE.pdf", "access": "Public" },
+              { "label": "Currículo de Pernambuco — Ensino Fundamental (computing transversally integrated)", "url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2024/08/CURRICULO-DE-PERNAMBUCO-ENSINO-FUNDAMENTAL.pdf", "access": "Public" },
+              { "label": "Instrução Normativa SEE-PE nº 02/2025 — Curricular Matrices EF Anos Finais from 2025", "url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2025/02/Instrucao-Normativa-no-02-2025-Matrizes-Curriculares.pdf", "access": "Public" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Pedagogical Materials",
+            "headingNote": "(PDFs on SEE portal — variable stability ⚠️)",
+            "items": [
+              { "label": "Teacher Support Material — UC Tecnologia e Inovação", "url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2023/08/Unidade-Curricular_Tecnologia-e-Inovacao.pdf", "access": "Public" },
+              { "label": "Digital Technologies Track Portfolio (including Python, IoT, and Networks)", "url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2023/08/Portfolio_Trilha_Tecnologias_Digitais.pdf", "access": "Public" },
+              { "label": "Digital Culture Guide — EF Anos Finais (2025)", "url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2025/02/Cultura-Digital-na-sala-de-aula-Guia-de-orientacoes-didatico-metodologico-para-o-Ensino-Fundamental-Anos-finais-3.pdf", "access": "Public", "note": "Developed with support from Fundação Telefônica Vivo, aligned with BNCC Computing." },
+              { "label": "Complementary Activities Workbook 2026 (includes full Digital & Media Culture track script)", "url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-das-Atividades-Complementares-1.pdf", "access": "Public" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Institutional Portals",
+            "items": [
+              { "label": "SEE-PE — High School", "url": "https://portal.educacao.pe.gov.br/ensino-medio/" },
+              { "label": "SEE-PE — Middle School (Anos Finais)", "url": "https://portal.educacao.pe.gov.br/ensino-fundamental-anos-finais/" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Device Access", "body": "Primary delivery relies on **rotating computer lab access** in regular schools (30h/week). Full-time EREs and ETEs (45h/week) use computers more systematically. Unlike SP and ES, the state has not conducted a mass device distribution to students." },
+          { "type": "paragraph", "heading": "PE+Digital Program (2024–2025)", "body": "Distribution of notebooks to over **13,000 permanent staff** (teachers and school managers) with a R$ 44 million investment, focused on pedagogical planning via SIEPE." },
+          { "type": "paragraph", "heading": "Compet Médio-Tec (SEE + SECTI + FACEPE)", "body": "Annual program funding projects in **AI, IoT, robotics, and cloud computing** in schools, with scholarships for High School and ETE students." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "**89.8%** of PE public schools have internet access (Basic Education Yearbook 2024), but only **21% have an active computer lab**. Wi-Fi is unstable especially in inland areas (Agreste and Sertão). The 2025 Digital Culture Guide explicitly includes unplugged activities as a compensatory strategy for schools with limited device access." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Assessment Platforms",
+            "items": [
+              { "label": "SAEPE / IDEPE Portal", "url": "https://portal.educacao.pe.gov.br/idepe/", "access": "Public", "note": "Annual census-based assessment covering Portuguese and Mathematics. Aggregate results are public; microdata restricted to managers." },
+              { "label": "CAEd BI — Public Dashboard", "url": "https://avaliacaoemonitoramentopernambuco.caeddigital.net/#!/pagina-inicial", "access": "Public" },
+              { "label": "FACEPE — Compet Médio-Tec", "url": "https://www.facepe.br", "access": "Public", "note": "Annual showcase and award for technology projects by HS and ETE students." }
+            ]
+          },
+          { "type": "paragraph", "heading": "Project-Based Assessment", "body": "The UC Tecnologia e Inovação teacher guide specifies assessment primarily through **creative artifacts and prototypes** — apps, local problem solutions, and multimedia productions. There is no standardized exam specific to the UC." },
+          { "type": "alert", "variant": "amber", "heading": "Transparency Gap", "body": "No public feedback channel exists for students or teachers on the Tecnologia e Inovação UC. Fundação Telefônica Vivo (2026) found that only ~30% of PE teachers can integrate digital competencies in a qualified way. Teachers report difficulties with variable infrastructure across schools and the density of content within limited weekly periods." }
+        ]
+      }
+    ]
+  },
+
   "Bahia": {
     "sectionId": "ba-deep-dive",
     "svgId": "ba",

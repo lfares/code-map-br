@@ -113,6 +113,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Data Science & AI"]
     }
   },
+  "Pernambuco": {
+    "availability": {
+      "score": 3.2,
+      "label": "Layered but Fragmented",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.67, "outOf": 1, "note": "Curriculum and skills are public, but pedagogical materials are scattered PDFs with no unified portal." },
+        { "dimension": "Stability",    "score": 3,    "outOf": 5, "note": "Main portal is stable, but pedagogical material PDFs frequently return server errors." },
+        { "dimension": "Granularity",  "score": 3,    "outOf": 5, "note": "HS skills are mapped with EMIF codes; Digital Culture Guide has real depth for MS. No standalone CS skills in MS." }
+      ]
+    },
+    "shortSummary": "One of the few states with a mandatory 'Tecnologia e Inovação' unit in High School covering CT, programming, and digital ethics. In Middle School, computing is transversally integrated via a 2025 Digital Culture Guide.",
+    "summary": "Pernambuco is one of the few states with a dedicated technology curricular unit in High School — 'Tecnologia e Inovação' — mandatory within the Formative Itineraries block for all students. In Middle School, computing is transversally integrated into Mathematics and Languages, supported by a Digital Culture Guide published in 2025. Pedagogical materials have real depth, but are distributed as scattered PDFs on the SEE portal, with no unified access platform.",
+    "details": [
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Mandatory for all students (High School) | Transversal (Middle School)" },
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Tecnologia e Inovação — mandatory UC in HS Itineraries | Digital Culture integrated into Math & Languages (MS)" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "~45–120h/year in HS (varies by school model) | 0h standalone in MS" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Currículo de Pernambuco EM (2020, revised 2025) + Currículo Complementar de Educação Digital e Midiática (2025–2026)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "~100% implemented in HS; MS in transversal implementation phase" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Mandatory since 2022 (New High School) | 2026 — BNCC Computing mandatory in all stages (IN SEE-PE 02/2025)" }
+    ],
+    "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "pe-deep-dive",
+    "meta": {
+      "abbr": "PE",
+      "region": "Northeast",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": "Mandatory for all students",
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "Laboratory",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "Project-Based (Artifacts)",
+      "maturityYear": 2022,
+      "maturityRange": "Mid Adoption (2022–2023)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software"]
+    }
+  },
   "Bahia": {
     "availability": {
       "score": 3.3,
