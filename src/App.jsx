@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white text-[#001C3D] font-sans antialiased">
-      <Navbar setPage={setRoute} />
+      <Navbar setPage={setRoute} currentPage={route} />
 
       <main className="pt-24">
         {route === 'home' && <Home setPage={setRoute} />}
