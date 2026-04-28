@@ -23,7 +23,7 @@
     "meta": {
       "abbr": "SP",
       "region": "Southeast",
-      "networkSize": "Large",
+      "networkSize": "Large (+1500 schools)",
       "deliveryModel": "Mandatory for all students",
       "adminScope": ["Middle School (6-9)", "High School"],
       "materialTransparency": "Restricted (Login)",
@@ -60,7 +60,7 @@
     "meta": {
       "abbr": "MG",
       "region": "Southeast",
-      "networkSize": "Large",
+      "networkSize": "Large (+1500 schools)",
       "deliveryModel": "Mandatory for all students",
       "adminScope": ["High School"],
       "materialTransparency": "Open",
@@ -172,7 +172,7 @@
     "meta": {
       "abbr": "RJ",
       "region": "Southeast",
-      "networkSize": "Medium",
+      "networkSize": "Medium (500 to 1500 schools)",
       "deliveryModel": "Itinerary (depends on student's specialty choice)",
       "adminScope": ["High School"],
       "materialTransparency": "Open",
