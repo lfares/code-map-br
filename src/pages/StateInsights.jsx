@@ -56,15 +56,25 @@ function AdminScopeTimeline({ from, to, fromLabel, toLabel }) {
         </div>
 
         {/* Scope label row */}
-        <div className="relative h-4 mt-0.5">
+        <div className="relative h-8 mt-0.5">
           {fromLabel === toLabel ? (
-            <div className="absolute flex justify-center" style={{ left: `${activeStart}%`, width: `${activeWidth}%` }}>
+            <div className="absolute flex flex-col items-center" style={{ left: `${activeStart}%`, width: `${activeWidth}%` }}>
               <span className="text-[10px] font-bold text-[#A57B2F]">{fromLabel}</span>
+              {fromLabel.toLowerCase().includes('high school') && <span className="text-[9px] font-bold text-[#001C3D]">(HS)</span>}
+              {fromLabel.toLowerCase().includes('middle school') && <span className="text-[9px] font-bold text-teal-600">(MS)</span>}
             </div>
           ) : (
             <>
-              <span className="absolute text-[10px] font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeStart}%` }}>{fromLabel}</span>
-              <span className="absolute text-[10px] font-bold text-[#A57B2F] -translate-x-1/2" style={{ left: `${activeEnd}%` }}>{toLabel}</span>
+              <div className="absolute flex flex-col items-center -translate-x-1/2" style={{ left: `${activeStart}%` }}>
+                <span className="text-[10px] font-bold text-[#A57B2F]">{fromLabel}</span>
+                {fromLabel.toLowerCase().includes('middle school') && <span className="text-[9px] font-bold text-teal-600">(MS)</span>}
+                {fromLabel.toLowerCase().includes('high school') && <span className="text-[9px] font-bold text-[#001C3D]">(HS)</span>}
+              </div>
+              <div className="absolute flex flex-col items-center -translate-x-1/2" style={{ left: `${activeEnd}%` }}>
+                <span className="text-[10px] font-bold text-[#A57B2F]">{toLabel}</span>
+                {toLabel.toLowerCase().includes('high school') && <span className="text-[9px] font-bold text-[#001C3D]">(HS)</span>}
+                {toLabel.toLowerCase().includes('middle school') && <span className="text-[9px] font-bold text-teal-600">(MS)</span>}
+              </div>
             </>
           )}
         </div>
@@ -307,13 +317,29 @@ function StatePanel({ name, onLearnMore }) {
                   {['Subject', 'Weekly Hours'].map(lbl => {
                     const d = byLabel[lbl]
                     const Icon = d ? ICON_MAP[d.icon] : null
+                    const isMultiLevel = d?.text?.includes('HS:') && d?.text?.includes('MS:')
+                    const parts = isMultiLevel ? d.text.split(' | ').map(p => {
+                      const [level, ...rest] = p.split(': ')
+                      return { level: level.trim(), value: rest.join(': ').trim() }
+                    }) : null
                     return (
                       <div key={lbl} className="pl-2.5 border-l-2 border-[#A57B2F]/20">
                         <div className="flex items-center gap-1 mb-0.5">
                           {Icon && <Icon className="w-3.5 h-3.5 text-[#A57B2F]" />}
                           <p className="text-[11px] font-bold uppercase tracking-wider text-[#9CA3AF]">{lbl}</p>
                         </div>
-                        <p className="text-sm text-[#374151] leading-snug">{d?.text}</p>
+                        {isMultiLevel ? (
+                          <div className="flex flex-col gap-1 mt-0.5">
+                            {parts.map(({ level, value }) => (
+                              <div key={level} className="flex items-start gap-1.5">
+                                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 mt-0.5 ${level === 'HS' ? 'bg-[#001C3D] text-white' : 'bg-teal-600 text-white'}`}>{level}</span>
+                                <span className="text-sm text-[#374151] leading-snug">{value}</span>
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="text-sm text-[#374151] leading-snug">{d?.text}</p>
+                        )}
                       </div>
                     )
                   })}
