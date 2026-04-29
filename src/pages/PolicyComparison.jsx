@@ -221,7 +221,7 @@ export default function PolicyComparison({ setPage, setSelectedState }) {
     setPage('dashboard')
   }
 
-  const allStates = Object.entries(stateData).filter(([, d]) => d.meta)
+  const allStates = Object.entries(stateData).filter(([, d]) => d.meta).sort(([a], [b]) => a.localeCompare(b))
   const matched = allStates.filter(([, d]) => matches(d.meta, activeFilters))
   const unmatched = allStates.filter(([, d]) => !matches(d.meta, activeFilters))
   const ordered = [...matched, ...unmatched]
