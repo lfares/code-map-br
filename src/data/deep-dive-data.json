@@ -603,6 +603,98 @@
     ]
   },
 
+  "Amazonas": {
+    "sectionId": "am-deep-dive",
+    "svgId": "am",
+    "glance": [
+      { "icon": "School",        "value": "~565",         "label": "State Schools" },
+      { "icon": "GraduationCap", "value": "~450,000",     "label": "Students" },
+      { "icon": "Users",         "value": "Multidisc.",   "label": "Teacher Profile" },
+      { "icon": "Globe",         "value": "SEDUC-AM",     "label": "portal", "url": "https://www.seduc.am.gov.br", "urlDisplay": "seduc.am.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Standalone Computing Subject",
+            "body": "Amazonas has not published a state computing curriculum complement. The components below reflect what is anticipated by the national BNCC Computação and the isolated initiatives identified in the network — without formal state curricular systematization."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, algorithms, and problem-solving; introduction to programming language for teachers and, indirectly, for students.", "Programming course for teachers (2024, via SEDUC); Digital After-School activities via Cemeam; unplugged approach in schools without connectivity.", "Plataforma Educação (Moodle), Saber Mais, offline DVDs for areas without internet."],
+              ["Digital World", "Understand how networks, devices, and the internet work; develop skills for the pedagogical use of available technologies.", "Exploration via Saber Mais and Cemeam (video lessons and educational games); digital resource use in connected urban schools.", "Saber Mais (sabermais.am.gov.br), Cemeam video lessons, Portal Educacional."],
+              ["Digital Culture & Ethics", "Critical and responsible use of technology; introduction to digital citizenship and data protection.", "Integrated into regular disciplines in connected schools; no specific systematization across the network.", "Plataforma Educação, Cemeam digital resources, Google Workspace in schools with access."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Documents (Public Access)",
+            "items": [
+              { "label": "Referencial Curricular Amazonense — Ensino Médio (RCA-EM, 2021)", "url": "http://www.cee.am.gov.br/wp-content/uploads/2021/08/RCA-Ensino-Medio.pdf", "note": "Approved by CEE/AM. No specific computing section." },
+              { "label": "SEDUC-AM — Referencial Curricular Amazonense (RCA-EF, 2020)", "url": "https://www.seduc.am.gov.br/secretaria-de-educacao-disponibiliza-referencial-curricular-amazonense-rca/", "note": "Foundational document for EF aligned with BNCC." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Pedagogical Platforms (Partial Public Access)",
+            "items": [
+              { "label": "Saber Mais", "url": "https://www.sabermais.am.gov.br", "note": "Multimedia portal categorized by subject and grade (partnership with Escola Digital / Instituto Inspirare)." },
+              { "label": "Plataforma Educação (Moodle)", "url": "http://plataformaeducacao.seduc.am.gov.br", "note": "Remote/hybrid teaching platform with video lessons and digital notebooks. Developed during the pandemic for areas with limited connectivity." },
+              { "label": "Aula em Casa", "url": "http://aulaemcasa.am.gov.br", "note": "Video lessons, worksheets, and digital notebooks — with offline DVD version for areas without internet." },
+              { "label": "Portal Educacional", "url": "https://portaleducacional.seduc.am.gov.br", "note": "School management system and student document access." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "red",
+            "heading": "Connectivity: The State's Largest Barrier",
+            "body": "Only 64.2% of public schools in Amazonas have internet access (Censo Escolar 2025), vs. 93.1% nationally. In rural areas the rate drops to 52.5%; in indigenous schools to 46.3%. Amazonas is among the states with the worst connection quality (~0.1 Mbps per student)."
+          },
+          { "type": "paragraph", "heading": "Federal Connectivity Program", "body": "The federal government plans to connect 2,000+ more schools in Amazonas by end of 2026, expanding coverage from 1,309 (25.4%) to a broader reach. In 2025 alone, connected schools grew from 17.2% to 25.4% in 7 months." },
+          { "type": "paragraph", "heading": "Offline Delivery Model", "body": "Amazonas maintains **DVD distribution** of pedagogical content for schools in low or no-connectivity areas — a strategy unique in Brazil reflecting the state's geographic reality. Printed study guides are distributed during river drought periods." },
+          { "type": "paragraph", "heading": "Cemeam", "body": "The **Centro de Mídias de Educação do Amazonas** produces and distributes video lessons and digital content for the Digital After-School program, serving students from Grade 5 to High School via television and internet." },
+          { "type": "paragraph", "heading": "Devices", "body": "The state network has not made a large-scale device purchase comparable to SP, ES, or PA. Urban schools in Manaus have computer labs; rural schools frequently lack access to devices." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SADEAM", "body": "Annual assessment applied since 2008, covering Portuguese and Mathematics — predominantly for Grade 2 EF. In 2025, 50,260 students participated (86% of the assessed cohort), with an 8% advance in literacy. Results are shared with focal points and municipal secretaries. **Digital competencies are not assessed.**" },
+          { "type": "paragraph", "heading": "AVAM", "body": "Complementary diagnostic assessment; in 2024, evaluated 90,000 state network students. Results used internally for pedagogical planning." },
+          { "type": "paragraph", "heading": "SAEB", "body": "Amazonas participates in the national SAEB. In 2025, more than 1,800 schools were included. The state achieved score 5.9 in Ideb 2023 for Early Childhood state network — above the federal target of 5.4." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Computing Assessment",
+            "body": "No assessment instrument exists for computing competencies. There is no rubric, grade, or result related to the three BNCC Computação axes. Teachers report that technology training is insufficient and sporadic, and no public feedback channel on computing or digital education exists."
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portals",
+            "items": [
+              { "label": "Portal CAEd/AM", "url": "https://avaliacaoemonitoramentoamazonas.caeddigital.net/#!/sistema" },
+              { "label": "Portal SADEAM (Saber Mais)", "url": "https://www.sabermais.am.gov.br/pagina/sadeam" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",

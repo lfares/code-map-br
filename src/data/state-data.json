@@ -303,6 +303,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software"]
     }
   },
+  "Amazonas": {
+    "availability": {
+      "score": 1.83,
+      "label": "Fragmented and Offline-Dependent",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.5,  "outOf": 1, "note": "RCA (EF and EM) is publicly accessible but fragmented. No standalone computing curriculum published. Saber Mais and Cemeam are partially public with no specific computing content." },
+        { "dimension": "Stability",    "score": 2,    "outOf": 5, "note": "SEDUC-AM portal has irregular maintenance; old portal still hosts content. Saber Mais renders poorly. For rural and river-access schools, online access is often impossible — the state maintains DVD distribution as an offline strategy." },
+        { "dimension": "Granularity",  "score": 1,    "outOf": 5, "note": "No public mapping of computing skills by grade, track or component. BNCC Computação has not yet been incorporated into a specific state curriculum document." }
+      ]
+    },
+    "shortSummary": "No standalone computing subject. BNCC Computação is still being incorporated. Main structural barrier is connectivity — only 64.2% of schools have internet access. Isolated initiatives via Saber Mais and Cemeam.",
+    "summary": "No standalone computing subject exists. BNCC Computação is still being incorporated into the state curriculum, with no complementary document published as of 2026. Existing initiatives — a programming language course for teachers (2024), the Saber Mais platform, and the Cemeam Digital After-School program — are isolated and non-systematic. The main structural barrier is connectivity: only 64.2% of public schools have internet access (vs. 93.1% national average), with rural and indigenous areas still largely offline.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "No standalone subject — BNCC Computação in transversal incorporation" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h (standalone mandatory)" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal (no formal definition published)" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Referencial Curricular Amazonense — EF (2020) + EM (2021) + BNCC Computação (mandatory from 2026, no state complement published)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "BNCC Computação in curricular adaptation — no approved state document as of April 2026" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "RCA EM approved 2021; BNCC Computação mandatory from 2026 (no specific state act published)" }
+    ],
+    "scope": { "from": 1, "to": 12, "fromLabel": "Elementary School", "toLabel": "High School" },
+    "deepDiveId": "am-deep-dive",
+    "meta": {
+      "abbr": "AM",
+      "region": "North",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": ["Transversal"],
+      "adminScope": ["Elementary School (K-5)", "Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "Low-tech (Teacher's computer or projector only)",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "No Assessment",
+      "maturityYear": 2026,
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,
