@@ -332,13 +332,15 @@ function StatePanel({ name, onLearnMore }) {
             </div>
           )
           return (
-            <div className="flex items-center gap-1.5 flex-wrap mt-0.5">
+            <div className="flex items-start gap-1.5 flex-wrap mt-0.5">
               {parts.map(({ level, value }, i) => (
-                <span key={level} className="flex items-center gap-1">
-                  {i > 0 && <span className="text-[#D1D5DB]">·</span>}
-                  <span className={`text-[11px] font-bold ${level === 'HS' ? 'text-[#001C3D]' : 'text-teal-600'}`}>{level}</span>
-                  <span className="text-sm leading-snug" style={{ color }}>{value}</span>
-                </span>
+                <>
+                  {i > 0 && <span key={`dot-${level}`} className="text-[#D1D5DB] leading-snug">·</span>}
+                  <span key={level} className="flex items-start gap-1">
+                    <span className={`text-[11px] font-bold shrink-0 mt-0.5 ${level === 'HS' ? 'text-[#001C3D]' : 'text-teal-600'}`}>{level}</span>
+                    <span className="text-sm leading-snug" style={{ color }}>{value}</span>
+                  </span>
+                </>
               ))}
             </div>
           )
