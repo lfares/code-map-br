@@ -113,6 +113,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Data Science & AI"]
     }
   },
+  "Pará": {
+    "availability": {
+      "score": 3.0,
+      "label": "Open but Nascent",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.67, "outOf": 1, "note": "DCE-PA is public, but the 2025 Computing Curriculum Reference is not yet open. Pedagogical materials restricted to teachers." },
+        { "dimension": "Stability",    "score": 3,    "outOf": 5, "note": "SEDUC-PA portal is stable. DCE-PA accessible via PDF. SisPAE and Ciseb links work adequately." },
+        { "dimension": "Granularity",  "score": 3,    "outOf": 5, "note": "Computing Reference maps BNCC axes to DCE-PA; Ciseb offers six detailed tracks. Implementation still in early cascade phase for regional schools." }
+      ]
+    },
+    "shortSummary": "No standalone computing subject — BNCC Computing implemented transversally from 2026, supported by the Ciseb Innovation Center in Belém. Open teaching materials are not yet publicly available.",
+    "summary": "No standalone computing subject exists; the state is implementing BNCC Computação transversally from 2026 across all knowledge areas. A Computing Curriculum Reference was developed in 2025 with Fundação Telefônica Vivo, and the Ciseb (Innovation Center) in Belém offers hands-on immersions in robotics, AI, and digital fabrication for the entire network. The cascade training strategy — from Ciseb and Cefor to regional DRE trainers — is the main implementation vehicle, but open public teaching materials are not yet available.",
+    "details": [
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal" },
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Integrated across all disciplines + Ciseb immersions (scheduled)" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h standalone — Ciseb immersions optional" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "DCE-PA EF (2019) + EM (2021) + Computing Reference (2025)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "In progress — trainer cascade underway across DREs in 2026" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "DCE-PA EM since 2021 — BNCC Computing mandatory from 2026" }
+    ],
+    "scope": { "from": 1, "to": 12, "fromLabel": "Elementary", "toLabel": "High School" },
+    "deepDiveId": "pa-deep-dive",
+    "meta": {
+      "abbr": "PA",
+      "region": "North",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": "Transversal",
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "1:1 Devices/Chromebooks",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "No Assessment",
+      "maturityYear": 2026,
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Data Science & AI", "Robotics & Hardware"]
+    }
+  },
   "Mato Grosso": {
     "availability": {
       "score": 3.45,

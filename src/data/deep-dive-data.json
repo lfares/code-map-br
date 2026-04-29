@@ -205,6 +205,89 @@
     ]
   },
 
+  "Pará": {
+    "sectionId": "pa-deep-dive",
+    "svgId": "pa",
+    "glance": [
+      { "icon": "School",        "value": "~998",     "label": "State Schools (+ rural, indigenous, quilombola annexes)" },
+      { "icon": "GraduationCap", "value": "~500,000", "label": "Students in the State Network (2025)" },
+      { "icon": "Users",         "value": "N/A",      "label": "No dedicated computing career — cascade via Ciseb/Cefor trainers" },
+      { "icon": "Globe",         "value": "SEDUC-PA", "label": "portal", "url": "https://www.seduc.pa.gov.br", "urlDisplay": "seduc.pa.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          { "type": "alert", "variant": "amber", "heading": "No Standalone Computing Subject", "body": "Computing is not a standalone subject. The axes below are implemented transversally across all disciplines (EF and HS), with practical deepening via Ciseb immersions. The 2025 Computing Curriculum Reference maps these axes to the DCE-PA." },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, problem decomposition, and algorithms integrated into regular subjects; understand prototyping and digital fabrication.", "Plugged and unplugged activities integrated into Math, Science, and Languages; Ciseb immersions with 3D printers, robotics kits, and Arduino.", "Robotics kits, Arduino, 3D printers, laser cutters (Ciseb); Scratch and block programming tools."],
+              ["Digital World & AI", "Understand networks, devices, cloud computing, and Artificial Intelligence; explore virtual and augmented reality applied to the Amazon context.", "Ciseb immersion tracks (VR/AR, creative computing, AI); debates on technology and Amazon sustainability.", "Plurall platform, Chromebooks, generative AI tools, Bot Ciseb (pedagogical AI assistant)."],
+              ["Digital Culture & Ethics", "Critically analyze technology use; combat disinformation and fake news; develop ethical digital citizenship and responsible media use.", "Discussions integrated into History, Geography, and Languages; analysis of tech impact in Amazon and indigenous contexts.", "Chromebooks, Google Workspace, information curation tools."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Links",
+            "items": [
+              { "label": "DCE-PA — Ensino Médio (2021)", "url": "https://www.seduc.pa.gov.br/site/public/upload/arquivo/probncc/ProBNCC_DCEPA-12072021_compressed-3b8b0.pdf", "access": "Public" },
+              { "label": "DCE-PA — Ensino Fundamental (Curricular Matrices 2024)", "url": "https://www.seduc.pa.gov.br/site/public/upload/arquivo/saeb/MATRIZES%20ENSINO%20REGULAR-23_01_2024-f4e09.pdf", "access": "Public" },
+              { "label": "Pedagogical Guidelines 2026 — Ensino Médio (IFAs)", "url": "https://www.seduc.pa.gov.br/novoensinomedio/pagina/14352-orientacoes-pedagogicas-2026", "access": "Public" },
+              { "label": "Ciseb — Innovation Center (tracks, scheduling, teacher training)", "url": "https://sites.google.com/seduc.pa.gov.br/ciseb/início", "access": "Public" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Restricted or Unpublished Materials",
+            "items": [
+              { "label": "Computing Curriculum Reference of Pará (2025)", "tag": "(Not yet publicly available)", "tagColor": "red", "url": "https://www.seduc.pa.gov.br", "note": "Developed with Fundação Telefônica Vivo. Used by Bot Ciseb and in Feb/2026 trainer training. Not yet released as a public PDF." },
+              { "label": "Plurall Platform / SAEB Workbooks", "tag": "(Requires institutional login)", "tagColor": "gray", "url": "https://www.seduc.pa.gov.br", "note": "Supplementary materials for Portuguese and Mathematics. Restricted to network teachers and students." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Institutional Portals",
+            "items": [
+              { "label": "SEDUC-PA", "url": "https://www.seduc.pa.gov.br" },
+              { "label": "New High School — Normative Acts (PAIEs, CEE/PA Resolutions)", "url": "https://www.seduc.pa.gov.br/novoensinomedio/pagina/12066-atos-normativos" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Conecta Educação Program (2025)", "body": "Distribution of **36,000 Chromebooks** with mobile carts to 920 state schools (36 per school), with an investment of over R$ 64 million. An additional **17,500 Chromebooks** distributed to teachers." },
+          { "type": "paragraph", "heading": "Internet & Connectivity", "body": "**1,649 Starlink antennas** installed in state schools, including rural, indigenous, and quilombola annexes under the Connectivity Law (nº 14.172). Covers 100% of the 998 state schools and their annexes. Urban schools also have fiber optic access (ConectaNet/WebEscola)." },
+          { "type": "paragraph", "heading": "Ciseb (Innovation and Sustainability Center)", "body": "Currently **4 units in operation** (Belém and Santo Antônio do Tauá), with six immersion rooms covering: digital prototyping and fabrication, maker culture, digital culture, VR/AR, robotics, and creative computing & AI. Any school in Pará can schedule visits for groups of up to **120 students**." },
+          { "type": "paragraph", "heading": "Device Model", "body": "Chromebooks in mobile carts with rotating classroom use. Integral schools (**162 units, ~48,000 students** in 2025) have more systematic device access. Despite universal Starlink coverage, connection stability in riverine, indigenous, and remote areas remains a bottleneck for continuous cloud platform use." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Assessment Platforms",
+            "items": [
+              { "label": "SisPAE — Public Results Portal", "url": "https://www.seduc.pa.gov.br/sispae/index", "access": "Public", "note": "Biannual census assessment in Portuguese and Mathematics. Results public by school, DRE, and municipality." }
+            ]
+          },
+          { "type": "paragraph", "heading": "SAEB", "body": "Pará participates in the national SAEB. In 2023, the state rose from **26th to 6th place** in the national Ideb ranking, an advance of 1.3 points. General results are public via INEP." },
+          { "type": "paragraph", "heading": "Bot Ciseb", "body": "A generative AI tool built on the Computing Curriculum Reference and DCE-PA, made available to network teachers to support transversal computing lesson planning. Signals the beginning of a pedagogical support ecosystem, but no public usage data has been released." },
+          { "type": "alert", "variant": "amber", "heading": "Transparency Gap", "body": "No specific assessment instrument exists for the three BNCC Computing axes. No public feedback channel exists for students or teachers. A DRE Belém 4 technology coordinator publicly stated that without the Feb/2026 Ciseb training, she would feel unprepared to implement the reference — signaling that teacher readiness outside the capital and DRE technology hubs is still incipient." }
+        ]
+      }
+    ]
+  },
+
   "Mato Grosso": {
     "sectionId": "mt-deep-dive",
     "svgId": "mt",

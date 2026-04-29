@@ -17,10 +17,14 @@ const northeastLocations = brazilMap.locations.filter(l => NORTHEAST_IDS.include
 const CENTRALWEST_IDS = ['mt', 'ms', 'go', 'df']
 const centralWestLocations = brazilMap.locations.filter(l => CENTRALWEST_IDS.includes(l.id))
 
+const NORTH_IDS = ['am', 'pa', 'ac', 'ro', 'rr', 'ap', 'to']
+const northLocations = brazilMap.locations.filter(l => NORTH_IDS.includes(l.id))
+
 const REGION_CONFIG = {
-  Southeast: { locations: southeastLocations, viewBox: '316 295 231 203' },
-  Northeast: { locations: northeastLocations, viewBox: '175 75 445 430' },
-  'Central-West': { locations: centralWestLocations, viewBox: '100 250 350 280' },
+  Southeast:     { locations: southeastLocations,  viewBox: '316 295 231 203' },
+  Northeast:     { locations: northeastLocations,  viewBox: '175 75 445 430'  },
+  'Central-West':{ locations: centralWestLocations,viewBox: '100 250 350 280' },
+  North:         { locations: northLocations,       viewBox: '0 0 430 320'     },
 }
 
 const GEO_URL = '/brazil-states.geojson'
