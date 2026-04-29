@@ -883,6 +883,98 @@
       }
     ]
   },
+  "Rio Grande do Sul": {
+    "sectionId": "rs-deep-dive",
+    "svgId": "rs",
+    "glance": [
+      { "icon": "School",        "value": "2,320",        "label": "State Schools" },
+      { "icon": "GraduationCap", "value": "~700,000",     "label": "Students" },
+      { "icon": "Users",         "value": "Transitional", "label": "Teacher Profile (until 2028)" },
+      { "icon": "Globe",         "value": "SEDUC-RS",     "label": "portal", "url": "https://educacao.rs.gov.br", "urlDisplay": "educacao.rs.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "heading": "Context",
+            "body": "**'Fundamentos de Computação'** is mandatory in Grade 5 and Grade 9 of elementary school and in all High School series (Res. CEEd 379/2024). In the Early Years of EF, it can be taught as a component, project, or transversally. Res. 384/2025 incorporates BNCC Computação into the High School Formação Geral Básica. The RCG Computação (2024) maps skills for all three axes across the entire Basic Education cycle."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, problem decomposition, algorithms, and programming logic; understand prototyping and complex problem-solving; ensure basic digital literacy (read, write, calculate, and code).", "Plugged and unplugged activities; standalone curricular component in Grade 5, Grade 9 EF, and HS; HackaTchê Robotics challenge for EF Final Years.", "Robotics kits (HackaTchê Robotics), Scratch, block-based programming tools; unplugged activities."],
+              ["Digital World & Infrastructure", "Understand how devices, networks, the internet, cloud computing, and AI work; develop authorship and digital production skills.", "Practical exploration with available devices; integration with regular disciplines; pedagogical use of school digital tools.", "Google Workspace (via schools), computer labs, Escola.RS app for pedagogical records."],
+              ["Digital Culture & Ethics", "Critically analyze the impact of technologies; develop digital citizenship, ethical use of media, and online safety; combat misinformation.", "HackaTchê Business (HS): development of technology solutions for SDGs; discussions integrated into regular disciplines.", "Digital creation tools, presentation platforms, SEDUC-RS Education Portal."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum & Legislation (Public Access)",
+            "items": [
+              { "label": "Referencial Curricular Gaúcho (RCG) — Interactive Platform", "url": "https://curriculo.educacao.rs.gov.br", "note": "Online portal with RCG EF (2018) and EM (2021) by area and component." },
+              { "label": "RCG — Downloads por caderno (EF e EM) — UNDIME/RS", "url": "https://undimers.org.br/referencial-curricular-gaucho/", "note": "Notebooks by knowledge area accessible via UNDIME/RS." },
+              { "label": "Resolução CEEd nº 379/2024 — Computação obrigatória na Educação Básica", "url": "https://www.ceed.rs.gov.br/upload/arquivos/202404/18154727-resolucao-379.pdf", "note": "Complete normative act: mandatory grades, teacher profile, and 4-year transitional period." },
+              { "label": "Resolução CEEd nº 384/2025 — Novo Ensino Médio RS (BNCC Computação à FGB)", "url": "https://www.ceed.rs.gov.br/upload/arquivos/202508/07130455-resolucao-384-reexaminada.pdf" },
+              { "label": "Matriz de Referência 2025 (includes computing transversal guidelines)", "url": "https://educacao.rs.gov.br/upload/arquivos/202502/03123859-matriz-de-referencia-2025.pdf" },
+              { "label": "Matrizes Curriculares 2025 — Ensino Regular (includes Tecnologia e Robótica / Inovação for EMTI)", "url": "https://midiasstoragesec.blob.core.windows.net/001/2024/11/matrizes-curriculares-2025-escolas-pei-e-escolas-parciais_.pdf" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Programs & Activities",
+            "items": [
+              { "label": "HackaTchê — Business (HS) & Robotics (EF Final Years)", "url": "https://educacao.rs.gov.br/hackatche", "note": "Annual innovation competition in its 4th (Business) and 2nd (Robotics) editions in 2025." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "red",
+            "heading": "2024 Flood Disaster: 700+ Schools Affected",
+            "body": "The April–May 2024 floods — the worst climate disaster in RS history — affected more than 700 state schools, destroying computer labs, equipment, and furniture. The state invested R$ 83 million via Programa Agiliza Educação for reconstruction, but the impact on technology infrastructure is still felt in 2025."
+          },
+          { "type": "paragraph", "heading": "Programa Agiliza Educação", "body": "Direct resource transfer to schools (R$ 90k–R$ 140k per unit) for autonomous use in renovations, equipment, and teaching materials — including computer lab equipment. Created in 2021 and intensified after the floods." },
+          { "type": "paragraph", "heading": "Ensino Médio em Tempo Integral (EMTI)", "body": "205 EMTI schools in 2024, expanding to **295 in 2025** (target: 50% of HS schools by 2026). EMTI curricular matrices include **'Tecnologia e Robótica'** and **'Tecnologia e Inovação'** as components, taught by Mathematics/Natural Sciences teachers." },
+          { "type": "paragraph", "heading": "Connectivity & Devices", "body": "No mass individual device program comparable to GO or ES. State schools have access to computer labs and, in some cases, Chromebooks via federal programs. The Programa Escolas Resilientes includes climate-resilient infrastructure plans." },
+          { "type": "paragraph", "heading": "HackaTchê Robotics", "body": "Annual competition delivering robotics kits to the **five finalist teams** from EF Final Years. The challenge structure requires schools to already have robotics development as a prerequisite for registration." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAERS", "body": "Annual census-based assessment for Grade 2, 5, and 9 EF and HS Year 3, covering Portuguese and Mathematics across the entire state and municipal network. Established by decree in 2022, with results linked to the Educational ICMS for municipalities. In 2023, evaluated 333,337 students. Digital competencies are not directly assessed." },
+          { "type": "paragraph", "heading": "Simulado SAEB 2025", "body": "Applied September 8–18, 2025 across all state schools, with cash prizes for top-performing students by class. Preparation tool for the national SAEB." },
+          { "type": "paragraph", "heading": "Avaliação Diagnóstica Trimestral", "body": "Quarterly assessments with grades (Grade 3 to Grade 9 EF and HS) or Descriptive Report (Grade 1–2 EF), recorded in the Escola.RS app. Computing has no specific separate assessment — it is integrated into the curricular component according to each school's criteria." },
+          { "type": "paragraph", "heading": "HackaTchê as Project Assessment", "body": "HackaTchê Business (HS) and Robotics (EF Final Years) serve as the main project assessment showcase. In 2025, both competitions included expert jury evaluation and awards. The competition is voluntary and does not replace formal curricular assessment." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "Teacher Gap Acknowledged",
+            "body": "The state explicitly recognized in Res. 379/2024 that the 4-year transitional period exists because 'there are not enough qualified Computing teachers.' The 2024 floods introduced 'climate justice and climate education' as central principles in the 2025 Reference Matrix, reflecting structural impact on the school community."
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portal",
+            "items": [
+              { "label": "Portal SAERS/CAEd", "url": "https://avaliacaoemonitoramentoriograndedosul.caeddigital.net/#!/minhapagina" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",

@@ -417,6 +417,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware"]
     }
   },
+  "Rio Grande do Sul": {
+    "availability": {
+      "score": 3.5,
+      "label": "Normative and Open",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.83, "outOf": 1, "note": "RCG (EF and EM) and Res. CEEd 379/2024 are public and detailed. RCG Computação was submitted to public consultation. Only gap: practical pedagogical materials (teaching sequences) still incipient publicly." },
+        { "dimension": "Stability",    "score": 3,    "outOf": 5, "note": "SEDUC-RS portal well-organized and stable. The 2024 flood disaster affected 700+ schools, disrupting infrastructure and pedagogical processes with effects still felt in 2025." },
+        { "dimension": "Granularity",  "score": 3,    "outOf": 5, "note": "Res. CEEd 379/2024 is the most detailed mandatory computing regulation in Brazil — specifies subject name, grade levels, teacher profile, transitional period. RCG Computação maps skills. Practical teaching materials and technology electives still in early implementation phase." }
+      ]
+    },
+    "shortSummary": "The most specific mandatory computing regulation in Brazil: Res. CEEd 379/2024 mandates 'Fundamentos de Computação' in Grade 5, Grade 9, and all HS series. Implementation slowed by 2024 floods and shortage of licensed Computing teachers.",
+    "summary": "The state has the most advanced and specific regulation for computing as a standalone curricular component in Brazil: CEEd Resolution 379/2024 mandates 'Fundamentos de Computação' in the 5th and 9th years of elementary school and in all High School grades, with a four-year transitional period (2024–2028) for teacher qualification. The RCG Computação was developed by a working group including the Brazilian Computing Society and went through public consultation. Practical implementation is slowed by the 2024 flood disaster affecting 700+ schools and a shortage of licensed Computing teachers.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Fundamentos de Computação (mandatory in Grade 5, Grade 9, and all HS series)" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "Defined by each school in the curricular matrix (no minimum specified by Res. 379/2024)" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Grade 5 & 9: Standalone mandatory component | Early EF: Component, project, or transversal | HS: Mandatory integrated to FGB" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Referencial Curricular Gaúcho (RCG-EF 2018 + EM 2021) + RCG Computação (2024) + Res. CEEd nº 379/2024 + Res. CEEd nº 384/2025" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "Transitional implementation since 2024 — 4-year period (2024–2028); any teacher with computing training may teach during transition" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Res. CEEd nº 379/2024 (06/03/2024); EM: Res. 384/2025 incorporates BNCC Computação to FGB" }
+    ],
+    "scope": { "from": 5, "to": 12, "fromLabel": "Elementary School", "toLabel": "High School" },
+    "deepDiveId": "rs-deep-dive",
+    "meta": {
+      "abbr": "RS",
+      "region": "South",
+      "networkSize": "Large (+1500 schools)",
+      "deliveryModel": ["Mandatory for all students"],
+      "adminScope": ["Elementary School (K-5)", "Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "Laboratory",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "Project-Based (Artifacts)",
+      "maturityYear": 2024,
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,
