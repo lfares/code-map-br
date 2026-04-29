@@ -695,6 +695,103 @@
       }
     ]
   },
+  "Tocantins": {
+    "sectionId": "to-deep-dive",
+    "svgId": "to",
+    "glance": [
+      { "icon": "School",        "value": "502",          "label": "State Schools (324 with EM)" },
+      { "icon": "GraduationCap", "value": "~135,000",     "label": "Students" },
+      { "icon": "Users",         "value": "Multidisc.",   "label": "Teacher Profile" },
+      { "icon": "Globe",         "value": "SEDUC-TO",     "label": "portal", "url": "https://www.to.gov.br/seduc", "urlDisplay": "to.gov.br/seduc" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "heading": "Context",
+            "body": "In High School, robotics and programming are offered as optional **Unidades Curriculares Eletivas** within the Itinerários Formativos. In Middle School, BNCC Computação axes are being incorporated transversally into regular disciplines. Computational thinking, gamification, and digital culture have been part of state teacher training since 2017."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking & Robotics", "Develop logical reasoning, programming, and problem-solving; assemble and program robots in the context of Natural Sciences and Mathematics.", "Weekly Robotics Elective (HS): assembly of motorized models, programming, and control. Web Programming and Game Design elective in pioneer schools.", "Robotics kits (2,380 kits for 238 HS schools), Chromebooks, Google Workspace."],
+              ["Digital World & Infrastructure", "Understand how devices, networks, and digital tools work; develop authorship and digital production skills.", "Pedagogical use of Chromebooks and Google Workspace; Escola Digital platform for content curation; Canva for Education for creative production.", "Chromebooks (28,000 units), Google Workspace (97,000 licences), Canva for Education, Escola Digital."],
+              ["Digital Culture & Ethics", "Develop digital citizenship, critical and ethical use of technology; counter misinformation and understand the social impact of AI.", "Teacher training focused on gamification and digital culture (since 2017); integration into regular disciplines; thematic electives.", "Google Workspace, Escola Digital, Moodle (Profe Formação)."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Documents (Public Access)",
+            "items": [
+              { "label": "DCT-TO — Ensino Médio (2022, Res. CEE/TO nº 169/2022)", "url": "https://www.to.gov.br/seduc/documento-curricular-do-territorio-do-tocantins-dct-to-etapa-ensino-medio/4hdqnsjj0uwt", "note": "4 notebooks: General Provisions, Core Formation, Deepening Tracks, and Formative Itineraries (Electives + Life Project)." },
+              { "label": "DCT-TO — Educação Infantil e Ensino Fundamental (2019)", "url": "https://www.to.gov.br/seduc/documento-curricular-do-tocantins-educacao-infantil-e-ensino-fundamental/3pxz92xtgb1p" },
+              { "label": "Painel do Novo Ensino Médio no Tocantins", "url": "https://www.to.gov.br/seduc/novo-ensino-edio/1mfhijwi0bn5", "note": "Portal with DCTs, portfolios, guides, and implementation monitoring." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Pedagogical Platforms",
+            "items": [
+              { "label": "Escola Digital", "url": "https://escoladigital.org.br", "note": "Multimedia content curation platform by subject and grade, integrated with the state network (partnership with Instituto Inspirare / Instituto Natura)." },
+              { "label": "Estruturas Curriculares e Matrizes (SEDUC-TO)", "url": "https://www.to.gov.br/seduc/estruturas-curriculares/6lb64nqsxl0o", "note": "Curricular matrices and pedagogical guidelines by stage." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Regulatory Acts",
+            "items": [
+              { "label": "Resolução CEE/TO nº 169/2022 — DCT-TO EM", "url": "https://central.to.gov.br/download/314299" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Profe Digital (since 2023, R$ 49 million)", "body": "Distribution of **28,000 Chromebooks** to 366 schools (120,000+ students), **14,000 notebooks** for teachers, 97,000+ Google Workspace for Education licences, and a partnership with Canva for Education. Target of 50,000 machines by 2027 (including Espaços Makers)." },
+          { "type": "paragraph", "heading": "Robótica em Ação (Jun/2025)", "body": "Delivery of **2,380 robotics kits** to 238 high schools, with in-person training for Mathematics, Physics, Chemistry, and Biology teachers. Robotics electives launched in **August 2025**, once a week, 2-hour sessions." },
+          { "type": "paragraph", "heading": "Wi-Fi nas Escolas", "body": "High-speed internet (Access Points with up to 1,024 simultaneous connections) deployed in **100% of urban schools** (346 units), benefiting 116,000 students. Expansion to rural schools planned for 2025/2026." },
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "Connectivity: Above National Average",
+            "body": "89.1% of state schools have internet access (Censo Escolar 2025/ENEC) — well above the regional average (60.5%) and national average (69.7%). 100% of schools have adequate energy supply; 84.8% have adequate speed; 82.5% have compatible Wi-Fi."
+          },
+          { "type": "paragraph", "heading": "Mestrado Profissional em Governança e Transformação Digital", "body": "Partnership with the **Universidade Federal do Tocantins (UFT)** for postgraduate education of state network teachers, focused on digital governance and computational modeling." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAETO", "body": "Created by Law nº 4,395/2024, covering Portuguese and Mathematics for Grades 2 and 5 EF (municipal networks) and Grades 5/9 EF and HS Year 3 (state network). Results influence the distribution of the Educational ICMS to municipalities (up to R$ 100 million). In 2025, Tocantins achieved **61% performance**, exceeding MEC's 55% target. Digital competencies are not directly assessed." },
+          { "type": "paragraph", "heading": "SAEB 2025", "body": "Tocantins recorded a historic **95% participation rate** among High School students. In Ideb 2023, the state achieved an overall average of 4.9, ranking **1st in the North Region**." },
+          { "type": "paragraph", "heading": "Prêmio Ideb Mais", "body": "Annual award of R$ 23.7 million (2025) for schools achieving a minimum 0.3% Ideb growth, with bonuses of R$ 750–R$ 6,000 per staff member. Functions as a performance incentive tied to external assessments." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Standardized Computing Assessment",
+            "body": "No public standardized instrument exists for computing competencies. Robotics electives are assessed procedurally by teachers, focused on practical assembly and programming projects. The Fundação Telefônica Vivo (2022) noted that advances have been achieved 'mainly through permanent dialogue with teachers and a lot of planning' — without formal curricular systematization yet."
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portals",
+            "items": [
+              { "label": "Plataforma CAED/SAETO", "url": "https://avaliacaoemonitoramentotocantins.caeddigital.net/#!/sistema" },
+              { "label": "Resultados no Diário Oficial do Tocantins", "url": "https://doe.to.gov.br" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",

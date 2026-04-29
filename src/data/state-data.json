@@ -341,6 +341,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy"]
     }
   },
+  "Tocantins": {
+    "availability": {
+      "score": 3.2,
+      "label": "Open and Operational",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.67, "outOf": 1, "note": "DCT-TO (EF and EM) is public and accessible. Elective portfolio is available. However, no BNCC Computação complement has been published, and robotics elective materials are for trained teachers only." },
+        { "dimension": "Stability",    "score": 4,    "outOf": 5, "note": "SEDUC-TO portal is stable and well-maintained. DCT and New High School links are functional. SAETO results published in the Official Gazette." },
+        { "dimension": "Granularity",  "score": 2,    "outOf": 5, "note": "Robotics electives have pedagogical depth in participating schools. Computational thinking present in teacher training since 2017, but no public skills mapping by grade aligned to BNCC Computação." }
+      ]
+    },
+    "shortSummary": "Robotics electives across all 238 high schools since Aug/2025, backed by 28k Chromebooks and 2,380 kits via Profe Digital. BNCC Computação being incorporated transversally without a state-specific published document.",
+    "summary": "No standalone computing subject, but Tocantins is one of the most advanced states in the North region for real digital infrastructure and pedagogy. Through Profe Digital, the state distributed 28,000 Chromebooks to students, 14,000 notebooks to teachers, and 2,380 robotics kits to 238 high schools (2025), with weekly robotics electives. Computational thinking and gamification have been part of teacher training since 2017. BNCC Computação is being incorporated transversally, with no state-specific complementary document published as of 2026.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "HS: Robótica Eletiva + Programação Web (pioneer schools) | MS: BNCC Computação Transversal" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "HS: ~2h/week (per semester) | MS: 0h standalone" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "HS: Elective (Itinerary) + Transversal | MS: Transversal" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Documento Curricular do Território do Tocantins (DCT-TO) — EF (2019) + EM (Res. CEE/TO nº 169/2022) + BNCC Computação (from 2026)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "HS: Robotics electives in 238 schools since Aug/2025 | MS: BNCC Computação in transversal incorporation" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "DCT-TO EM 2022; Robotics electives Aug/2025; Computational thinking in teacher training since 2017" }
+    ],
+    "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "to-deep-dive",
+    "meta": {
+      "abbr": "TO",
+      "region": "North",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": ["Itinerary (depends on student's specialty choice)", "Transversal"],
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "1:1 Devices/Chromebooks",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "Project-Based (Artifacts)",
+      "maturityYear": 2022,
+      "maturityRange": "Mid Adoption (2022–2023)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,
