@@ -379,6 +379,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware"]
     }
   },
+  "Goiás": {
+    "availability": {
+      "score": 3.8,
+      "label": "Structured and Accessible",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.83, "outOf": 1, "note": "DC-GO (EF, EM, and Ampliado) is public and well-documented. Elective catalog with 'Technology & Innovation' is public. Goiânia published a detailed BNCC Computação implementation guide as state model. Only gap: no official SEDUC-GO state computing supplement published." },
+        { "dimension": "Stability",    "score": 4,    "outOf": 5, "note": "SEDUC-GO portal is well-maintained. DC-GO and elective catalog links are functional. NetEscola operational. SAEGO results via CAEd accessible." },
+        { "dimension": "Granularity",  "score": 3,    "outOf": 5, "note": "Elective catalog structures 'Technology & Innovation' with BNCC Computação axes. DC-GO Ampliado includes computing. Active educational robotics in 173+ schools with R$ 58M invested since 2022. No formal state document with skills mapped by grade." }
+      ]
+    },
+    "shortSummary": "Tech & Innovation elective (BNCC-aligned) available in all HS, plus robotics in 173+ schools. 100% connectivity across 1,014 state schools and 135k+ Chromebooks distributed since 2021.",
+    "summary": "No standalone computing subject, but Goiás has one of the strongest real infrastructure advances: 100% of 1,014 state schools connected (target met in 2025), 135,000+ Chromebooks distributed since 2021, and R$ 58 million invested in educational robotics since 2022. Computing and technology are addressed through the 'Technology and Innovation' elective in High School, explicitly grounded in the three BNCC Computação axes, and through robotics in full-time schools and military colleges. BNCC Computação is being implemented transversally, with a detailed implementation guide published by Goiânia city as a model.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "HS: Tecnologia e Inovação (Eletiva) + Robótica nos Cepis | MS: BNCC Computação Transversal + Robótica nos CEPMGs" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "HS: Variable/semester (elective) | MS: up to 4h/week (Cepis/CEPMGs)" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "HS: Elective (Itinerary) + Transversal | MS: Transversal + Robotics in full-time/military schools" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "DC-GO (EF 2018/Ampliado) + DC-GOEM (2022) + Catálogo de Eletivas (BNCC Computação) + BNCC Computação from 2026" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "HS: Tech & Innovation elective in all schools; Robotics in 173+ units | MS: BNCC Computação in transversal incorporation" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "DC-GO EF (2018); DC-GOEM approved 2022; Robotics since 2022; BNCC Computação mandatory 2026" }
+    ],
+    "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "go-deep-dive",
+    "meta": {
+      "abbr": "GO",
+      "region": "Central-West",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": ["Itinerary (depends on student's specialty choice)", "Transversal"],
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "1:1 Devices/Chromebooks",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "Project-Based (Artifacts)",
+      "maturityYear": 2022,
+      "maturityRange": "Mid Adoption (2022–2023)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,

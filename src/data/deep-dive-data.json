@@ -792,6 +792,97 @@
       }
     ]
   },
+  "Goiás": {
+    "sectionId": "go-deep-dive",
+    "svgId": "go",
+    "glance": [
+      { "icon": "School",        "value": "1,014",        "label": "State Schools" },
+      { "icon": "GraduationCap", "value": "~560,000",     "label": "Students" },
+      { "icon": "Users",         "value": "Multidisc.",   "label": "Teacher Profile" },
+      { "icon": "Globe",         "value": "SEDUC-GO",     "label": "portal", "url": "https://goias.gov.br/educacao", "urlDisplay": "goias.gov.br/educacao" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "heading": "Context",
+            "body": "In High School, **'Tecnologia e Inovação'** is a semester elective in the Catálogo de Eletivas, explicitly structured around the three BNCC Computação axes. In full-time schools (Cepis) and military colleges (CEPMGs), robotics is a regular elective. Across both EF and EM, the three axes are being incorporated transversally into regular disciplines from 2026."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, algorithms, programming logic, and prototyping; assemble and program robots applying Natural Sciences and Mathematics concepts.", "Elective 'Tecnologia e Inovação' in HS; Educational robotics in Cepis and military colleges with assembly kits and programming software.", "Robotics kits, Chromebooks, Google Workspace for Education, Scratch."],
+              ["Digital World & Infrastructure", "Understand how devices, networks, and digital tools work; develop authorship and digital production competencies.", "Pedagogical use of Chromebooks and Google Workspace; NetEscola portal for digital activities; teacher training via Google for Education.", "Chromebooks (135,000+ distributed), Google Workspace, Portal NetEscola, NetEscola app."],
+              ["Digital Culture & Ethics", "Critically analyze the impact of technologies; develop digital citizenship, ethical and safe use of media; understand social implications of AI.", "Contemporary Cross-Cutting Themes integrated into the curriculum; thematic electives; discussions in regular disciplines.", "Google Workspace, curation tools, CAEd platform for assessment."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Documents (Public Access)",
+            "items": [
+              { "label": "DC-GO — Documento Curricular para Goiás (EF + DC-GO Ampliado)", "url": "https://goias.gov.br/educacao/dc-go-documento-curricular-para-goias/", "note": "Includes digital competencies and 3-volume Ampliado with computing reference matrix." },
+              { "label": "DC-GOEM — Documento Curricular para Goiás — Ensino Médio", "url": "https://goias.gov.br/educacao/dc-go-documento-curricular-para-goias/", "note": "HS base curriculum organized by knowledge area and formative itineraries." },
+              { "label": "Catálogo de Eletivas 2025 (includes Tecnologia e Inovação)", "url": "https://goias.gov.br/educacao/tutores-educacionais-2025/", "note": "Semester elective portfolio with pedagogical scripts aligned to BNCC Computação axes (programming, logic, digital culture)." },
+              { "label": "Matriz Curricular 2025 — Caderno Orientador", "url": "https://goias.gov.br/educacao/wp-content/uploads/sites/40/2024/ProcessoSeletivoSimplificado/DesportoEducacional/Matriz_Curricular_2025__Caderno_Orientador.pdf", "note": "Full curricular organization for EF and EM in 2025." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Pedagogical Platforms & Materials",
+            "items": [
+              { "label": "Portal NetEscola", "url": "https://portalnetescola.educacao.go.gov.br", "note": "SEDUC-GO platform with online content and activities for all stages." },
+              { "label": "REVISA GOIÁS — Material Didático", "url": "https://goias.gov.br/educacao/material-didatico/", "note": "Bimonthly teaching material for Portuguese and Mathematics (Grade 6 to HS), digitized for teacher use." },
+              { "label": "Orientações para implementação do DC-GO Ampliado — Computação (Goiânia, 2026)", "url": "https://sme.goiania.go.gov.br/site/index.php/institucional/documentos-oficiais-2/category/27-documentos-gerais?download=1326:orientacoes-para-implementacao-do-dc-go-computacao", "note": "Detailed document with skills matrix by year (EI to HS), plugged/unplugged activities, and transversal guidelines — model for the entire state network." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "100% Connectivity Achieved (2025)",
+            "body": "Goiás universalized high-speed internet across all 1,014 state schools — a target recorded by Censo Escolar 2024, placing the state among the first in the country. The Conectar program invested R$ 4.8 million in network infrastructure."
+          },
+          { "type": "paragraph", "heading": "Chromebooks — 135,000+ Distributed", "body": "Progressive distribution since 2021 to Grade 9 EF, and HS Years 2 and 3, with accumulated investment of R$ 329 million. Students keep the device for home use during the school year. In 2025, **60,000 new Chromebooks** were delivered to HS Year 2." },
+          { "type": "paragraph", "heading": "Google Workspace Partnership", "body": "Goiás received a technical visit from Google in 2024 as recognition for best practices, with ongoing teacher training via Google for Education." },
+          { "type": "paragraph", "heading": "Robótica Educacional — R$ 58 Million since 2022", "body": "Kits delivered to **173+ school units**, including all 74 **CEPMGs** (Military State Colleges, focused on Grades 6–7 EF) and Cepis, with annual teacher training. The 2026 training cycle launched in February 2026." },
+          { "type": "paragraph", "heading": "Programa Jornada Ampliada e Cepis", "body": "Full-time schools offer 4 elective periods per week in EF and 2 in HS. Robotics is one of the available electives, with kits, tablets, and supplementary materials." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAEGO", "body": "Annual 3-stage assessment (Diagnostic, Formative, Institutional) for Grades 5 and 9 EF and HS Year 3, covering Portuguese and Mathematics. Created in 2011, managed by CAEd/UFJF, aligned with SAEB. Historic ~92% participation in 2023. Digital competencies are not directly assessed." },
+          { "type": "paragraph", "heading": "SAEGO-Alfa", "body": "Reading fluency assessment for Grades 2 and 5 EF (state and municipal networks), linked to the Educational ICMS and the AlfaMais Goiás program." },
+          { "type": "paragraph", "heading": "SAEB 2025", "body": "In Ideb 2025, the state network achieved **4.8 in High School — the best national result for a state HS network**. Goiás participated with high engagement." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Standardized Computing Assessment",
+            "body": "No public standardized instrument exists for computing competencies. Electives are assessed procedurally by teachers, focused on practical projects. The Goiânia 2026 document recommends assessment integrated into regular disciplines — no separate computing grade. The 100% salary bonus for all 42,000 staff creates a structural incentive focused on Portuguese and Mathematics, not computing."
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portal",
+            "items": [
+              { "label": "Portal SAEGO/CAEd", "url": "https://avaliacaoemonitoramentogoias.caeddigital.net/" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",
