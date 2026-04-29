@@ -13,6 +13,7 @@ export const FILTERS = [
     key: 'deliveryModel',
     label: 'Delivery Model',
     options: ['Mandatory for all students', "Itinerary (depends on student's specialty choice)", 'Transversal'],
+    multi: true,
   },
   {
     key: 'adminScope',

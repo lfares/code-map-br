@@ -205,6 +205,82 @@
     ]
   },
 
+  "Santa Catarina": {
+    "sectionId": "sc-deep-dive",
+    "svgId": "sc",
+    "glance": [
+      { "icon": "School",        "value": "~1,046",   "label": "State School Units" },
+      { "icon": "GraduationCap", "value": "~600,000", "label": "Students in the State Network" },
+      { "icon": "Users",         "value": "394",      "label": "Technology Teacher vacancies (2025 concurso) + 107 NTE coordinators" },
+      { "icon": "Globe",         "value": "SED-SC",   "label": "portal", "url": "https://www.sed.sc.gov.br", "urlDisplay": "sed.sc.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          { "type": "alert", "variant": "amber", "heading": "Optional Electives in HS — Transversal in MS", "body": "In High School, 'Digital Culture' and 'Computational Thinking' are optional CCEs chosen by students among 25 available electives. All EF and HS students will have the three BNCC Computing axes integrated transversally from 2026 via the Digital Education Curriculum." },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, problem decomposition, and algorithms; prototype solutions in real contexts.", "Optional CCE in HS with hands-on projects; maker lab activities; programming challenges integrated into Math in EF.", "Maker labs, robotics kits, Scratch, cloudbooks, and interactive screens."],
+              ["Digital World & Infrastructure", "Understand networks, devices, cloud computing, and AI; develop digital production and authoring skills.", "Hands-on exploration in Computer and Maker labs; digital tools projects; NTE training.", "Chromebooks, interactive screens, Google Workspace, digital creation tools."],
+              ["Digital Culture & Ethics", "Critically analyze the impact of technology; develop ethical, creative, and safe media use; combat disinformation.", "Optional 'Digital Culture' CCE in HS; discussions integrated into knowledge areas; interdisciplinary projects.", "Curation tools, social media, fact-checking tools."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Links",
+            "items": [
+              { "label": "CBTC — Ensino Médio (2021) + CCE Portfolio (incl. Digital Culture & Computational Thinking)", "url": "https://sites.google.com/sed.sc.gov.br/nem-sedsc/currículo", "access": "Public" },
+              { "label": "CBTC — Ensino Fundamental (2019, CEE/SC Resolution 070/2019)", "url": "https://www.cee.sc.gov.br/index.php/curriculo-base-do-territorio-catarinense", "access": "Public" },
+              { "label": "New HS Guidelines 2026 (CEE/SC Resolution 070/2025)", "url": "https://sites.google.com/sed.sc.gov.br/nem-sedsc/página-inicial", "access": "Public" },
+              { "label": "Nota Técnica CEE/SC 001/2024 — Digital Education Guidelines for 2025", "url": "https://www.cee.sc.gov.br/index.php/noticias/1901-nota-tecnica-n-001-aprovado-em-11-11-2024", "access": "Public" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Pedagogical Materials",
+            "items": [
+              { "label": "Maker Lab Publications, NTE Notebooks & Didactic Sequences", "url": "https://sites.google.com/sed.sc.gov.br/nem-sedsc/publicações", "access": "Public" },
+              { "label": "Digital Education Curriculum (Estudantes Conectados, 2025)", "tag": "(Not yet formally published)", "tagColor": "red", "url": "https://www.sed.sc.gov.br", "note": "Created as part of the program; not yet available as an open public document." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Institutional Portal",
+            "items": [
+              { "label": "SED-SC", "url": "https://www.sed.sc.gov.br" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Estudantes Conectados Program (2025, R$ 80M)", "body": "Distribution of **18,000 chromebooks** for teachers, cloudbooks and notebooks for students with charging carts in all 1,046 schools; interactive screens for all classrooms. Target: **100% of schools with high-performance Wi-Fi by July 2026**. In 2026, 107 NTE coordinators were specifically trained for BNCC Computing." },
+          { "type": "paragraph", "heading": "Maker Laboratories", "body": "Target of up to **120 Maker Labs** across the state network (expansion ongoing in 2025–2026). Each lab offers space for prototyping, digital fabrication, and robotics." },
+          { "type": "paragraph", "heading": "NTEs (Educational Technology Centers)", "body": "Each Regional Education Coordination has an NTE responsible for teacher training in pedagogical use of equipment and for implementing BNCC Computing. **107 coordinators** are the main implementation vehicle." },
+          { "type": "paragraph", "heading": "CaTec+ (Technical Education)", "body": "~**30,000 students** enrolled in technical courses in CEDUPs, with more robust technology infrastructure for applied computing." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SEAESC (2025)", "body": "State assessment system launched in 2025, with first application in November 2025 for **128,000 students**. Assesses Portuguese and Mathematics. Results will be public by school and will classify schools into three groups for the **Prêmio Reconhecer** (awards up to R$ 1.2 million). No specific digital competency assessment." },
+          { "type": "paragraph", "heading": "CCE Assessment", "body": "Assessment of the 'Digital Culture' and 'Computational Thinking' electives is process-based and project-driven, per SED pedagogical scripts. No standardized instrument or specific public result exists." },
+          { "type": "paragraph", "heading": "Institutional Evaluation", "body": "Annual evaluation in all 1,046 state schools involving students, parents, teachers, and staff, covering four axes (Pedagogical Policies, Organizational Climate, Infrastructure, Management). Does not include specific digital competency assessment." },
+          { "type": "alert", "variant": "amber", "heading": "Transparency Gap", "body": "No public feedback channel exists for students or teachers on computing components. Nota Técnica CEE/SC 001/2024 explicitly acknowledges that 'digital education as a curricular component will be disciplinary or transversal, at the choice of the school network' — signaling the state is still defining the final model." }
+        ]
+      }
+    ]
+  },
+
   "Pará": {
     "sectionId": "pa-deep-dive",
     "svgId": "pa",

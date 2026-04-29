@@ -79,7 +79,7 @@ function FilterSidebar({ activeFilters, onToggle, onClearAll, hasActiveFilters }
 
 function AnalyticsBar({ stateEntries, total, hasActiveFilters }) {
   const count = stateEntries.length
-  const mandatory = stateEntries.filter(([, d]) => d.meta.deliveryModel === 'Mandatory for all students').length
+  const mandatory = stateEntries.filter(([, d]) => [d.meta.deliveryModel].flat().includes('Mandatory for all students')).length
   const open = stateEntries.filter(([, d]) => d.meta.materialTransparency === 'Open').length
   const withAI = stateEntries.filter(([, d]) => d.meta.learningComponents?.includes('Data Science & AI')).length
   const avgScore = count > 0
@@ -117,7 +117,7 @@ const DELIVERY_COLOR = {
 function StateCard({ stateName, data, isMatch, hasActiveFilters, onLearnMore }) {
   const dim = hasActiveFilters && !isMatch
   const elevated = hasActiveFilters && isMatch
-  const delivery = DELIVERY_COLOR[data.meta?.deliveryModel] || { bg: 'bg-gray-100', text: 'text-gray-600', dot: 'bg-gray-400' }
+  const deliveryModels = [data.meta?.deliveryModel].flat().filter(Boolean)
 
   return (
     <div
@@ -155,11 +155,16 @@ function StateCard({ stateName, data, isMatch, hasActiveFilters, onLearnMore }) 
         </p>
 
         {/* Delivery model */}
-        <div className="flex items-center gap-2">
-          <span className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full ${delivery.bg} ${delivery.text}`}>
-            <span className={`w-1.5 h-1.5 rounded-full ${delivery.dot}`} />
-            {data.meta?.deliveryModel}
-          </span>
+        <div className="flex flex-wrap items-center gap-1.5">
+          {deliveryModels.map((dm, i) => {
+            const c = DELIVERY_COLOR[dm] || { bg: 'bg-gray-100', text: 'text-gray-600', dot: 'bg-gray-400' }
+            return (
+              <span key={i} className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full ${c.bg} ${c.text}`}>
+                <span className={`w-1.5 h-1.5 rounded-full ${c.dot}`} />
+                {dm}
+              </span>
+            )
+          })}
         </div>
 
         {/* Scope + transparency tags */}
