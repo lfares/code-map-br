@@ -205,6 +205,90 @@
     ]
   },
 
+  "Mato Grosso": {
+    "sectionId": "mt-deep-dive",
+    "svgId": "mt",
+    "glance": [
+      { "icon": "School",        "value": "628",      "label": "State Schools (2025–2026)" },
+      { "icon": "GraduationCap", "value": "~320,000", "label": "Students (EF Finals + HS + EJA)" },
+      { "icon": "Users",         "value": "500–1k",   "label": "Robotics/Tech Teachers (est.)" },
+      { "icon": "Globe",         "value": "SEDUC-MT", "label": "portal", "url": "https://www3.seduc.mt.gov.br", "urlDisplay": "seduc.mt.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          { "type": "alert", "variant": "amber", "heading": "No Standalone Computing Subject", "body": "Computing is not a standalone subject. The axes below are delivered transversally within regular disciplines (EF and HS) and more structured in robotics-enabled schools. In HS, students who choose technology tracks in the Formative Itineraries deepen the first two axes." },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking & Robotics", "Develop logical reasoning, algorithms, and problem-solving through robot assembly and programming; understand automation and prototyping.", "Project-based learning with robotics kits; physical and digital prototype construction; participation in the state STEAM Fair.", "LEGO Education kits (SIMROBÓTICA/SIM Inova), Arduino, block programming platforms, Scratch."],
+              ["Digital World & Infrastructure", "Understand devices, networks, IoT, cloud computing, and AI applications in everyday life and agribusiness (regional context).", "Exploration with Chromebooks and Smart TVs; activities on Plurall platform; IoT debates applied to farming and smart homes.", "Chromebooks, Plurall platform (FGV), Smart TVs, digital simulators."],
+              ["Digital Culture & Ethics", "Critically analyze the impact of technology; develop digital citizenship, online safety, and ethical media use.", "Discussions integrated into regular subjects; interdisciplinary projects focused on SDGs (Sustainable Development Goals).", "Plurall platform, social media, information curation tools."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Links",
+            "items": [
+              { "label": "DRC-MT — Ensino Médio (2021, Portaria nº 356/2021)", "url": "https://sites.google.com/view/novo-ensino-medio-mt/drcmt-em-documento-homologado", "access": "Public" },
+              { "label": "DRC-MT — Ensino Fundamental (4 volumes, 2018/2019)", "url": "https://sites.google.com/view/bnccmt/educação-infantil-e-ensino-fundamental/documento-de-referência-curricular-para-mato-grosso", "access": "Public" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Platforms & Programs",
+            "items": [
+              { "label": "Sistema Estruturado de Ensino — Plurall (FGV)", "url": "https://seduc.mt.educar.tech/", "tag": "(Requires institutional login)", "tagColor": "gray", "note": "Digital workbooks, bimonthly assessments, and complementary materials for all network students." },
+              { "label": "AVADEP — Teacher Development Platform", "url": "https://ava.seduc.mt.gov.br", "tag": "(Requires @edu.mt.gov.br login)", "tagColor": "gray", "note": "Continuing education platform including robotics courses for teachers." },
+              { "label": "Robotics Education Course (AVADEP/CDES)", "url": "https://cos.seduc.mt.gov.br/-/18483185-curso-de-robotica-educativa-com-vistas-a-sustentabilidade-esta-disponivel-na-plataforma-ead-avadep-para-professores-e-facilitadores", "access": "Public", "note": "Open course on low-cost educational robotics, aligned with the DRC-MT." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Institutional Portals",
+            "items": [
+              { "label": "SEDUC-MT", "url": "https://www3.seduc.mt.gov.br" },
+              { "label": "Pedagogical Notebooks (diversity education)", "url": "https://www3.seduc.mt.gov.br/educacao-do-campo-e-quilombola/cadernos-pedagogicos" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Chromebooks & Smart TVs", "body": "Mass distribution underway — all classrooms in the state network are receiving **60\" Smart TVs** and Chromebooks for student use, integrated with the Structured Teaching System and Plurall platform. The goal is 1:1 coverage, currently in gradual expansion." },
+          { "type": "paragraph", "heading": "Educational Robotics (SIMROBÓTICA)", "body": "Over **204 state schools** have robotics kits (LEGO Education/SIM Inova), with continuous expansion. Each participating teacher receives SIM Inova certification and integrated continuing education. Covers both Middle School and High School." },
+          { "type": "paragraph", "heading": "Maker Spaces & Labs", "body": "Target of **30 schools with Maker Spaces** and 30 with dedicated robotics labs, as part of a R$ 214 million investment in the New High School program." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "High-speed internet is a declared priority of the EducAção 10 Anos program. New and renovated schools receive full Wi-Fi coverage. In rural areas connectivity remains variable, especially in rural and indigenous schools." },
+          { "type": "paragraph", "heading": "Structured System (FGV)", "body": "Printed and digital bimonthly workbooks for all students in EF Finals, HS, and EJA (628 schools, ~320k students), with R$ 110 million investment in 2026. Content is regionalized and aligned with DRC-MT and BNCC." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Assessment Platforms",
+            "items": [
+              { "label": "SEDUC-MT — Official Notices (SAEB, Mostra STEAM)", "url": "https://www3.seduc.mt.gov.br", "access": "Public" }
+            ]
+          },
+          { "type": "paragraph", "heading": "FGV Bimonthly Assessments", "body": "Diagnostic and process assessments applied bimonthly across the network, managed by FGV. Results are available in real time to managers and teachers via the platform. Computing and robotics are assessed as part of regular disciplines — no specific public instrument exists." },
+          { "type": "paragraph", "heading": "SAEB", "body": "MT participates in SAEB every two years. In 2023 the state rose from **22nd to 8th place** in the national High School ranking. General results are public; school-level microdata accessible via INEP." },
+          { "type": "paragraph", "heading": "STEAM Science Fair", "body": "The annual **Mostra Científica STEAM SEDUC-MT** (since 2020) is the main showcase for technology and computing projects, with regional and state-level phases. In 2024, 61 projects were selected; in 2025, results were shared via TikTok (#steammt2025)." },
+          { "type": "alert", "variant": "amber", "heading": "Transparency Gap", "body": "No public feedback channel exists for students or teachers on computing/robotics classes. Academic research (Casagrande, Lima & Maciel, 2025) identified a tension between strong digital platform assessment and weak day-to-day pedagogical integration. Teachers report the approach is stronger in digital evaluation than in everyday classroom practice." }
+        ]
+      }
+    ]
+  },
+
   "Pernambuco": {
     "sectionId": "pe-deep-dive",
     "svgId": "pe",

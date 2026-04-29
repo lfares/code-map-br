@@ -113,6 +113,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Data Science & AI"]
     }
   },
+  "Mato Grosso": {
+    "availability": {
+      "score": 3.45,
+      "label": "Structured but Siloed",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.67, "outOf": 1, "note": "Base curriculum (DRC-MT) is public, but workbooks, assessments, and the Plurall platform are closed to external audiences." },
+        { "dimension": "Stability",    "score": 5,    "outOf": 5, "note": "SEDUC-MT portal is stable and well-maintained. DRC-MT links via Google Sites work consistently." },
+        { "dimension": "Granularity",  "score": 2,    "outOf": 5, "note": "No standalone computing section in the DRC-MT. Skills are diluted across BNCC digital culture competencies with no year-by-year mapping." }
+      ]
+    },
+    "shortSummary": "No standalone computing subject, integrating digital competencies transversally through educational robotics (SIMROBÓTICA in over 200 schools) and its annual STEAM Science Fair. Pedagogical content is delivered through the Structured Teaching System (bimonthly workbooks and Plurall platform via FGV), whose materials operate within a closed ecosystem.",
+    "summary": "No standalone computing subject, integrating digital competencies transversally through educational robotics (SIMROBÓTICA in over 200 schools) and its annual STEAM Science Fair. Pedagogical content is delivered through the Structured Teaching System (bimonthly workbooks and Plurall platform via FGV), whose materials operate within a closed ecosystem.",
+    "details": [
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal" },
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Integrated into Math/Science + Robotics (enabled schools)" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h standalone" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "DRC-MT + BNCC Computing" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "Transversal in progress | Robotics in ~204/628 schools" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "DRC-MT EM since 2021 | BNCC Computing mandatory from 2026" }
+    ],
+    "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "mt-deep-dive",
+    "meta": {
+      "abbr": "MT",
+      "region": "Central-West",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": "Transversal",
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "1:1 Devices/Chromebooks",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "Project-Based (Artifacts)",
+      "maturityYear": 2021,
+      "maturityRange": "Mid Adoption (2022–2023)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Robotics & Hardware"]
+    }
+  },
   "Pernambuco": {
     "availability": {
       "score": 3.2,
