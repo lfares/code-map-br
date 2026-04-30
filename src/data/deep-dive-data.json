@@ -1064,6 +1064,94 @@
       }
     ]
   },
+  "Mato Grosso do Sul": {
+    "sectionId": "ms-deep-dive",
+    "svgId": "ms",
+    "glance": [
+      { "icon": "School",        "value": "352",          "label": "State Schools (213 full-time)" },
+      { "icon": "GraduationCap", "value": "~200,000",     "label": "Students" },
+      { "icon": "Users",         "value": "Multidisc.",   "label": "Teacher Profile" },
+      { "icon": "Globe",         "value": "SED-MS",       "label": "portal", "url": "https://www.sed.ms.gov.br", "urlDisplay": "sed.ms.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "heading": "Context",
+            "body": "The **Currículo da Educação Digital, Midiática e Computacional** (Dec/2025) establishes a transversal approach to the three BNCC Computação axes across all EF and EM disciplines. Educational robotics is active in selected schools as a practical complement. The curriculum was built via public consultation (Sept/2025) in partnership with UNDIME/MS, involving teachers, principals, and students."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, algorithms, and problem-solving; assemble and program robots applying Mathematics and Natural Sciences concepts.", "Educational robotics in selected schools; plugged and unplugged activities integrated into regular disciplines.", "Robotics kits, Scratch, unplugged activities, computer labs."],
+              ["Digital World & Infrastructure", "Understand how devices, networks, AI, and cloud computing work; exercise digital rights and develop digital authorship.", "Pedagogical use of devices integrated into regular classes; interdisciplinary digital production.", "School devices, Google Workspace, educational digital platforms."],
+              ["Digital Culture & Media Ethics", "Develop critical analysis of digital content; combat misinformation; understand LGPD and digital inclusion in the Mato Grosso do Sul context.", "Media audit integrated into History, Geography, and Portuguese; debates on AI and digital ethics.", "Fact-checking tools, social media platforms, audio and video editors."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Documents (Public Access)",
+            "items": [
+              { "label": "Currículo da Educação Digital, Midiática e Computacional da REE/MS (Dec/2025)", "url": "https://www.sed.ms.gov.br/wp-content/uploads/2025/12/curriculo_da_educacao_digital_ms.pdf", "note": "Complete document with the three BNCC Computação axes mapped for transversality, built via public consultation with UNDIME/MS." },
+              { "label": "Currículo de Referência REE/MS — Ensino Fundamental (2019)", "url": "https://www.sed.ms.gov.br/wp-content/uploads/2019/07/Curr%C3%ADculo-MS-V26.pdf" },
+              { "label": "Currículo de Referência REE/MS — Ensino Médio (2021)", "url": "https://www.sed.ms.gov.br/wp-content/uploads/2022/01/Curriculo-Novo-Ensino-Medio-v1.1.pdf" },
+              { "label": "Consulta Pública — Currículo Digital (Sept/2025)", "url": "https://www.sed.ms.gov.br/prazo-aberto-contribua-com-o-novo-curriculo-de-educacao-digital-em-ms/", "note": "Open form involving teachers, principals, and students." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Institutional Portal",
+            "items": [
+              { "label": "SED-MS Publications", "url": "https://www.sed.ms.gov.br/institucional/publicacoes/" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Educational Robotics", "body": "Active in selected schools with assembly and programming kits. In November 2025, SED expanded robotics training to more teachers, with practical projects such as cleaning robots and other prototypes developed by students." },
+          { "type": "paragraph", "heading": "Full-Time Schools (Tempo Integral)", "body": "**213 of 352 schools** operate in full-time mode, with an extended daily schedule that facilitates the incorporation of technology projects into school routines." },
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "Favorable Connectivity Context",
+            "body": "95% of households in Mato Grosso do Sul have internet access (PNAD 2024, cited in the Digital Curriculum), signaling a favorable context for digital implementation. The state network has not published specific Wi-Fi coverage data by school."
+          },
+          { "type": "paragraph", "heading": "Devices", "body": "No large-scale individual device purchase program for students. Schools operate with computer labs and personal devices with guided pedagogical use." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAEMS", "body": "Annual assessment covering Portuguese, Mathematics, and Written Production in Grade 2, 5, and 9 EF and HS Year 3. In 2025, contextual questionnaires for Grade 5 students and teachers were introduced (school climate, infrastructure, and pedagogical practices). Digital competencies are not directly assessed. Public results by school, municipality, and CRE." },
+          { "type": "paragraph", "heading": "IDAMS and IQE-MS", "body": "Indices derived from SAEMS — IDAMS (Learning Development) and IQE-MS (Education Quality by municipality). Both publicly available via portal." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Computing-Specific Assessment",
+            "body": "No standardized instrument exists for computing competencies. The Digital Curriculum calls for assessment integrated into regular disciplines. The SAEMS contextual questionnaires collect teacher perceptions on infrastructure and practices, but with no specific focus on computing."
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portals",
+            "items": [
+              { "label": "Portal SAEMS", "url": "https://www.sed.ms.gov.br/saems/" },
+              { "label": "Consulta de resultados por escola (SAIEMS)", "url": "https://saiems.sed.ms.gov.br/Comum/ResultadosDaEscola/ConsultarResultado" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",

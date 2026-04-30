@@ -468,7 +468,7 @@
     "shortSummary": "No standalone computing in the common curriculum yet — DCRC Computing Complement in homologation for 2026. Main tech front: 131 vocational schools (EEEPs) with IT courses, 228k tablets delivered in 2024, and Brazil's longest-running state assessment (SPAECE since 1992).",
     "summary": "No standalone computing subject exists — the DCRC Computing Complement completed public consultation in Dec/2025 and is pending homologation for transversal implementation in 2026. The state stands out for massive device investment (228,000 tablets in 2024) and SPAECE, Brazil's longest-running external assessment system.",
     "details": [
-      { "icon": "BookOpen",     "label": "Subject",              "text": "No standalone subject — BNCC Computação transversal to regular disciplines (2026)" },
+      { "icon": "BookOpen",     "label": "Subject",              "text": "No standalone subject" },
       { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h standalone" },
       { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal" },
       { "icon": "FileText",     "label": "Curriculum Framework", "text": "DCRC (2021) + Complemento ao DCRC — Computação (homologation pending 2026)" },
@@ -491,6 +491,44 @@
       "maturityYear": 2021,
       "maturityRange": "Early Adopter (2020–2021)",
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software"]
+    }
+  },
+  "Mato Grosso do Sul": {
+    "availability": {
+      "score": 3.8,
+      "label": "Proactive and Open",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.83, "outOf": 1, "note": "REE/MS Reference Curriculum (EF and EM) is public. Digital, Media and Computational Education Curriculum published Dec/2025 as an open PDF — one of the few state computing documents already homologated in Brazil. SAEMS has public results by school. Gap: practical teaching materials still in development." },
+        { "dimension": "Stability",    "score": 4,    "outOf": 5, "note": "SED-MS portal stable and well-organized. Curriculum documents accessible via direct links. SAIEMS portal functional." },
+        { "dimension": "Granularity",  "score": 3,    "outOf": 5, "note": "The Digital Curriculum maps the three BNCC Computação axes with focus on transversality, digital rights, and digital inclusion. Active educational robotics with documented teacher training. Skills mapped by year and specific teaching materials not yet published." }
+      ]
+    },
+    "shortSummary": "Launched the Digital, Media and Computational Education Curriculum in Dec/2025 — one of the few state computing documents already homologated in Brazil, built via public consultation. Transversal approach across all EF and EM subjects, with robotics in selected schools.",
+    "summary": "No standalone computing subject exists — the state launched in December 2025 the Digital, Media and Computational Education Curriculum, one of the few state-specific computing documents already published in Brazil, built through public consultation with teachers, principals, and students. The approach is transversal across all EF and EM subjects, with educational robotics active in selected schools as a practical complement.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "No standalone subject" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h standalone" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Currículo da Educação Digital, Midiática e Computacional (Res. CNE/CEB nº 2/2025)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "Transversal implementation starting 2026" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "2026" }
+    ],
+    "scope": { "from": 1, "to": 12, "fromLabel": "Elementary School", "toLabel": "High School" },
+    "deepDiveId": "ms-deep-dive",
+    "meta": {
+      "abbr": "MS",
+      "region": "Central-West",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": ["Transversal"],
+      "adminScope": ["Elementary School (K-5)", "Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "Laboratory",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "No Assessment",
+      "maturityYear": 2025,
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Robotics & Hardware"]
     }
   },
   "Rio de Janeiro": {
