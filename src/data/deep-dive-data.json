@@ -975,6 +975,95 @@
       }
     ]
   },
+  "Ceará": {
+    "sectionId": "ce-deep-dive",
+    "svgId": "ce",
+    "glance": [
+      { "icon": "School",        "value": "755",          "label": "State Schools (131 EEEPs, 382 EEMTIs)" },
+      { "icon": "GraduationCap", "value": "~390,000",     "label": "HS Students (3rd best Ideb 2023)" },
+      { "icon": "Users",         "value": "Multidisc.",   "label": "Teacher Profile" },
+      { "icon": "Globe",         "value": "SEDUC-CE",     "label": "portal", "url": "https://www.seduc.ce.gov.br", "urlDisplay": "seduc.ce.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "heading": "Context",
+            "body": "In regular EM and EEMTIs, computing is being incorporated transversally from 2026 via the DCRC Complement (pending homologation). In **EEEPs** (131 vocational schools), computing is taught in depth through technical courses integrated into High School. The three axes below reflect both what is anticipated in the DCRC Complement and what is already practiced in EEEPs and EEMTI electives."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, algorithms, programming, and problem-solving; in EEEPs, deepen systems development, networking, and computer graphics in a professional context.", "EEEPs: practical IT labs with technical projects and paid internship (6,000 partner companies); EEMTIs: thematic electives; regular EM: transversal integration from 2026.", "Tablets (228,000 distributed in 2024), EEEP computer labs, Google Workspace, Scratch."],
+              ["Digital World & Infrastructure", "Understand how networks, operating systems, cloud computing, and digital security work; develop practical IT skills for the job market (EEEPs).", "Curso Técnico em Redes de Computadores (EEEPs): hands-on lab practice; pedagogical use of tablets and devices in EEMTIs and regular EM.", "Tablets, network equipment (EEEP labs), Google Workspace, digital platforms."],
+              ["Digital Culture & Ethics", "Critically analyze the social impact of technologies; develop digital citizenship and responsible, ethical media use in the Ceará context.", "Integrated into regular disciplines and Projeto de Vida in EEMTIs; discussions on guided pedagogical cell phone use (Ceará Educa Mais); thematic electives.", "Tablets, cell phones with guided pedagogical use, Google Workspace."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Documents (Public Access)",
+            "items": [
+              { "label": "Documento Curricular Referencial do Ceará (DCRC, 2021)", "url": "https://www.seduc.ce.gov.br/wp-content/uploads/sites/37/2022/01/dcrc_completo_v14_09_2021.pdf", "note": "Base document for the entire network, aligned with BNCC. No explicit computing skills — Complement in development." },
+              { "label": "Matrizes Curriculares 2026", "url": "https://www.seduc.ce.gov.br/2025/12/17/seduc-divulga-matrizes-curriculares-2026/", "note": "Curricular organization for EF and EM for 2026, including BNCC Computação guidelines." },
+              { "label": "Proposta do Complemento ao DCRC — Computação (public consultation Dec/2025–Jan/2026)", "url": "https://www.seduc.ce.gov.br/2025/12/22/seduc-divulga-proposta-de-complementacao-ao-documento-curricular-referencial-do-ceara/", "note": "Document with computing skills for EI and EF. Not yet homologated." },
+              { "label": "Diretrizes para o Ano Letivo 2025", "url": "https://www.seduc.ce.gov.br/wp-content/uploads/sites/37/2025/01/diretrizes_2025.pdf", "note": "Annual pedagogical guidelines with digital education as a key axis of Ceará Educa Mais." }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portals",
+            "items": [
+              { "label": "SPAECE — Resultados históricos (1992–2025)", "url": "https://www.seduc.ce.gov.br/spaece/", "note": "Results by school, Crede, municipality, and state in historical series." },
+              { "label": "Resultados via CAEd/SPAECE", "url": "https://avaliacaoemonitoramentoceara.caeddigital.net/" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "228,000 Tablets Delivered (2024, R$ 100 million)",
+            "body": "In 2024, the government delivered 228,000 tablets to HS Year 1 students across the state network. The goal is for all state public school students to have a tablet. In 2025, an additional 6,034 tablets were delivered to HS Year 1. Devices are for integrated pedagogical use, not just content delivery."
+          },
+          { "type": "paragraph", "heading": "EEEPs — 131 Vocational Schools", "body": "Specialized laboratories for technical courses in **Informática**, **Redes de Computadores**, **Desenvolvimento de Sistemas**, and **Computação Gráfica**. In 2023, R$ 1.6 million was invested in revitalizing labs across all 131 technical courses. Mandatory paid internship in Year 3 with **6,000 partner companies**." },
+          { "type": "paragraph", "heading": "EEMTIs — 382 Full-Time Schools", "body": "7–9h daily schedule with Formative Itineraries, Projeto de Vida, and Electives — including technology electives. Each EEMTI defines its own electives with pedagogical autonomy." },
+          { "type": "paragraph", "heading": "Guided Cell Phone Use (Ceará Educa Mais)", "body": "Ceará chose to guide the pedagogical use of personal cell phones in schools as an access-expansion strategy, rather than banning them — regulated by each school according to its charter." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "The state has not published specific Wi-Fi coverage data for the state network, but EEEPs have quality internet for technical labs. In EEMTIs and regular schools, connectivity is variable." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "SPAECE: Brazil's Longest-Running State Assessment (since 1992)",
+            "body": "Evaluates Portuguese and Mathematics in Grade 2, 5, and 9 EF (state and municipal networks via PAIC) and HS Years 2 and 3 (census-based). Historical public results by school, Crede, and municipality. The Prêmio Escola Nota 10 is linked to SPAECE-Alfa. Digital competencies are not directly assessed."
+          },
+          { "type": "paragraph", "heading": "SPAECE EM 2025", "body": "Applied in October 2025 for HS Years 2 and 3, with preliminary results released in December 2025. High network mobilization: 100% of HS completers enrolled in ENEM 2024 (97,283 students)." },
+          { "type": "paragraph", "heading": "Ceará Científico", "body": "Annual science fair promoted by SEDUC, with regional and state stages. In 2025, **259 projects from 187 schools** participated in four categories, including technology projects. Functions as a showcase for interdisciplinary projects with a technological component." },
+          { "type": "paragraph", "heading": "EEEP Assessment", "body": "Technical courses assessed by technical competencies and mandatory internship. No specific IT course performance results have been published publicly." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "Computing Assessment: Not Yet in Place",
+            "body": "No computing-specific assessment instrument exists. SEDUC acknowledges that Mathematics is still a challenge and that specialized teacher training will be needed — the same challenge will apply to computing when the DCRC Complement is homologated."
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",
