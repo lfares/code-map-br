@@ -1698,6 +1698,97 @@
       }
     ]
   },
+  "Rio Grande do Norte": {
+    "sectionId": "rn-deep-dive",
+    "svgId": "rn",
+    "glance": [
+      { "icon": "School",        "value": "~1,200",       "label": "State Schools" },
+      { "icon": "GraduationCap", "value": "~350,000",     "label": "Students" },
+      { "icon": "Users",         "value": "COINTE",       "label": "16 regional NATEs coordinating" },
+      { "icon": "Globe",         "value": "SEEC-RN",      "label": "portal", "url": "https://www.seec.rn.gov.br", "urlDisplay": "seec.rn.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "heading": "Context",
+            "body": "The **DCEC/RN** (Mar/2026) maps the three BNCC Computação axes for all Basic Education, with transversal implementation in the state network and an option for a dedicated subject in municipal networks. The Innovation Hubs deepen practice with maker labs, robotics, and audiovisual production. COINTE coordinates implementation via 16 regional NATEs."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, algorithms, and problem-solving; prototyping in maker labs with 3D printers, laser cutters, and robotics kits.", "Transversal approach integrated into regular disciplines; maker labs in Innovation Hubs; RIEH for hybrid methodologies.", "Robotics kits, 3D printers, laser cutters, prototyping and electronics tools (Innovation Hubs)."],
+              ["Digital World & Infrastructure", "Understand how networks, devices, cloud computing, and AI work; develop digital authorship and production skills.", "Pedagogical use of Chromebooks and notebooks; audiovisual production via Innovation Hubs; RIEH integrating in-person and digital.", "Chromebooks (2,800), teacher notebooks (2,300), AVAMEC (MEC), RIEH platforms."],
+              ["Digital Culture & Ethics", "Develop digital citizenship, ethical and responsible use of technology; combat misinformation; understand LGPD and data protection; apply Lei nº 11.673.", "Integrated into regular disciplines; debates on safe technology and social media use; teacher training via COINTE and NATEs.", "Fact-checking tools, secure educational platforms, COINTE guidelines."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum & Legislation (Public Access)",
+            "items": [
+              { "label": "DCEC/RN — Diretrizes Curriculares do Ensino de Computação (Mar/2026)", "url": "https://www.consed.org.br/noticia/rn-consolida-politica-de-educacao-digital-com-novo-curriculo-de-computacao", "note": "Published via CONSED. Public consultation Sept–Oct/2025 with UNDIME-RN. ⚠️ Direct PDF not yet on SEEC portal — check seec.rn.gov.br." },
+              { "label": "Documento Curricular do RN — Ensino Fundamental", "url": "https://observatoriodeeducacao.institutounibanco.org.br/cedoc/detalhe/tf-documento-curricular-do-estado-do-rio-grande-do-norte-ensino-fundamental,abc8d68a-a4d2-4329-b6b0-55d90e23d102" },
+              { "label": "Referencial Curricular do Ensino Médio Potiguar (2022)", "url": "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20211224/752403.htm", "note": "Approved by CEE-RN (Official Gazette Dec 24, 2021)." },
+              { "label": "Lei nº 11.673 — Política de Educação Digital — Cidadania Digital", "url": "https://www.consed.org.br/noticia/rio-grande-do-norte-institui-politica-de-educacao-digital-para-promover-a-cidadania-digital" },
+              { "label": "Lei nº 11.804/2024 — Política Estadual de Educação em Tempo Integral", "url": "https://www.al.rn.leg.br/storage/legislacao/2024/r0yt6kf1ds958xc9somoeb7vfusj6n.pdf" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Platforms & Portals",
+            "items": [
+              { "label": "Escola na Rede (SEEC-RN)", "url": "https://www.escolasnarede.seec.rn.gov.br" },
+              { "label": "SIGEduc — Sistema de Gestão Escolar", "url": "https://sigeduc.rn.gov.br" },
+              { "label": "Portal CAEd/RN — Assessment & Monitoring", "url": "https://avaliacaoemonitoramentoparaiba.caeddigital.net/" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "100% State Schools Connected (Geração Conectada)",
+            "body": "The Geração Conectada program guaranteed broadband internet in all state schools. In 2025, 80.6% of public schools statewide (state + municipal) achieved adequate quality connectivity (ENEC/MEC), with 2,346 schools receiving PDDE-PIEC resources (R$ 6.8 million)."
+          },
+          { "type": "paragraph", "heading": "Devices", "body": "**2,300 notebooks** for teachers and **2,800 Chromebooks** distributed to state schools via Geração Conectada." },
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "4 Innovation Hubs — 1st in Brazil (Apr/2024)",
+            "body": "Equipped with 3D printers, laser cutters, robotics kits, woodworking, electronics, and prototyping materials. Units: Natal (Apr/2024 — first in Brazil), Pau dos Ferros (Jul/2025), Caicó (Nov/2025), Mossoró (planned 2026)."
+          },
+          { "type": "paragraph", "heading": "RIEH (Rede de Inovação para Educação Híbrida)", "body": "Three RIEH units implemented in RN in partnership with the Federal Government, strengthening methodologies that integrate in-person and digital learning." },
+          { "type": "paragraph", "heading": "COINTE & NATEs", "body": "**COINTE** (Coordenadoria de Inovação e Tecnologias Educacionais), created in 2024, is responsible for articulating the digital education policy — continuing training, infrastructure, and pedagogical materials — via **NATEs** (Núcleos de Apoio em Tecnologia Educacional) across 16 Regional Directorates." },
+          { "type": "paragraph", "heading": "Full-Time Schools", "body": "15,232 new full-time enrollments funded by FUNDEB Oct/2025–Jan/2026 (R$ 60.2 million federal). HS dropout rate fell from 10.2% (2023) to 7.7% (2024)." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAEPE-RN", "body": "Annual assessment in Portuguese and Mathematics for the state network. Public results via CAEd portal. Digital competencies are not directly assessed." },
+          { "type": "paragraph", "heading": "SAEB", "body": "RN participates in the national SAEB. Pé-de-Meia benefited 89,800 students in 2025 (69.7% of public network students). Public results via INEP." },
+          { "type": "paragraph", "heading": "Computing Assessment", "body": "The DCEC/RN (Mar/2026) calls for procedural and formative assessment integrated into regular disciplines. No specific external standardized instrument for computing." },
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "Participatory Process as Structural Feedback",
+            "body": "The DCEC/RN was built via public consultation (Sept–Oct/2025) involving educators, principals, students, researchers, and civil society — making the construction process itself a form of structured feedback. Secretary Socorro Batista stated: 'We are building a collective document.' COINTE is the dedicated institutional body for monitoring digital education implementation via 16 regional NATEs."
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",
