@@ -1614,6 +1614,90 @@
       }
     ]
   },
+  "Paraíba": {
+    "sectionId": "pb-deep-dive",
+    "svgId": "pb",
+    "glance": [
+      { "icon": "School",        "value": "597",          "label": "State Schools (50% full-time HS)" },
+      { "icon": "GraduationCap", "value": "~200,000",     "label": "Students" },
+      { "icon": "Users",         "value": "Multidisc.",   "label": "Teacher Profile" },
+      { "icon": "Globe",         "value": "SEE-PB",       "label": "portal", "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-educacao-e-da-ciencia-e-tecnologia", "urlDisplay": "paraiba.pb.gov.br/educacao" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Published Computing Curriculum",
+            "body": "No standalone computing subject or BNCC Computação complement has been published by SEE-PB as of April 2026. The components below reflect BNCC national expectations, the HS Formative Itinerary catalog, and identified initiatives — without formal state curricular systematization."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning and problem-solving; Computational Thinking Formative Itinerary available as an option in HS for students who choose this track.", "Optional itinerary in HS; transversal approach in regular disciplines in implementation from 2026.", "PbEduca (pedagogical portal with institutional login), school computer labs."],
+              ["Digital World", "Understand how devices, networks, and digital tools work; develop digital authorship skills.", "Pedagogical use of available school devices; integration into regular disciplines.", "PbEduca, computer labs, school digital platforms."],
+              ["Digital Culture & Ethics", "Critically analyze the impact of technologies; develop digital citizenship and ethical media use.", "Transversal approach in regular disciplines; Programa Educação Cidadã Integral (Lei nº 13.533/2024) as citizenship formation reference.", "Digital educational platforms, PbEduca resources."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Documents (Public Access)",
+            "items": [
+              { "label": "Proposta Curricular da Paraíba — EI e EF (ProBNCC-PB)", "url": "https://sites.google.com/see.pb.gov.br/probnccpb/proposta-curricular-ei-e-ef" },
+              { "label": "Proposta Curricular da Paraíba — Ensino Médio", "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-educacao/arquivos/curriculo" },
+              { "label": "Diretrizes Operacionais da Rede Estadual (annual)", "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-educacao/arquivos/diretrizes-operacionais" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Platforms & Assessment",
+            "items": [
+              { "label": "PbEduca — SEE-PB Pedagogical Portal", "url": "https://pbeduca.see.pb.gov.br/", "tag": "(Requires institutional login)", "tagColor": "gray" },
+              { "label": "Portal SAEPE/CAEd", "url": "https://avaliacaoemonitoramentoparaiba.caeddigital.net/" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "Air Conditioning for 452 Schools (target Dec/2026)", "body": "Task force during the 2024/2025 school recess to install air conditioning and upgrade electrical networks across 452 schools — considered a priority for improving conditions for electronic device use in classrooms." },
+          { "type": "paragraph", "heading": "Full-Time Schools", "body": "**Half of 597 state HS schools** operate in full-time mode (35h or 45h per week) — one of the highest proportions in the Northeast. Full-time schools have more favorable structural conditions for incorporating technology." },
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "International Quantum Computing Center (Dec/2025)",
+            "body": "A use agreement was signed between the State Government and the Municipality of João Pessoa to install a quantum computing hub at the Estação das Artes Luciano Agra. This is a science and technology initiative — direct curricular impact on the state network has not yet been publicly documented."
+          },
+          { "type": "paragraph", "heading": "ParaíbaTEC", "body": "Vocational and technology education program linked to PRONATEC, with technical IT courses integrated into HS in approximately one-third of state schools." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "No specific published data on Wi-Fi coverage for the state network. PbEduca requires Google login, suggesting schools have minimum internet access for portal use." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAEPE", "body": "Annual assessment in Portuguese and Mathematics for state and municipal networks. Results via CAEd portal. Digital competencies are not directly assessed." },
+          { "type": "paragraph", "heading": "SAEB", "body": "PB participates in the national SAEB. Public results via INEP." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Computing Assessment",
+            "body": "Computing has no assessment instrument, rubric, grade, or associated result. Without a formal computing curriculum, there is no monitoring mechanism for digital competency implementation."
+          },
+          { "type": "paragraph", "heading": "Programa Educação Cidadã Integral (Lei nº 13.533/2024)", "body": "Structural program organizing full-time schools and diversified activities. Includes citizenship formation, but without specific computing focus documented." },
+          { "type": "paragraph", "heading": "Conexão Mundo", "body": "Exchange and language program connecting students to international experiences — a sign of internationalization, but without direct relation to curricular computing." }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",
