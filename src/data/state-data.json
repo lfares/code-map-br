@@ -835,6 +835,47 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy"]
     }
   },
+  "Roraima": {
+    "availability": {
+      "score": 1.8,
+      "label": "Early Stage",
+      "breakdown": [
+        { "dimension": "Transparency",    "score": 0.33, "outOf": 1, "note": "Referencial Curricular RR (EF + EM) accessible via MEC portal. Seed-RR site functional but limited pedagogical content. No published BNCC Computação complementary document. IERR discussion rounds (Oct/2025) and AI training referenced in news without public content documentation." },
+        { "dimension": "Curriculum",      "score": 0.5,  "outOf": 1, "note": "Referencial Curricular RR EF + EM accessible via MEC; no published computing complement." },
+        { "dimension": "Materials",       "score": 0.0,  "outOf": 1, "note": "No published computing pedagogical materials; IERR without public documentation of a formal program." },
+        { "dimension": "Assessment",      "score": 0.5,  "outOf": 1, "note": "SAERR with partially public results via CAEd; SAEB public; no computing-specific assessment." },
+        { "dimension": "Stability",       "score": 2.0,  "outOf": 5, "note": "Seed-RR portal functional but sparse content. Referencial links accessible via MEC. IERR portal active for selective processes but without visible pedagogical content." },
+        { "dimension": "Granularity",     "score": 1.0,  "outOf": 5, "note": "No mapped skills, no formal program, no complementary document. The 2025 selective process includes 'Educational Technology Technician' role, and IERR discussion rounds indicate incipient movement — but no published curricular systematization." }
+      ]
+    },
+    "shortSummary": "No standalone computing subject or published complementary document. IERR and Seed held discussion rounds on BNCC Computação in Oct/2025, with AI teacher training as initial strategy. 2025 selective process included 'Educational Technology Technician' among 1,654 vacancies.",
+    "summary": "No standalone computing subject or published complementary document exists. In October 2025, IERR and Seed held discussion rounds on BNCC Computação challenges, and AI teacher training was adopted as an initial strategy. The 2025 selective process included an 'Educational Technology Technician' position among 1,654 vacancies offered. BNCC Computação is in debate and structuring phase, with no state curricular document published as of April 2026.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "No standalone subject" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h standalone" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "In definition — AI teacher training as initial strategy" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Referencial Curricular de Roraima without published computing state complement" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "0% — in debate and structuring phase" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "2026 — no specific state normative act published as of Apr/2026" }
+    ],
+    "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "rr-deep-dive",
+    "meta": {
+      "abbr": "RR",
+      "region": "North",
+      "networkSize": "Small (up to 500 schools)",
+      "deliveryModel": ["Transversal"],
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "N/A (Not found)",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "Low-tech (Teacher's computer or projector only)",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "No Assessment",
+      "maturityYear": 2026,
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,

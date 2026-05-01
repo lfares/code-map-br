@@ -1878,6 +1878,110 @@
       }
     ]
   },
+  "Roraima": {
+    "sectionId": "rr-deep-dive",
+    "svgId": "rr",
+    "glance": [
+      { "icon": "School",       "label": "State Schools", "value": "~370" },
+      { "icon": "Users",        "label": "Students",      "value": "79,189" },
+      { "icon": "GraduationCap","label": "Teacher Profile","value": "Multidisciplinary" },
+      { "icon": "Globe",        "label": "Portal",        "value": "educacao.rr.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Roraima has no standalone computing discipline. In October 2025, IERR and Seed held discussion rounds on BNCC Computação challenges, and AI teacher training was adopted as an initial entry strategy. No formal curricular systematization has been published. The components below reflect BNCC national expectations and the initiatives identified so far."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "No state curricular complement for computing has been published. Identified initiatives — IERR discussion rounds (Oct/2025) and AI teacher training — remain without public documentation of content or scope."
+          },
+          {
+            "type": "table",
+            "headers": ["Component", "Level", "Status"],
+            "rows": [
+              ["Computational Thinking", "MS + HS", "Transversal — embedded; unplugged activities especially in indigenous schools"],
+              ["Digital Culture & AI",   "MS + HS", "AI teacher training via IERR as initial strategy; computer labs in Boa Vista urban schools"],
+              ["Digital Culture & Ethics","MS + HS", "Transversal in regular subjects; cybersecurity center under discussion"],
+              ["Programming / Robotics", "—",        "Not formally offered"]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "red",
+            "text": "No state-authored computing curriculum or teacher guide has been published. The IERR has no public documentation of a formal computing program."
+          },
+          {
+            "type": "paragraph",
+            "text": "The Referencial Curricular de Roraima (EF and EM) is accessible via the MEC portal but contains no dedicated computing complement. The Seed-RR portal is functional but pedagogically sparse. IERR manages all teacher training and selective processes, making it the central actor for any future computing policy implementation."
+          },
+          {
+            "type": "links",
+            "items": [
+              { "label": "Seed-RR Portal", "url": "https://educacao.rr.gov.br" },
+              { "label": "IERR (Instituto de Educação de Roraima)", "url": "https://www.ierr.edu.br" },
+              { "label": "Referencial Curricular RR — MEC", "url": "https://basenacionalcomum.mec.gov.br/implementacao/curriculos/documento-curricular-por-estado" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure & Teaching",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "Connectivity is a significant barrier. Indigenous schools (Terra Indígena Yanomami, Raposa Serra do Sol) have virtually no connectivity. Urban Boa Vista schools have computer labs but without systematic Wi-Fi coverage."
+          },
+          {
+            "type": "paragraph",
+            "text": "The state network has not made a mass device purchase for students. Boa Vista urban schools have rotating-use computer labs. The inclusion of an 'Educational Technology Technician' role in the 2025 selective process (1,654 vacancies total) signals intent to strengthen technical school support."
+          },
+          {
+            "type": "paragraph",
+            "text": "A notable feature of Roraima's network: the state assumes full responsibility for Middle School Years (6th–9th grade) across all 15 municipalities — municipalities only manage Early Years (1st–5th). Indigenous bilingual schools operated by Seed with separately contracted indigenous teachers add further complexity to any technology rollout."
+          },
+          {
+            "type": "paragraph",
+            "text": "In October 2024, the state government discussed implementing a Cybersecurity Center to monitor network traffic and data protection in schools — signaling growing concern with digital infrastructure, independent of the computing curriculum debate."
+          }
+        ]
+      },
+      {
+        "title": "Assessment & Accountability",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Roraima participates in SAEB (historically one of the lowest IDEB scores in Brazil) and administers the SAERR (Sistema de Avaliação da Educação de Roraima) in Portuguese and Mathematics, with results partially available via CAEd. Neither assessment covers computing or digital competencies."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "No computing-specific assessment exists. There are no published learning outcomes or benchmarks for digital competencies at the state level."
+          },
+          {
+            "type": "paragraph",
+            "text": "The IERR's October 2025 discussion rounds on BNCC Computação represent the only documented public movement toward implementation. IERR manages all teacher selective processes, making it the institutional gateway for any future computing teacher certification or AI training program."
+          },
+          {
+            "type": "links",
+            "items": [
+              { "label": "SAERR — CAEd/RR Portal", "url": "https://avaliacaoemonitoramentororaima.caeddigital.net/" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",
