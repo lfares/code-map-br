@@ -1336,6 +1336,96 @@
       }
     ]
   },
+  "Sergipe": {
+    "sectionId": "se-deep-dive",
+    "svgId": "se",
+    "glance": [
+      { "icon": "School",        "value": "319",          "label": "State Schools (146 full-time)" },
+      { "icon": "GraduationCap", "value": "139,723",      "label": "Students (2026)" },
+      { "icon": "Users",         "value": "~300",         "label": "Teachers trained in tech & AI (Jan/2026)" },
+      { "icon": "Globe",         "value": "Seed-SE",      "label": "portal", "url": "https://seduc.se.gov.br", "urlDisplay": "seduc.se.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "heading": "Context",
+            "body": "The **Caderno Complementar BNCC Computação** (2025) maps the three axes transversally for the entire network from early childhood to high school. In full-time schools, **'Educação, Cultura Digital e Inteligência Artificial'** is a standalone component in Grade 6/7 EF and HS Year 2 from 2026, focused on digital security, data protection, and applied AI."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, algorithms, and problem-solving; understand prototyping and digital fabrication. In full-time schools: deepen programming and applied computational logic.", "Plugged and unplugged activities integrated into disciplines; standalone component in full-time schools; Maker labs with 3D printers in excellence schools.", "Tablets (71,000 distributed), computer labs, tech carts (30 notebooks each), 3D printers (Makers)."],
+              ["Digital World & AI", "Understand how networks, the internet, cloud computing, and AI work; develop digital authorship skills and critical use of AI tools. In full-time schools: specific AI component in Grade 6/7 EF and HS Year 2.", "Standalone 'Educação, Cultura Digital e IA' component in full-time schools; pedagogical use of tablets and labs; AVA Escolar for content production and curation by teachers.", "Tablets, AVA Escolar, modernized computer labs, fiber optic in 100% of schools."],
+              ["Digital Culture & Ethics", "Develop digital citizenship, ethical and safe technology use; combat misinformation; understand LGPD and data protection; apply ECA Digital (Lei nº 15.211/2025).", "Debates integrated into Portuguese, History, and Humanities; 'Ser Cidadão' program for digital ethics and coexistence; ECA Digital protection protocols.", "Secure digital platforms, fact-checking tools, Ser Cidadão program."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Documents (Public Access)",
+            "items": [
+              { "label": "Caderno Complementar BNCC Computação — Currículo de Sergipe (2025)", "url": "https://seduc.se.gov.br/curriculo-de-sergipe/", "note": "Published in partnership with UNDIME/SE; skills mapped across three axes from EI to EM. Referenced on portal — no direct PDF download link." },
+              { "label": "Resolução CEE/SE nº 98/2025 — Autorizes BNCC Computação implementation", "url": "https://seduc.se.gov.br/curriculo-de-sergipe/" },
+              { "label": "Currículo de Sergipe — Ensino Fundamental (direct download)", "url": "https://seduc.se.gov.br/curriculo-de-sergipe/" },
+              { "label": "Currículo de Sergipe — Ensino Médio (direct download)", "url": "https://seduc.se.gov.br/download/curriculo-de-sergipe-ensino-medio/" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Pedagogical Platforms",
+            "items": [
+              { "label": "AVA Escolar — Virtual Learning Environment", "url": "https://seduc.se.gov.br", "note": "Content produced and curated by state public school teachers, accessible to students and teachers." },
+              { "label": "Portal de Matrícula Online", "url": "https://matriculaonline.seduc.se.gov.br/Portal" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "100% Fiber Optic Connectivity (Censo Escolar 2026)",
+            "body": "All 319 state schools are connected via fiber optic with managed secure Wi-Fi, confirmed by the 2026 School Census — one of the few Brazilian states to reach this milestone. Connectivity organized across three axes: broadband internet, secure Wi-Fi with attack protection, and device delivery."
+          },
+          { "type": "paragraph", "heading": "71,000 Tablets for HS Students (R$ 57 million)", "body": "Distribution launched in 2025 for all high school students in the state network. By Jan/2026, 60,000+ devices delivered to 135 schools. Target: completion in 2026." },
+          { "type": "paragraph", "heading": "Tech Carts", "body": "56 schools without a physical computer lab received **carts with 30 notebooks each**, ensuring technology access in any classroom." },
+          { "type": "paragraph", "heading": "Maker Labs", "body": "Excellence schools receive labs with **3D printers**, integrated into Science, robotics, and technology projects. In Jan/2026, robot presentations were a highlight of the annual Jornada Pedagógica." },
+          { "type": "paragraph", "heading": "Full-Time Schools", "body": "**146 schools (46% of network)** in 7–9h daily schedules, with 'Digital Education' as a mandatory curricular component and 'Educação, Cultura Digital e IA' as a standalone component from 2026 in Grade 6/7 EF and HS Year 2." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAESE", "body": "Annual assessment covering Portuguese and Mathematics, with public results by school. Full-time schools achieved **97.4% approval rate in 2024**, with consistent ENEM/SISU growth. Digital competencies are not directly assessed." },
+          { "type": "paragraph", "heading": "SAEB", "body": "SE participates in the national SAEB. Full-time schools show consistent improvement in SAEB and ENEM indicators. Public results via INEP and QEdu." },
+          { "type": "paragraph", "heading": "Assessment in Full-Time Schools", "body": "The 'Educação, Cultura Digital e IA' component is assessed procedurally by teachers, integrated into the full-time school curricular matrix. No standardized public instrument exists." },
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "Teacher Development: International Investment",
+            "body": "The 'Sergipe no Mundo' program — which sends teachers abroad — now includes a Technology axis with destinations China, Singapore, and Silicon Valley. ~300 teachers completed technology and AI training by Jan/2026. Teachers from the South DRE reported 2,000+ students participating in digital media and computer maintenance courses in 2025."
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portal",
+            "items": [
+              { "label": "Portal SAESE/CAEd", "url": "https://avaliacaoemonitoramentosergipe.caeddigital.net/" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",

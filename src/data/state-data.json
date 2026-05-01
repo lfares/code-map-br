@@ -607,6 +607,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy"]
     }
   },
+  "Sergipe": {
+    "availability": {
+      "score": 4.0,
+      "label": "Published and Connected",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.83, "outOf": 1, "note": "Currículo de Sergipe (EF and EM) is public with direct download. BNCC Computação Supplementary Booklet published in 2025 with mapped skills EI to EM. Res. CEE nº 98/2025 available. Gap: Supplementary Booklet referenced but no direct PDF download link." },
+        { "dimension": "Stability",    "score": 4,    "outOf": 5, "note": "Seed-SE portal stable and well-organized. Curriculum links functional. Online enrollment portal operational. AVA Escolar accessible." },
+        { "dimension": "Granularity",  "score": 4,    "outOf": 5, "note": "Supplementary Booklet maps skills across three axes EI to EM. In full-time schools, 'Educação, Cultura Digital e IA' is a standalone component in Grade 6/7 EF and HS Year 2 (2026). 2026 public hiring includes specific Computing/IT teacher role." }
+      ]
+    },
+    "shortSummary": "Published the BNCC Computação Supplementary Booklet in 2025 (EI to EM). Full-time schools (46% of network) have 'Digital Education & AI' as standalone component from 2026. 100% fiber optic connectivity and 71k tablets for HS students.",
+    "summary": "Published in 2025 the BNCC Computação Supplementary Booklet in partnership with UNDIME/SE, with mapped skills across three axes from early childhood to high school. In full-time schools, 'Education, Digital Culture and Artificial Intelligence' is a standalone component from 2026. Infrastructure is strong: 100% of 319 schools with fiber optic, 71,000 tablets for high school students, and mobile tech carts for schools without fixed labs.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Educação, Cultura Digital e IA (Grades 6,7, and 11) for full-time schools" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "Full-time schools: defined per unit matrix | Regular: 0h standalone" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal (regular network) + Standalone component (full-time schools)" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Currículo de Sergipe (Res. CEE nº 4/2018) + Caderno Complementar BNCC Computação (Res. CEE/SE nº 98/2025)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "100% implemented" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "2025 (Res. CEE nº 98/202)" }
+    ],
+    "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "se-deep-dive",
+    "meta": {
+      "abbr": "SE",
+      "region": "Northeast",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": ["Mandatory for all students", "Transversal"],
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "1:1 Devices/Chromebooks",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "Project-Based (Artifacts)",
+      "maturityYear": 2025,
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,
