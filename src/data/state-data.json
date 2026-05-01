@@ -810,12 +810,12 @@
     "shortSummary": "No computing curriculum published. Well-structured base curriculum (RCA EF and EM) and institutionalized NTE, but no public technology education program documented. One of Brazil's lowest school connectivity rates — indigenous, quilombola, and riverside communities largely offline.",
     "summary": "No standalone computing subject or BNCC Computação complementary document has been published. The state has a well-structured base curriculum (RCA EF and EM) and an institutionalized NTE, but no formally documented public technology education program. Challenges are structural: Amapá's school connectivity is among the lowest in Brazil, with indigenous and riverside communities still largely offline, and the network has not made a large-scale device purchase for students.",
     "details": [
-      { "icon": "BookOpen",     "label": "Subject",              "text": "No standalone subject — BNCC Computação without state complementary document published" },
+      { "icon": "BookOpen",     "label": "Subject",              "text": "No standalone subject" },
       { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h standalone" },
-      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal (in implementation 2026) — no formal published definition" },
-      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Referencial Curricular Amapaense EF (2019) + EM (2022) + BNCC Computação (mandatory from 2026, no state complement published)" },
-      { "icon": "BarChart2",    "label": "Implementation Status","text": "BNCC Computação without published complement; NTE active without public program documentation" },
-      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "2026 — BNCC Computação mandatory (no specific state normative act published as of Apr/2026)" }
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Referencial Curricular Amapaense without CS complement)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "0%" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "2026 — no specific state normative act published as of Apr/2026" }
     ],
     "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
     "deepDiveId": "ap-deep-dive",
