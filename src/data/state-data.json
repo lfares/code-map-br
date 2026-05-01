@@ -569,6 +569,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware"]
     }
   },
+  "Alagoas": {
+    "availability": {
+      "score": 2.5,
+      "label": "Declared but Undetailed",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.5,  "outOf": 1, "note": "ReCAL is referenced on Escola@Web but no direct open PDF link. BNCC Computação declared as pillar in Portaria 1.133/2026 but no complementary document published. EsCriPITEs cited without detailed public documentation." },
+        { "dimension": "Stability",    "score": 2,    "outOf": 5, "note": "SEDUC-AL main portal has fragmented navigation. Escola@Web is the more organized pedagogical portal but mostly for internal network access. Document links frequently lead to pages without loaded content." },
+        { "dimension": "Granularity",  "score": 2,    "outOf": 5, "note": "BNCC Computação declared as transversal pillar for 2026 with theme 'Culture, Territories and Alagoana Identities in the Digital Age', but no skills mapped by grade, specific teaching materials, or published complementary document." }
+      ]
+    },
+    "shortSummary": "BNCC Computação declared as transversal pillar for 2026 under the theme 'Alagoana Identities in the Digital Age', but no curriculum document published. EsCriPITEs are the main innovation hubs. One of Brazil's lowest school connectivity rates.",
+    "summary": "No standalone computing subject exists. BNCC Computação was declared a transversal pillar for the 2026 school year (Portaria nº 1.133/2026), under the central theme 'Culture, Territories and Alagoana Identities in the Digital Age,' but with no complementary document or published teaching materials. The EsCriPITEs are the network's main innovation hubs for teacher training and investigative practices, but without universal coverage. Digital infrastructure is limited — Alagoas has one of the lowest rates of school connectivity in Brazil.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "No standalone subject" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h standalone" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal + EsCriPITEs as complementary innovation spaces" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "ReCAL EF and EM (2019/2021) + Portaria nº 1.133/2026 (BNCC Computação as school year pillar)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "Transversal implementation declared for 2026" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "2026 (Portaria nº 1.133/2026)" }
+    ],
+    "scope": { "from": 1, "to": 12, "fromLabel": "Elementary School", "toLabel": "High School" },
+    "deepDiveId": "al-deep-dive",
+    "meta": {
+      "abbr": "AL",
+      "region": "Northeast",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": ["Transversal"],
+      "adminScope": ["Elementary School (K-5)", "Middle School (6-9)", "High School"],
+      "materialTransparency": "Restricted (Login)",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "Low-tech (Teacher's computer or projector only)",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "No Assessment",
+      "maturityYear": 2026,
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,

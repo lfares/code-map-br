@@ -1252,6 +1252,90 @@
       }
     ]
   },
+  "Alagoas": {
+    "sectionId": "al-deep-dive",
+    "svgId": "al",
+    "glance": [
+      { "icon": "School",        "value": "~690",         "label": "State Schools" },
+      { "icon": "GraduationCap", "value": "~148,000",     "label": "State Network Students" },
+      { "icon": "Users",         "value": "Multidisc.",   "label": "Teacher Profile" },
+      { "icon": "Globe",         "value": "SEDUC-AL",     "label": "portal", "url": "https://www.educacao.al.gov.br", "urlDisplay": "educacao.al.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Published Computing Curriculum",
+            "body": "There is no standalone computing subject and no state-specific complement to BNCC Computação published as of April 2026. The components below reflect what is declared in Portaria nº 1.133/2026 and the transversal approach being incorporated into regular disciplines."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning, problem-solving, and algorithms integrated into regular disciplines; investigative practices in EsCriPITEs.", "Plugged and unplugged activities in regular disciplines; experimentation workshops in EsCriPITEs; transdisciplinary approach guided by the Guia de Abordagem Transdisciplinar (GAT).", "EsCriPITEs, unplugged activities, available computer labs."],
+              ["Digital World", "Understand the use of devices and networks in daily life; develop digital authorship skills integrated into disciplines.", "Pedagogical use of available school devices; exploration of SAGEAL as a digital management tool for school principals.", "Available school devices, SAGEAL (digital school management system)."],
+              ["Digital Culture & Ethics", "Critically analyze the impact of technologies; develop digital citizenship with Alagoana identity — connecting indigenous, quilombola, and Afro-Brazilian culture to the digital context.", "Debates integrated into History, Portuguese Language, and Humanities; anti-racist approach and territorial identity valorization in the digital context.", "Available digital resources, cultural content production platforms."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "red",
+            "heading": "Limited Public Access to Curriculum Documents",
+            "body": "The ReCAL is referenced on the Escola@Web portal but direct open PDF links are not publicly available. Curricular matrices and pedagogical notebooks are concentrated on Escola@Web, which is primarily for internal network access. The Portaria nº 1.133/2026 is available in the Official Gazette."
+          },
+          {
+            "type": "links",
+            "heading": "Publicly Referenced Documents",
+            "items": [
+              { "label": "SEDUC-AL — ReCAL (search 'Referencial Curricular')", "url": "https://www.educacao.al.gov.br", "note": "Referenced but without a direct open PDF link." },
+              { "label": "Escola@Web — Pedagogical Portal (internal network access)", "url": "https://escolaweb.educacao.al.gov.br", "note": "Curricular matrices, pedagogical notebooks, guides, and teaching materials for the state network." },
+              { "label": "Portaria nº 1.133/2026 — 2026 School Year Guidelines", "url": "https://www.educacao.al.gov.br", "note": "Establishes BNCC Computação as a transversal pillar. Available in the Official Gazette of Alagoas (Jan/2026)." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          { "type": "paragraph", "heading": "EsCriPITEs", "body": "Physical innovation spaces installed in selected state schools, with scheduling for recordings, training sessions, and experimentation workshops. They function as teacher training hubs and investigative practice spaces for students. The exact number of units and network coverage have not been officially published." },
+          {
+            "type": "alert",
+            "variant": "red",
+            "heading": "One of Brazil's Lowest School Connectivity Rates",
+            "body": "According to Censo Escolar 2024, only ~72% of Alagoas public schools have internet access, with adequate speed in an even smaller proportion. The federal Escolas Conectadas program plans connectivity expansion in the state, but no timeline has been published by SEDUC-AL."
+          },
+          { "type": "paragraph", "heading": "Devices", "body": "The state network has not made a large-scale device purchase for students. Schools operate with computer labs with equipment of varying ages. The Moderniza Seduc program focuses on furniture and basic equipment for full-time schools." },
+          { "type": "paragraph", "heading": "SAGEAL", "body": "The **Sistema de Gestão Escolar de Alagoas** requires daily mandatory updates on attendance, enrollment, and school meals. It represents the main digital management infrastructure for the network, but has no direct pedagogical function." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAVEAL", "body": "Annual census-based assessment covering Portuguese and Mathematics in Grade 2, 5, and 9 EF and HS Year 3, covering state and municipal networks (102 municipalities by adhesion). In 2023, evaluated ~148,000 students. Grade 2 results compose the IQEAL, which determines Educational ICMS distribution to municipalities via Programa Escola 10. Digital competencies are not assessed." },
+          {
+            "type": "alert",
+            "variant": "red",
+            "heading": "One of Brazil's Lowest IDEB Scores",
+            "body": "Alagoas scored below 4.0 in the HS IDEB 2023, placing the state among the greatest learning challenges in the country. The historical pattern of educational policy discontinuity — including the ReCAL's 'weakened implementation due to management discontinuity' noted by the Observatório Movimento pela Base (2021) — compounds the challenge of implementing computing education."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Computing Assessment",
+            "body": "Computing has no assessment instrument, rubric, grade, or associated result. The declared transversality of BNCC Computação has no monitoring mechanism described in public documents."
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",
