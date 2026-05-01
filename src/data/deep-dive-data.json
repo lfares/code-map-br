@@ -1878,6 +1878,106 @@
       }
     ]
   },
+  "Rondônia": {
+    "sectionId": "ro-deep-dive",
+    "svgId": "ro",
+    "glance": [
+      { "icon": "School",       "label": "State Schools", "value": "~700" },
+      { "icon": "Users",        "label": "Students",      "value": "~250,000" },
+      { "icon": "GraduationCap","label": "Teacher Profile","value": "Multidisciplinary" },
+      { "icon": "Globe",        "label": "Portal",        "value": "rondonia.ro.gov.br/seduc" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Rondônia has no standalone computing discipline. The BNCC Computação complement is under development following the structured Public Consultation of October 2025. The components below reflect BNCC national expectations and the network initiatives already underway — AI training, robotics, and Medtec."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "The BNCC Computação curricular complement is in development after the Oct/2025 Public Consultation. No state computing document has been published as of April 2026."
+          },
+          {
+            "type": "table",
+            "headers": ["Component", "Level", "Status"],
+            "rows": [
+              ["Computational Thinking & Robotics", "MS + HS", "Robotics projects cited as 2025 network innovation; unplugged activities for schools without connectivity"],
+              ["Digital World & AI",               "MS + HS", "AI teacher training (Feb/2026): 2,000+ professionals — SaferNet + MPRO + Undime partnership"],
+              ["Digital Culture & Ethics",          "MS + HS", "Online AI/education event (Feb/2026): risks, limits, and potential of AI; transversal in regular subjects"],
+              ["Programming",                       "—",       "Not formally offered"]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The Referencial Curricular de Rondônia (EF and EM) is publicly accessible with direct download from the state government portal — one of the most accessible curriculum documents in the North region. No computing-specific complement or pedagogical materials have been published."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "The BNCC Computação complement — result of the Oct/2025 Public Consultation with stage-specific forms — is expected for publication in 2026 but has not yet been released."
+          },
+          {
+            "type": "links",
+            "items": [
+              { "label": "Referencial Curricular RO — Ensino Fundamental", "url": "https://rondonia.ro.gov.br/publicacao/referencial-curricular-do-estado-de-rondonia-ensino-fundamental-anos-iniciais-e-anos-finais/" },
+              { "label": "Referencial Curricular RO — Ensino Médio", "url": "https://rondonia.ro.gov.br/seduc/programas-e-projetos/referenciais-curriculares/referencial-curricular/" },
+              { "label": "Seduc-RO Portal", "url": "https://rondonia.ro.gov.br/seduc" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure & Teaching",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Medtec (Mediação Tecnológica) is a nationally recognized program that guarantees high school access in riverside and indigenous communities via live-streamed classes with an in-person mediating teacher. It serves students in locations where full in-person schooling is unfeasible due to geography and distance — one of the most recognized digital inclusion models in the North."
+          },
+          {
+            "type": "paragraph",
+            "text": "Robotics projects were highlighted as a 2025 network innovation by Seduc, though without published detail on school coverage or kit types. In 2025, over R$ 16 million was invested in school renovations across dozens of schools, improving classrooms, libraries, and common areas. Seduc also monitored all 18 Regional Education Superintendencies (Supers) in 2025, generating field diagnostics on school infrastructure and pedagogical practices."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "No specific data has been published on Wi-Fi coverage across the state network. Medtec presupposes connectivity for class streaming, but the state faces structural challenges in remote, riverside, and indigenous areas."
+          }
+        ]
+      },
+      {
+        "title": "Assessment & Accountability",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Rondônia participates in SAEB and administers SAERO (Sistema de Avaliação da Educação Básica de Rondônia) in Portuguese and Mathematics. In 2025, Rondônia achieved the Selo Ouro de Alfabetização (Proalfa) — national recognition for literacy assessment performance. Over 46,000 state students enrolled in ENEM 2025. Neither assessment covers computing competencies."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "No computing-specific assessment exists. Without a published curricular complement, there are no rubrics, grades, or results associated with digital competencies."
+          },
+          {
+            "type": "paragraph",
+            "text": "The 'Day D' of the BNCC Computação Public Consultation (Oct 28, 2025) was the main mechanism for collecting network feedback on what should be included in the curricular complement. Stage-specific forms were applied to teachers from state, municipal, and private networks — the most structured participatory consultation process on computing identified in the North region."
+          },
+          {
+            "type": "links",
+            "items": [
+              { "label": "SAERO — Results Portal (CAEd)", "url": "https://rondonia.caeddigital.net/" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Roraima": {
     "sectionId": "rr-deep-dive",
     "svgId": "rr",
