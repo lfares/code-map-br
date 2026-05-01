@@ -1523,6 +1523,97 @@
       }
     ]
   },
+  "Maranhão": {
+    "sectionId": "ma-deep-dive",
+    "svgId": "ma",
+    "glance": [
+      { "icon": "School",        "value": "~2,200",       "label": "State Schools" },
+      { "icon": "GraduationCap", "value": "247,180",      "label": "State Students (2025)" },
+      { "icon": "Users",         "value": "Multidisc.",   "label": "Teacher Profile" },
+      { "icon": "Globe",         "value": "Seduc-MA",     "label": "portal", "url": "https://www.educacao.ma.gov.br", "urlDisplay": "educacao.ma.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Published Computing Curriculum",
+            "body": "There is no standalone computing subject and no state-specific BNCC Computação complement published as of April 2026. The components below reflect BNCC national expectations and the isolated initiatives identified — Educa STEAM and NIEH — without formal state curricular systematization."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking", "Develop logical reasoning and problem-solving via STEAM; introduction to digital games and science labs integrated into regular disciplines.", "Educa STEAM program: use of educational technologies, digital games, and science labs; NIEH as teacher training and hybrid content production space.", "Computer labs (via Computadores para Inclusão), NIEH, digital educational games."],
+              ["Digital World & Infrastructure", "Understand how devices, networks, and the internet work; develop digital authorship skills with the distributed tablets.", "Pedagogical use of tablets distributed via Tô Conectado; data chip access for out-of-school use; computer labs in Centros Educa Mais.", "Tablets (250,000 in distribution), teacher notebooks, data chips, computer labs."],
+              ["Digital Culture & Ethics", "Develop digital citizenship and critical use of technologies; integrate digital competencies into regular disciplines.", "Transversal approach in regular disciplines; CEDIP (Ciclo de Escuta e Diálogos Pedagógicos) as a reflection space on pedagogical practices with technology.", "Tablets, digital educational platforms, NIEH."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "red",
+            "heading": "No Open Computing Materials Published",
+            "body": "No computing curriculum, skill maps, or pedagogical materials have been published by the state network. The Educa STEAM program and NIEH are cited in institutional press releases without public content documentation. The capital's municipal network (São Luís) constituted a BNCC Computação working group in May 2025 — indicating the state network has not yet done so formally."
+          },
+          {
+            "type": "links",
+            "heading": "Publicly Accessible Documents",
+            "items": [
+              { "label": "Caderno de Orientações Curriculares para o EM (2023)", "url": "https://www.educacao.ma.gov.br/wp-content/uploads/2023/02/CADERNO-DE-ORIENTACOES-CURRICULARES-PARA-A-REDE-ESTADUAL-.pdf", "note": "EM curricular orientation document. No specific computing section." },
+              { "label": "Portaria nº 164/2025 (SEMED São Luís) — BNCC Computação Working Group (municipal)", "url": "https://diariooficial.saoluis.ma.gov.br/documento/view/35611/portaria-n-1642025-semed", "note": "Indicates São Luís municipal network is moving faster than the state on BNCC Computação formalization." }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "Tô Conectado: 250,000 Devices (R$ 275 million)",
+            "body": "Distribution of ~250,000 tablets with internet access for HS students and notebooks for all state network teachers. Distribution completed in São Luís and ongoing in the interior in 2025–2026. Data chip partnership with the Ministry of Communications for out-of-school access."
+          },
+          { "type": "paragraph", "heading": "NIEH (Núcleo de Inovação e Educação Híbrida)", "body": "Inaugurated in 2025, functions as a studio for hybrid educational content production, teacher training, and innovative methodology development. No public documentation of content or school coverage." },
+          { "type": "paragraph", "heading": "Educa STEAM", "body": "Program encouraging use of educational technologies, digital games, and science labs in state schools, with **8,000+ participants** in the CEDIP (Ciclo de Escuta e Diálogos Pedagógicos) in 2025." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "Connectivity Gap",
+            "body": "92% of MA public schools have internet access, but only 22.9% were monitored with adequate speed for pedagogical use (Estratégia Nacional de Escolas Conectadas, 2023). The federal government plans to universalize connectivity across the state's 10,417 public schools by 2026, with R$ 8.8 billion federal investment."
+          },
+          { "type": "paragraph", "heading": "Infrastructure Renovation", "body": "700 schools renovated or restructured in 2025, including Centros Educa Mais, military colleges, and indigenous schools. Programa Computadores para Inclusão (federal) delivering computer labs to Centros Educa Mais in São Luís and Grande Ilha." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAEMA", "body": "Annual assessment in Portuguese and Mathematics for the state and municipal networks (by adhesion). In 2025, MA achieved 60% in the ICA 2024 (Índice Criança Alfabetizada) — 10th nationally and 4th in the Northeast. Digital competencies are not directly assessed." },
+          { "type": "paragraph", "heading": "SAEB", "body": "MA participates in the national SAEB. Public results via INEP." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "No Computing Assessment",
+            "body": "Computing has no assessment instrument, rubric, grade, or associated result. Without a formal curriculum, there is no monitoring mechanism for digital competency implementation. The Prêmio Escola Destaque awards 70 schools for literacy performance — no technology criterion exists."
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portal",
+            "items": [
+              { "label": "Portal SAEMA/CAEd", "url": "https://avaliacaoemonitoramentomaranhao.caeddigital.net/" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",
