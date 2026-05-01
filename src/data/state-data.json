@@ -569,6 +569,47 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware"]
     }
   },
+  "Acre": {
+    "availability": {
+      "score": 2.5,
+      "label": "Committed but Constrained",
+      "breakdown": [
+        { "dimension": "Transparency",    "score": 0.5,  "outOf": 1, "note": "Currículo do Acre (EF + EM) public via Novo Currículo Acre portal. CEE/AC Resolution nº 667/2025 published — a rare formal normative act in the North. Public consultation held Nov/2025 with online meetings by school stage. Complementary document not yet published as of Apr/2026. Escola Digital platform exists but doesn't render public content." },
+        { "dimension": "Curriculum",      "score": 1.0,  "outOf": 1, "note": "Currículo AC EF + EM public; CEE Resolution nº 667/2025 published; structured public consultation held." },
+        { "dimension": "Materials",       "score": 0.5,  "outOf": 1, "note": "Escola Digital exists as a platform; curricular complement not yet published; computer labs in expansion." },
+        { "dimension": "Assessment",      "score": 0.0,  "outOf": 1, "note": "No state-specific assessment system with open results identified publicly; SAEB public via INEP." },
+        { "dimension": "Stability",       "score": 2.0,  "outOf": 5, "note": "SEE-AC portal functional but limited content. Escola Digital platform (educ.see.ac.gov.br) exists but doesn't render visible public content. Novo Currículo Acre links via Wix work. Lowest school connectivity in Brazil (52.5%) is the biggest structural access barrier." },
+        { "dimension": "Granularity",     "score": 2.0,  "outOf": 5, "note": "CEE Resolution nº 667/2025 is an important normative milestone but without published mapped skills. Public consultation organized by school stage with specific forms. Detei has concrete lab targets for 2026. Complementary curriculum with specific skills not yet published." }
+      ]
+    },
+    "shortSummary": "Published CEE/AC Resolution nº 667/2025, institutionalizing Digital, Media and Computational Education — one of the few formal normative acts in the North. Public consultation held Nov/2025. Lowest school connectivity in Brazil (52.5%); Detei targets 100% lab coverage for HS by 2026.",
+    "summary": "Published CEE/AC Resolution nº 667/2025, which institutionalizes the Digital, Media and Computational Education curriculum — one of the few formal regulatory acts in the North on the subject. A public consultation was held in November 2025 with online meetings by school stage for the entire network. The resulting curricular complement is being developed for 2026. The main challenge is structural: with only 52.5% school connectivity — the worst rate in Brazil — the Detei is betting on computer labs (target: 100% of high schools by 2026) and satellite connectivity for rural and indigenous schools.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "No standalone subject" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "0h standalone" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Transversal in implementation" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Currículo do Acre — Educação Digital, Midiática e Computacional (CEE/AC Resolution nº 667/2025)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "Transversal implementation starting 2026" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "2026" }
+    ],
+    "scope": { "from": 6, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "ac-deep-dive",
+    "meta": {
+      "abbr": "AC",
+      "region": "North",
+      "networkSize": "Medium (500–2,000 schools)",
+      "deliveryModel": ["Transversal"],
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Partial (Some materials public)",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "Low-tech (Teacher's computer or projector only)",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "No Assessment",
+      "maturityYear": 2026,
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy"]
+    }
+  },
   "Alagoas": {
     "availability": {
       "score": 2.5,

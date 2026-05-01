@@ -1252,6 +1252,101 @@
       }
     ]
   },
+  "Acre": {
+    "sectionId": "ac-deep-dive",
+    "svgId": "ac",
+    "glance": [
+      { "icon": "School",       "label": "State Schools", "value": "~530" },
+      { "icon": "Users",        "label": "Students",      "value": "~160,000" },
+      { "icon": "GraduationCap","label": "Teacher Profile","value": "Multidisciplinary" },
+      { "icon": "Globe",        "label": "Portal",        "value": "see.ac.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Acre has no standalone computing discipline. The BNCC Computação complement is under development following the structured Public Consultation of November 2025. CEE/AC Resolution nº 667/2025 formally institutionalizes Digital, Media and Computational Education — one of the few normative regulatory acts on computing in the North region. The components below reflect BNCC national expectations, the Resolution, and identified network initiatives."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "The curricular complement — result of the Nov/2025 public consultation — is expected for 2026 but has not been published. With only 52.5% school connectivity (lowest in Brazil), unplugged approaches are a strategic necessity for most of the network."
+          },
+          {
+            "type": "table",
+            "headers": ["Component", "Level", "Status"],
+            "rows": [
+              ["Computational Thinking", "MS + HS", "Unplugged activities as central strategy; computer labs in expansion (100% HS target by 2026)"],
+              ["Digital World & Infrastructure", "MS + HS", "Satellite connectivity expansion for rural/indigenous schools; Escola Digital platform"],
+              ["Digital Culture & Ethics", "MS + HS", "Transversal in regular subjects; public consultation modeled civic participation in curriculum"],
+              ["Programming / Robotics", "—", "Not formally offered"]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "The Currículo do Acre (EF and EM) is publicly accessible via the Novo Currículo Acre portal. CEE/AC Resolution nº 667/2025, which formally institutionalizes Digital, Media and Computational Education, is published in the State Official Gazette. The Escola Digital platform (educ.see.ac.gov.br) exists but does not render publicly visible content."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "The BNCC Computação curricular complement — result of the Nov/2025 public consultation with stage-specific meetings — is under development for publication in 2026."
+          },
+          {
+            "type": "links",
+            "items": [
+              { "label": "Novo Currículo Acre — EF + EM", "url": "https://novocurriculoacre.wixsite.com/curriculoacre" },
+              { "label": "CEE/AC Resolution nº 667/2025 (Diário Oficial AC)", "url": "https://diario.ac.gov.br" },
+              { "label": "Escola Digital — SEE-AC", "url": "https://educ.see.ac.gov.br" },
+              { "label": "SEE-AC Portal", "url": "https://see.ac.gov.br" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure & Teaching",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "red",
+            "text": "Acre has the lowest school connectivity in Brazil: only 52.5% of public schools have internet access (Censo Escolar 2025). In rural and indigenous zones, access is minimal. Only 33.2% of schools have internet available for teaching activities, and 28.2% have computers for students."
+          },
+          {
+            "type": "paragraph",
+            "text": "The Detei (Departamento de Tecnologia e Inovação) is the SEE-AC internal unit responsible for educational technology policy. It is expanding satellite internet connectivity to all 411 rural and indigenous schools, with a declared target of 100% state network connectivity by end of 2026. Computer lab coverage targeting 100% of high schools by 2026 is underway, starting with 33 labs for integral schools."
+          },
+          {
+            "type": "paragraph",
+            "text": "The 25 integral schools approved in 2025 are the priority for computer lab installation. The full-time school program (PEI/AC) targets 50% of schools in integral format. Anderson Melo (Detei chief) is the public face of computing and connectivity initiatives in the state."
+          }
+        ]
+      },
+      {
+        "title": "Assessment & Accountability",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Acre participates in SAEB nationally. The state historically has one of the lowest IDEBs in Brazil, with challenges concentrated in elementary school. No state assessment system with openly published results comparable to SAERO (RO) or SAEPE (PE) was identified. The Escola Digital platform is mentioned as a network resource but without visible assessment data publicly."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "No computing-specific assessment exists. With the curricular complement still in development, there are no rubrics, grades, or results associated with digital competencies."
+          },
+          {
+            "type": "paragraph",
+            "text": "The November 2025 public consultation — four online meetings organized by school stage (EI, EF Early, EF Final, EM), covering state, municipal, and private networks from all regional offices — was the main feedback mechanism on computing. Its stage-by-stage organization signals intent to produce a progressive curricular complement. Acre is notable for combining the most advanced curricular process in the North (CEE Resolution published + structured consultation) with the worst connectivity infrastructure in the country — a structural tension the Detei is actively working to resolve."
+          }
+        ]
+      }
+    ]
+  },
   "Alagoas": {
     "sectionId": "al-deep-dive",
     "svgId": "al",
