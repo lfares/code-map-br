@@ -1789,6 +1789,95 @@
       }
     ]
   },
+  "Amapá": {
+    "sectionId": "ap-deep-dive",
+    "svgId": "ap",
+    "glance": [
+      { "icon": "School", "label": "State Schools", "value": "~240" },
+      { "icon": "Users", "label": "Students", "value": "~70,000" },
+      { "icon": "GraduationCap", "label": "Teacher Profile", "value": "Multidisciplinary" },
+      { "icon": "Globe", "label": "Portal", "value": "Seed-AP (seedap.ap.gov.br)" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Amapá has no standalone computing discipline. Computing is approached transversally through digital tools embedded in existing subjects, aligned with the Computational Thinking and Digital Culture competencies described in the BNCC. There is no published state curriculum supplement (DRC) for computing at this time."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "No dedicated computing subject exists. Content is teacher-driven and ad hoc across subjects."
+          },
+          {
+            "type": "table",
+            "headers": ["Component", "Level", "Status"],
+            "rows": [
+              ["Computational Thinking", "MS + HS", "Transversal — embedded"],
+              ["Digital Culture & Literacy", "MS + HS", "Transversal — embedded"],
+              ["Programming / Robotics", "—", "Not formally offered"],
+              ["Data Science & AI", "—", "Not formally offered"]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "red",
+            "text": "No state-authored computing curriculum or teacher guide has been published. Materials found are national (BNCC-aligned) or from NGOs, not Amapá-specific."
+          },
+          {
+            "type": "paragraph",
+            "text": "The state secretariat (SEED-AP) operates a portal at seedap.ap.gov.br and regional Nuclei of Technological Education (NTE) offices. The NTEs provide teacher training in basic digital tools (Google Workspace, educational software) but no dedicated CS curriculum support."
+          },
+          {
+            "type": "links",
+            "items": [
+              { "label": "SEED-AP Portal", "url": "https://seedap.ap.gov.br" },
+              { "label": "BNCC Computing References (MEC)", "url": "https://basenacionalcomum.mec.gov.br" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure & Teaching",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "Connectivity is a major barrier: many interior schools operate with intermittent or no internet access. Most schools have a teacher's computer or projector at best."
+          },
+          {
+            "type": "paragraph",
+            "text": "The state NTE (Núcleo de Tecnologia Educacional) network offers teacher training workshops on digital tools. The Bolsa Monitoria program allows university students to support digital inclusion activities in public schools, providing some indirect computing exposure to students."
+          },
+          {
+            "type": "paragraph",
+            "text": "Device availability is concentrated in capital Macapá schools. Interior municipalities (e.g., Oiapoque, Laranjal do Jari) face infrastructure deficits limiting any technology-based instruction."
+          }
+        ]
+      },
+      {
+        "title": "Assessment & Accountability",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Amapá participates in the national SAEB assessment and administers its own PAAP (Programa de Avaliação da Aprendizagem do Amapá) for Portuguese and Mathematics. Neither assessment includes computing or digital literacy components."
+          },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "text": "No computing-specific assessment exists at the state level. There are no published learning outcomes or benchmarks for digital competencies."
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",
