@@ -11,7 +11,7 @@ const AUDIENCES = [
   {
     icon: GraduationCap,
     audience: 'Researchers & Educators',
-    description: 'Structured, comparable data on CS curriculum across 18 states, with links to primary sources.',
+    description: 'Structured, comparable data on CS curriculum across 19 states, with links to primary sources.',
     uses: ['Cross-state comparative research', 'Access linked official materials', 'Track CS policy maturity over time'],
   },
   {
@@ -209,7 +209,7 @@ export default function Home({ setPage }) {
           style={{ animationDelay: '0.15s' }}
         >
           {[
-            { value: 18, suffix: '', label: 'States tracked' },
+            { value: 19, suffix: '', label: 'States tracked' },
             { value: 11, suffix: '', label: 'Policy dimensions' },
             { value: 100, suffix: '%', label: 'Open access' },
           ].map(({ value, suffix, label }) => (

@@ -1426,6 +1426,103 @@
       }
     ]
   },
+  "Piauí": {
+    "sectionId": "pi-deep-dive",
+    "svgId": "pi",
+    "glance": [
+      { "icon": "School",        "value": "~820",         "label": "State Schools (540 with AI subject)" },
+      { "icon": "GraduationCap", "value": "~120,000",     "label": "Students (EF Final Years + HS)" },
+      { "icon": "Users",         "value": "800+",         "label": "Teachers trained in AI (2024)" },
+      { "icon": "Globe",         "value": "Seduc-PI",     "label": "portal", "url": "https://www.seduc.pi.gov.br", "urlDisplay": "seduc.pi.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "UNESCO Award Winner 2025",
+            "body": "Piauí was awarded the King Hamad Bin Isa Al-Khalifa Prize by UNESCO in 2025 for its AI in Education initiative — recognizing the state's policy as a global reference. Piauí ranked 2nd nationally in the 2025 AI Olympiad (ONIA), with 1,010 students in the 3rd phase, and had students at the International AI Olympiad (IOAI 2025) in Beijing."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["AI & Computational Thinking", "Understand AI fundamentals, machine learning, algorithms, and automation; develop AI projects applied to real community problems (e.g., apps for farmers). AWS Cloud Computing certification.", "Mandatory subject with interdisciplinary practical projects (AI + Biology + Projeto de Vida); flipped classroom methodology; robotics in 100 schools since 2025.", "Google platform (AI subject), Canal Educação (Seduc-PI), AWS (Cloud Computing), TRON robotics kits, Microsoft Teams (teacher training)."],
+              ["Digital World & Infrastructure", "Understand networks, cloud computing, digital security, and IoT; develop technical skills for the job market via Seduc Tec courses.", "Technical courses in Systems Development, Game Programming, and Digital Marketing (Seduc Tec); integration between AI subject and knowledge areas.", "Canal Educação, AWS platform, Google for Education."],
+              ["Digital Culture & Ethics", "Critically analyze AI's impact on society; understand algorithmic ethics, LGPD, and responsible data use; develop digital citizenship.", "Integrated into the AI subject and Projeto de Vida discussions; Computing Curriculum transversal in EF; Digital and Media Education Complementary Curriculum.", "Canal Educação, Google platform, Digital and Media Curriculum materials."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum Documents (Public Access)",
+            "items": [
+              { "label": "Currículo de Computação do Estado do Piauí (EI e EF) — PDF", "url": "https://seduc.pi.gov.br/download/diretrizes/Curriculo_de_Computacao___EI_e_EF.pdf", "note": "Complete document with skills mapped across three BNCC Computação axes from EI to EF. Published with Fundação Telefônica Vivo support." },
+              { "label": "Currículo do Piauí — Ensino Médio", "url": "https://www.seduc.pi.gov.br/arquivos/diretrizes/13-novo%20ensino%20medio%20Caderno01_Curriculo_Piaui.pdf" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Platforms & Recognition",
+            "items": [
+              { "label": "Canal Educação (Seduc-PI) — AI subject video lessons", "url": "https://www.canaleducacao.tv/aulas" },
+              { "label": "IA@Escola — Program documentation site", "url": "https://iaaescola.seduc.pi.gov.br", "note": "Referenced in reports — verify current availability." },
+              { "label": "Porvir — UNESCO Prize coverage", "url": "https://porvir.org/piaui-ia-escolas-premio-unesco/" },
+              { "label": "CIEB — AI in Basic Education Report (includes Piauí case)", "url": "https://www.cieb.net.br" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "All HS Schools Full-Time (CETIs)",
+            "body": "All state high schools operate as CETIs (Centros Estaduais de Tempo Integral), which made it possible to include the AI subject in the schedule without reducing other disciplines' hours."
+          },
+          { "type": "paragraph", "heading": "Connectivity", "body": "74.9% school connectivity across the state's ~3,699 public schools (including municipal) — above the national average of 59.65% (Programa Escolas Conectadas, 2025). Providing stable internet to remote areas in the Sertão and southern region remains the main bottleneck." },
+          { "type": "paragraph", "heading": "Robótica em 100 Escolas (2025)", "body": "Partnership with **TRON** for robotics kit supply and training of 100 teachers, benefiting ~15,000 students. Expansion planned." },
+          { "type": "paragraph", "heading": "Digital Platforms", "body": "Canal Educação (Seduc-PI's own platform), Google partnership (AI subject platform), AWS (Cloud Computing module with certification), Microsoft Teams (teacher training)." },
+          { "type": "paragraph", "heading": "Seduc Tec", "body": "Vocational education program with technical courses in **Systems Development**, **Game Programming**, and **Digital Marketing**, integrated into HS with AWS certification." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAEPI", "body": "Annual assessment in Portuguese and Mathematics. AI and computing competencies are not directly assessed. Public results via CAEd." },
+          { "type": "paragraph", "heading": "SAEB", "body": "PI participates in the national SAEB. Public results via INEP." },
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "Olympiad Performance as Impact Indicator",
+            "body": "Piauí placed 2nd nationally in the 2025 National AI Olympiad (ONIA) with 1,010 students in the 3rd phase. Students participated in the International AI Olympiad (IOAI 2025) in Beijing. These results serve as the main public effectiveness indicator for the program."
+          },
+          { "type": "paragraph", "heading": "Teacher Certification", "body": "The 800 teachers trained in 2024 received certification from Unipampa after a 60-hour program — creating a public qualification record. The hybrid flipped classroom methodology via Canal Educação and Microsoft Teams was documented and evaluated." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "Scaling Challenge",
+            "body": "Porvir (2025) identified 'maintaining quality in training new teachers and ensuring infrastructure in remote regions' as the central challenge. Non-STEM teachers (Biology, Physics) report that 60 hours of training is insufficient to cover the most technical aspects of the AI subject in depth."
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portal",
+            "items": [
+              { "label": "Portal SAEPI/CAEd", "url": "https://avaliacaoemonitoramentopiaui.caeddigital.net/" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",

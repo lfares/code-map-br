@@ -645,6 +645,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software"]
     }
   },
+  "Piauí": {
+    "availability": {
+      "score": 3.8,
+      "label": "Pioneering but Partially Open",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.83, "outOf": 1, "note": "Computing Curriculum (EI and EF) published as open PDF. AI subject is mandatory since 2024 with a formalized curriculum. Gap: detailed HS AI curriculum not published as open document; no external computing/AI assessment with public results." },
+        { "dimension": "Stability",    "score": 4,    "outOf": 5, "note": "Seduc-PI portal well-maintained. Computing Curriculum accessible via PDF. Canal Educação stable. Curriculum document links functional." },
+        { "dimension": "Granularity",  "score": 3,    "outOf": 5, "note": "AI subject is structured and mandatory with teacher training (800 teachers trained in 2024) and partnerships with Unipampa, IFFar, UFRGS, and Google. Computing Curriculum (EI and EF) maps all three axes. Detailed HS AI curriculum not published as open document." }
+      ]
+    },
+    "shortSummary": "AI is mandatory in Grade 9 EF and all HS series since 2024 — UNESCO award winner 2025, 2nd in Brazil's AI Olympiad. Computing Curriculum (EI–EF) published. Robotics in 100 schools. All HS schools operate full-time (CETIs).",
+    "summary": "The state with the boldest computing policy in Brazil and the Americas: since 2024, Artificial Intelligence is a mandatory subject in 9th grade and all three high school grades for over 120,000 students — recognized by UNESCO and awarded the King Hamad Bin Isa Al-Khalifa Prize in 2025. The curriculum was developed with Unipampa, IFFar, and UFRGS, with 800 teachers trained. In 2026, robotics was introduced in 100 schools with TRON's support. The Computing Curriculum (early childhood and elementary) was published with Fundação Telefônica Vivo support, covering all three BNCC Computação axes transversally.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "Inteligência Artificial (9th EF + all HS series)" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "Not publicly specified" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "Mandatory (AI in 9th EF and HS) + Transversal (other years)" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Currículo de Computação PI (EI+EF) + Currículo Complementar de Educação Digital e Midiática (Fundação Telefônica Vivo)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "AI 100% implemented (540 schools); Robotics ~20% (100 schools since 2025)" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "2024 — AI mandatory in 9th EF and all HS series" }
+    ],
+    "scope": { "from": 9, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "pi-deep-dive",
+    "meta": {
+      "abbr": "PI",
+      "region": "Northeast",
+      "networkSize": "Medium (500 to 1500 schools)",
+      "deliveryModel": ["Mandatory for all students"],
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "Laboratory",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "Project-Based (Artifacts)",
+      "maturityYear": 2024,
+      "maturityRange": "Recent (2024+)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Data Science & AI", "Robotics & Hardware"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,
