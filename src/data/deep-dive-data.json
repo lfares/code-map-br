@@ -1152,6 +1152,106 @@
       }
     ]
   },
+  "Paraná": {
+    "sectionId": "pr-deep-dive",
+    "svgId": "pr",
+    "glance": [
+      { "icon": "School",        "value": "1,903",        "label": "State Schools" },
+      { "icon": "GraduationCap", "value": "~840,000",     "label": "Students" },
+      { "icon": "Users",         "value": "16,700+",      "label": "Teachers trained in digital education (2025)" },
+      { "icon": "Globe",         "value": "Seed-PR",      "label": "portal", "url": "https://www.educacao.pr.gov.br", "urlDisplay": "educacao.pr.gov.br" }
+    ],
+    "cards": [
+      {
+        "title": "Learning Components",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "heading": "Context",
+            "body": "**Computational Thinking** is a mandatory component in 8th and 9th grade EF (2 classes/week). In High School, **Robotics** is part of the Parte Diversificada (1 class/week, 3 modules of 42 classes across the 3 HS years), and **Digital Education** became a mandatory FGB component from 2026. **Programming** via the Escola Digital platform reaches ~500,000 HS students. Robótica Paraná Kids is expanding to Grade 4–5 municipal schools via the Educa Juntos program."
+          },
+          {
+            "type": "table",
+            "columns": ["Axis (Pillar)", "Learning Milestone", "Classroom Approach", "Tools & Platforms"],
+            "rows": [
+              ["Computational Thinking & Robotics", "Develop logical reasoning, algorithms, and programming; assemble and program robots focused on automation, IoT, and home automation; learn block and text programming progressively (intro, advanced programming, robotics applied to projects).", "Mandatory component in 8th and 9th EF (2h/week); Robotics in HS with 3 modules of 42 classes per year; practical projects with physical kits and digital platform.", "Robotics kits (18,300+ delivered since 2022), Chromebooks, Escola Digital (programming platform), Scratch, Blockly."],
+              ["Digital World & AI", "Develop digital literacy and critical use of technologies; understand and use AI tools to support learning; develop digital authorship in different languages.", "Matemática Paraná with Khanmigo (Socratic AI, 500k students); Redação Paraná with AI correction (6 million essays in 2025); pedagogical use of Chromebooks integrated into disciplines.", "Escola Digital, Khanmigo (Khan Academy AI), Redação Paraná (AI), Chromebooks (42,195 new in 2025), Inglês Paraná."],
+              ["Digital Culture & Ethics", "Critically analyze the impact of technologies; develop digital citizenship, ethical use of media, and online safety; understand responsible AI use.", "Digital Education as mandatory FGB component in HS (2026); interdisciplinary discussions in integrative projects; transversal approach in other EF years.", "Escola Digital, media production tools (video, podcast), digital research platforms."]
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Available Materials",
+        "blocks": [
+          {
+            "type": "links",
+            "heading": "Curriculum & Legislation (Public Access)",
+            "items": [
+              { "label": "Referencial Curricular do Paraná — Interactive Portal (EF and EM)", "url": "https://www.referencialcurriculardoparana.pr.gov.br/" },
+              { "label": "Instrução Normativa Conjunta nº 001/2025 — Digital Education and Computing", "url": "https://www.educacao.pr.gov.br/instrucoes" },
+              { "label": "Matrizes Curriculares EM 2026 (IN Conjunta 015/2025) — Digital Education as mandatory FGB", "url": "https://www.educacao.pr.gov.br/instrucoes" },
+              { "label": "Deliberação CEE/PR — Educação Digital e Computação (public consultation)", "url": "https://www.cee.pr.gov.br/sites/cee/arquivos_restritos/files/documento/2025-06/CONSULTA%20PUBLICA%20-%20EDUCACAO%20DIGITAL%20E%20COMPUTACAO.pdf" }
+            ]
+          },
+          {
+            "type": "links",
+            "heading": "Pedagogical Platforms (Public Access)",
+            "items": [
+              { "label": "Escola Digital — Teacher Portal", "url": "https://professor.escoladigital.pr.gov.br", "note": "Programming, robotics, platforms, and pedagogical materials." },
+              { "label": "Escola Digital — Student Portal", "url": "https://aluno.escoladigital.pr.gov.br" },
+              { "label": "Escola Digital — Educational Robotics (Student)", "url": "https://aluno.escoladigital.pr.gov.br/robotica/aulas/educacional" },
+              { "label": "Matemática Paraná (Khanmigo / Khan Academy)", "url": "https://www.educacao.pr.gov.br/matematicaparana" },
+              { "label": "Redação Paraná (AI-powered essay correction)", "url": "https://www.educacao.pr.gov.br/redacaoparana" },
+              { "label": "Ensino Médio Paranaense — Pedagogical Portal", "url": "https://professor.escoladigital.pr.gov.br/nem" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Infrastructure",
+        "blocks": [
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "Largest State Tech Investment in Brazil (2025)",
+            "body": "In 2025: 42,195 Chromebooks, 16,160 desktops, 25,040 tablets, 57,741 headsets, 1,476 interactive screens, 900 printers, and 647 projectors — totaling R$ 187 million for 840,000 students in 1,903 schools. In 2023: 40,680 computers, 18,320 Chromebooks, and 18,300 robotics kits (R$ 200 million). In 2025: 32,000 additional Chromebooks distributed to 1,000+ schools."
+          },
+          { "type": "paragraph", "heading": "Robótica Paraná", "body": "Program launched in 2021, now with **160,000+ students** with access to Robotics classes in the state network. Each school receives kits for 3 modules of 42 classes across HS: introductory robotics (Year 1), advanced programming (Year 2), robotics applied to automation and IoT projects (Year 3)." },
+          { "type": "paragraph", "heading": "Robótica Paraná Kids (2025–2026)", "body": "Expansion of robotics to Grade 4–5 municipal schools (EF Early Years) via Programa Educa Juntos, with voluntary municipal adhesion. Includes continuing teacher training and state-funded pedagogical materials." },
+          { "type": "paragraph", "heading": "Connectivity", "body": "**22,500 Wi-Fi access points** installed across all state schools since 2021. In 2025, connectivity expanded to 150 new rural schools via federal program. Seed-PR is a national reference for school connectivity infrastructure." },
+          { "type": "paragraph", "heading": "AI at Scale", "body": "**Khanmigo** (Matemática Paraná) reached 93.77% of HS students Jan–Sept/2025 with average 31 interactions/student and 4.8 million records. **Redação Paraná** generated 6 million essays in 2025 with average 7.7 texts/student." }
+        ]
+      },
+      {
+        "title": "Assessment & Feedback",
+        "blocks": [
+          { "type": "paragraph", "heading": "SAEP", "body": "Annual state assessment covering Portuguese and Mathematics in Grade 5 and 9 EF and HS Year 3. Public results by school via CAEd. Digital competencies are not directly assessed — Computational Thinking and Robotics have no specific external assessment instrument." },
+          {
+            "type": "alert",
+            "variant": "green",
+            "heading": "Brazil's Top IDEB Across All Three Stages",
+            "body": "Paraná is the state with the best IDEB in Brazil across all three stages (Early Years, Final Years, and HS) — a national quality reference. Public results via INEP."
+          },
+          { "type": "paragraph", "heading": "Platform-Based Internal Assessment", "body": "Escola Digital, Khanmigo, and Redação Paraná generate real-time usage and performance data accessible to principals and teachers. Seed-PR uses this data to monitor progress and adjust pedagogical strategies across its 32 regional education offices." },
+          { "type": "paragraph", "heading": "Robotics & Computational Thinking Assessment", "body": "No standardized external instrument. Assessment is project-based and procedural within each school. The Robotics content is structured in 3 modules with clear progression, but without a published rubric or external results." },
+          {
+            "type": "alert",
+            "variant": "amber",
+            "heading": "Integration Gap",
+            "body": "Teachers report high satisfaction with available digital tools. The main challenge identified is the effective integration of tools into everyday pedagogical practices beyond the specific computing disciplines."
+          },
+          {
+            "type": "links",
+            "heading": "Assessment Portal",
+            "items": [
+              { "label": "Portal SAEP/CAEd", "url": "https://avaliacaoemonitoramentoparan.caeddigital.net/" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "Rio de Janeiro": {
     "sectionId": "rj-deep-dive",
     "svgId": "rj",

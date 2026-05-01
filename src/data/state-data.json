@@ -531,6 +531,44 @@
       "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Robotics & Hardware"]
     }
   },
+  "Paraná": {
+    "availability": {
+      "score": 4.2,
+      "label": "Structured and Deployed",
+      "breakdown": [
+        { "dimension": "Transparency", "score": 0.83, "outOf": 1, "note": "Referencial Curricular do Paraná (EF and EM) is public with interactive portal. IN 001/2025 and EM 2026 curricular matrices are public. Escola Digital has open area with programming and robotics content. Computing Reference still in public consultation at CEE/PR without final homologation. Specific teaching materials not published in open format." },
+        { "dimension": "Stability",    "score": 4,    "outOf": 5, "note": "Seed-PR portal and Escola Digital are stable and well-maintained. Normative instructions and guidelines accessible. Interactive Referencial Curricular portal functional." },
+        { "dimension": "Granularity",  "score": 4,    "outOf": 5, "note": "One of the most granular computing curricula in Brazil: Computational Thinking in 8th/9th EF (2 classes/week), Programming for EM (~500k students), Robotics in EM (160k students, 1 class/week), Digital Education as mandatory FGB component from 2026. Platforms Escola Digital, Khanmigo, and Redação Paraná generate accessible usage data." }
+      ]
+    },
+    "shortSummary": "Computational Thinking mandatory in 8th and 9th grade MS, Robotics in all HS (160k students), and Programming reaching ~500k via Escola Digital. Digital Education became mandatory HS component in 2026. Brazil's top IDEB across all three stages.",
+    "summary": "One of the states with the strongest real computing implementation in Brazil: Computational Thinking is a mandatory curricular component in 8th and 9th grade of middle school, Robotics has been part of the high school curriculum since 2022, and Programming reaches around 500,000 students via the Escola Digital platform. From 2026, Digital Education became a mandatory component of the High School General Education Base. By end of 2025, 16,700 teachers had completed digital education training, and the state invests in pedagogical AI tools like Khanmigo (Math) and Redação Paraná.",
+    "details": [
+      { "icon": "BookOpen",     "label": "Subject",              "text": "HS: Educação Digital (FGB) + Robótica + Programação | MS: Pensamento Computacional (8th & 9th)" },
+      { "icon": "Clock",        "label": "Weekly Hours",         "text": "HS: Robótica 1 class/week + Digital Ed. to FGB | MS: 2 classes/week (8th & 9th)" },
+      { "icon": "Target",       "label": "Delivery Model",       "text": "MS: Mandatory component (8th & 9th) + Transversal | HS: Mandatory + Itinerary" },
+      { "icon": "FileText",     "label": "Curriculum Framework", "text": "Referencial Curricular do Paraná + Matrizes Curriculares (IN 015/2025)" },
+      { "icon": "BarChart2",    "label": "Implementation Status","text": "100% implemented" },
+      { "icon": "CalendarDays", "label": "Policy Start Date",    "text": "Robotics elective 2022 | Computational Thinking 8th/9th 2023 | Digital Education mandatory EM 2026" }
+    ],
+    "scope": { "from": 8, "to": 12, "fromLabel": "Middle School", "toLabel": "High School" },
+    "deepDiveId": "pr-deep-dive",
+    "meta": {
+      "abbr": "PR",
+      "region": "South",
+      "networkSize": "Large (+1500 schools)",
+      "deliveryModel": ["Mandatory for all students"],
+      "adminScope": ["Middle School (6-9)", "High School"],
+      "materialTransparency": "Open",
+      "materialSource": "In-house (State-authored)",
+      "infrastructure": "1:1 Devices/Chromebooks",
+      "teacherProfile": "Multidisciplinary",
+      "assessmentType": "Project-Based (Artifacts)",
+      "maturityYear": 2022,
+      "maturityRange": "Mid Adoption (2022–2023)",
+      "learningComponents": ["Computational Thinking", "Digital Culture & Literacy", "Programming & Software", "Robotics & Hardware"]
+    }
+  },
   "Rio de Janeiro": {
     "availability": {
       "score": 3.10,
